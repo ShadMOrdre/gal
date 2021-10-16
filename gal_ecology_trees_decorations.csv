@@ -1,0 +1,1603 @@
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# HOT HUMID||||||||||||
+# HOT HUMID OCEAN||||||||||||
+#||||||||||||
+# HOT HUMID BEACH||||||||||||
+trees|gal:dirt_silt_01|0.8|hot_humid_beach|1|3|mangrove_black_01;mangrove_black_02;mangrove_black_03||||||
+trees|gal:dirt_silt_01|0.8|hot_humid_beach|-1|1|mangrove_red_01;mangrove_red_02;mangrove_red_03||||||
+#plants|gal:tree_mangrove_root|0.02|hot_humid_beach|0|2|tree_mangrove_sapling|nil|nil|nil|||
+plants|gal:dirt_silt_01|0.02|hot_humid_beach|0|2|tree_mangrove_black_sapling|nil|nil|nil|||
+# HOT HUMID - DIRT WITH RAINFOREST LITTER||||||||||||
+trees|gal:dirt_with_litter_rainforest|0.004|hot_humid|coastal|shelf|cocoa_01;cocoa_02|nil|nil|nil|||
+trees|gal:dirt_with_litter_rainforest|0.004|hot_humid|lowland|highland|capirona_01;capirona_02||||||
+trees|gal:dirt_with_litter_rainforest|0.004|hot_humid|beach|lowland|ebony||||||
+trees|gal:dirt_with_litter_rainforest|0.004|hot_humid|lowland|highland|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07||||||
+trees|gal:dirt_with_litter_rainforest|0.004|hot_humid|coastal|shelf|kapok_01;kapok_02|nil|nil|nil|||
+trees|gal:dirt_with_litter_rainforest|0.004|hot_humid|beach|lowland|mahogany||||||
+trees|gal:dirt_with_litter_rainforest|0.004|hot_humid|beach|lowland|rubber_01;rubber_02;rubber_03;rubber_04||||||
+trees|gal:dirt_with_litter_rainforest|0.004|hot_humid|coastal|shelf|bamboo_tropical_01;bamboo_tropical_02;bamboo_tropical_03;bamboo_tropical_04||||||
+trees|gal:dirt_with_litter_rainforest|0.004|hot_humid|beach|coastal|palm_fountain_01;palm_fountain_02;palm_fountain_03||||||
+trees|gal:dirt_with_litter_rainforest|0.004|hot_humid|coastal|shelf|palm_jungle_01;palm_jungle_02||||||
+trees|gal:dirt_with_litter_rainforest|0.004|hot_humid|beach|lowland|palm_moriche_01;palm_moriche_02;palm_moriche_03||||||
+trees|gal:dirt_with_litter_rainforest|0.004|hot_humid|beach|lowland|bamboo_small||||||
+plants|gal:dirt_with_litter_rainforest|0.08|hot_humid|beach|highland|grass_bamboo_grass||||||
+plants|gal:dirt_with_litter_rainforest|0.08|hot_humid|beach|highland|grass_jungle||||||
+plants|gal:dirt_with_litter_rainforest|0.08|hot_humid|coastal|highland|flower_hibiscus||||||
+plants|gal:dirt_with_litter_rainforest|0.08|hot_humid|lowland|highland|flower_orchid||||||
+plants|gal:dirt_with_litter_rainforest|0.001|hot_humid|coastal|highland|plant_creeper||||||
+plants|gal:dirt_with_litter_rainforest|0.001|hot_humid|coastal|highland|plant_gourd_bottle_1||||||
+plants|gal:dirt_with_litter_rainforest|0.08|hot_humid|coastal|shelf|plant_small_jungle_tree||||||
+plants|gal:dirt_with_litter_rainforest|0.08|hot_humid|coastal|highland|shrub_jungle||||||
+# HOT HUMID - DIRT WITH FUNGI||||||||||||
+shroom|gal:dirt_with_litter_fungi|0.005|hot_humid|beach|shelf|mushroom_big-B=mushroom_cap_green_dk_spotted,H=mushroom_02_trunk||||||
+shroom|gal:dirt_with_litter_fungi|0.005|hot_humid|beach|shelf|mushroom_fat-B=mushroom_cap_brown_02,H=mushroom_01_trunk||||||
+shroom|gal:dirt_with_litter_fungi|0.005|hot_humid|beach|shelf|mushroom_giant_morel-B=mushroom_cap_brown_01,H=mushroom_01_trunk||||||
+shroom|gal:dirt_with_litter_fungi|0.005|hot_humid|beach|shelf|mushroom_giant_morel_large-B=mushroom_cap_red_spotted,H=mushroom_01_trunk||||||
+shroom|gal:dirt_with_litter_fungi|0.005|hot_humid|beach|shelf|mushroom_giant_tall-B=mushroom_cap_purple_spotted,H=mushroom_01_trunk||||||
+shroom|gal:dirt_with_litter_fungi|0.005|hot_humid|beach|shelf|mushroom_large-B=mushroom_cap_green_spotted,H=mushroom_02_trunk||||||
+shroom|gal:dirt_with_litter_fungi|0.005|hot_humid|beach|highland|mushroom_short-B=mushroom_cap_yellow_spotted_brown,H=mushroom_01_trunk||||||
+shroom|gal:dirt_with_litter_fungi|0.005|hot_humid|beach|coastal|mushroom_tall-B=mushroom_cap_yellow_spotted_blue,H=mushroom_01_trunk||||||
+shroom|gal:dirt_with_litter_fungi|0.005|hot_humid|beach|lowland|mushroom_3a-B=mushroom_small_cap_01,H=mushroom_small_trunk||||||
+shroom|gal:dirt_with_litter_fungi|0.005|hot_humid|beach|lowland|mushroom_3b-B=mushroom_small_cap_02,H=mushroom_small_trunk||||||
+# HOT HUMID - DIRT BLACK WITH RAINFOREST LITTER||||||||||||
+trees|gal:dirt_black_with_litter_rainforest|0.004|hot_humid|coastal|shelf|bamboo_tropical_01;bamboo_tropical_02;bamboo_tropical_03;bamboo_tropical_04||||||
+no_rot|gal:dirt_black_with_litter_rainforest|0.004|hot_humid|coastal|shelf|gal.big_tree_fern||||||
+no_rot|gal:dirt_black_with_litter_rainforest|0.004|hot_humid|lowland|shelf|gal.giant_tree_fern||||||
+no_rot|gal:dirt_black_with_litter_rainforest|0.004|hot_humid|lowland|shelf|gal.giant_tree_fern_2||||||
+trees|gal:dirt_black_with_litter_rainforest|0.004|hot_humid|beach|lowland|fern_small_01;fern_small_02;fern_small_03|nil|nil|nil|||
+trees|gal:dirt_black_with_litter_rainforest|0.004|hot_humid|beach|lowland|fern_silver_01;fern_silver_02|nil|nil|nil|||
+trees|gal:dirt_black_with_litter_rainforest|0.004|hot_humid|beach|lowland|cabbage_01;cabbage_02|nil|nil|nil|||
+trees|gal:dirt_black_with_litter_rainforest|0.004|hot_humid|beach|lowland|mamaku_01;mamaku_02|nil|nil|nil|||
+trees|gal:dirt_black_with_litter_rainforest|0.004|hot_humid|beach|lowland|wheki_01;wheki_02|nil|nil|nil|||
+plants|gal:dirt_black_with_litter_rainforest|0.08|hot_humid|beach|highland|grass_jungle||||||
+plants|gal:dirt_black_with_litter_rainforest|0.08|hot_humid|beach|shelf|fern_broadleaf_fern|nil|nil|nil|||
+plants|gal:dirt_black_with_litter_rainforest|0.08|hot_humid|coastal|lowland|fern_ladyfern|nil|nil|nil|||
+plants|gal:dirt_black_with_litter_rainforest|0.08|hot_humid|beach|lowland|fern_large_1|nil|nil|nil|||
+plants|gal:dirt_black_with_litter_rainforest|0.08|hot_humid|beach|lowland|fern_small_1|nil|nil|nil|||
+plants|gal:dirt_black_with_litter_rainforest|0.08|hot_humid|beach|shelf|fern_spikefern|nil|nil|nil|||
+plants|gal:dirt_black_with_litter_rainforest|0.001|hot_humid|coastal|highland|flower_hibiscus||||||
+plants|gal:dirt_black_with_litter_rainforest|0.001|hot_humid|lowland|highland|flower_orchid|nil|nil|nil|||
+plants|gal:dirt_black_with_litter_rainforest|0.001|hot_humid|coastal|highland|plant_gourd_bottle_1||||||
+plants|gal:dirt_black_with_litter_rainforest|0.001|hot_humid|coastal|highland|plant_creeper||||||
+plants|gal:dirt_black_with_litter_rainforest|0.001|hot_humid|beach|lowland|plant_pineapple_plant|nil|nil|nil|||
+plants|gal:dirt_black_with_litter_rainforest|0.08|hot_humid|coastal|shelf|plant_small_jungle_tree|nil|nil|nil|||
+plants|gal:dirt_black_with_litter_rainforest|0.08|hot_humid|coastal|highland|shrub_lush_01|nil|nil|nil|||
+# HOT HUMID - DIRT BROWN WITH RAINFOREST LITTER||||||||||||
+trees|gal:dirt_brown_with_litter_rainforest|0.004|hot_humid|lowland|shelf|capirona_01;capirona_02||||||
+trees|gal:dirt_brown_with_litter_rainforest|0.004|hot_humid|beach|lowland|ebony||||||
+trees|gal:dirt_brown_with_litter_rainforest|0.004|hot_humid|lowland|highland|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07||||||
+trees|gal:dirt_brown_with_litter_rainforest|0.004|hot_humid|coastal|shelf|kapok_01;kapok_02||||||
+trees|gal:dirt_brown_with_litter_rainforest|0.004|hot_humid|beach|lowland|mahogany||||||
+trees|gal:dirt_brown_with_litter_rainforest|0.004|hot_humid|beach|lowland|palm_fountain_01;palm_fountain_02;palm_fountain_03||||||
+trees|gal:dirt_brown_with_litter_rainforest|0.004|hot_humid|beach|shelf|palm_jungle_01;palm_jungle_02||||||
+trees|gal:dirt_brown_with_litter_rainforest|0.004|hot_humid|beach|lowland|palm_moriche_01;palm_moriche_02;palm_moriche_03||||||
+plants|gal:dirt_brown_with_litter_rainforest|0.001|hot_humid|coastal|highland|flower_hibiscus|nil|nil|nil|||
+plants|gal:dirt_brown_with_litter_rainforest|0.001|hot_humid|lowland|highland|flower_orchid|nil|nil|nil|||
+plants|gal:dirt_brown_with_litter_rainforest|0.001|hot_humid|shelf|highland|plant_creeper|nil|nil|nil|||
+plants|gal:dirt_brown_with_litter_rainforest|0.001|hot_humid|shelf|highland|plant_gourd_bottle_1|nil|nil|nil|||
+plants|gal:dirt_brown_with_litter_rainforest|0.001|hot_humid|beach|lowland|plant_pineapple_plant|nil|nil|nil|||
+plants|gal:dirt_brown_with_litter_rainforest|0.08|hot_humid|coastal|shelf|plant_small_jungle_tree|nil|nil|nil|||
+plants|gal:dirt_brown_with_litter_rainforest|0.08|hot_humid|beach|highland|shrub_jungle|nil|nil|nil|||
+plants|gal:dirt_brown_with_litter_rainforest|0.08|hot_humid|beach|highland|shrub_lush_01|nil|nil|nil|||
+# HOT HUMID - DIRT CLAYEY WITH RAINFOREST LITTER||||||||||||
+trees|gal:dirt_clayey_with_litter_rainforest|0.004|hot_humid|lowland|shelf|capirona_01;capirona_02||||||
+trees|gal:dirt_clayey_with_litter_rainforest|0.004|hot_humid|lowland|shelf|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07||||||
+trees|gal:dirt_clayey_with_litter_rainforest|0.004|hot_humid|beach|lowland|mahogany||||||
+trees|gal:dirt_clayey_with_litter_rainforest|0.004|hot_humid|beach|shelf|bamboo_tropical_01;bamboo_tropical_02;bamboo_tropical_03;bamboo_tropical_04||||||
+trees|gal:dirt_clayey_with_litter_rainforest|0.004|hot_humid|beach|lowland|palm_fountain_01;palm_fountain_02;palm_fountain_03||||||
+trees|gal:dirt_clayey_with_litter_rainforest|0.004|hot_humid|beach|shelf|palm_jungle_01;palm_jungle_02||||||
+trees|gal:dirt_clayey_with_litter_rainforest|0.004|hot_humid|beach|lowland|palm_moriche_01;palm_moriche_02;palm_moriche_03||||||
+trees|gal:dirt_clayey_with_litter_rainforest|0.08|hot_humid|beach|lowland|bamboo_small||||||
+plants|gal:dirt_clayey_with_litter_rainforest|0.08|hot_humid|beach|highland|grass_bamboograss||||||
+plants|gal:dirt_clayey_with_litter_rainforest|0.08|hot_humid|beach|highland|grass_bamboo_grass||||||
+plants|gal:dirt_clayey_with_litter_rainforest|0.001|hot_humid|beach|lowland|plant_pineapple_plant|nil|nil|nil|||
+plants|gal:dirt_clayey_with_litter_rainforest|0.08|hot_humid|coastal|shelf|plant_small_jungle_tree|nil|nil|nil|||
+plants|gal:dirt_clayey_with_litter_rainforest|0.08|hot_humid|beach|highland|shrub_lush_01|nil|nil|nil|||
+# HOT HUMID - DIRT SANDY WITH RAINFOREST LITTER||||||||||||
+trees|gal:dirt_sandy_with_litter_rainforest|0.004|hot_humid|beach|lowland|palm_fountain_01;palm_fountain_02;palm_fountain_03||||||
+trees|gal:dirt_sandy_with_litter_rainforest|0.004|hot_humid|beach|shelf|palm_jungle_01;palm_jungle_02||||||
+trees|gal:dirt_sandy_with_litter_rainforest|0.004|hot_humid|beach|lowland|palm_moriche_01;palm_moriche_02;palm_moriche_03||||||
+plants|gal:dirt_sandy_with_litter_rainforest|0.001|hot_humid|beach|lowland|plant_pineapple_plant|nil|nil|nil|||
+plants|gal:dirt_sandy_with_litter_rainforest|0.08|hot_humid|coastal|shelf|plant_small_jungle_tree|nil|nil|nil|||
+plants|gal:dirt_sandy_with_litter_rainforest|0.08|hot_humid|beach|highland|shrub_lush_01|nil|nil|nil|||
+# HOT HUMID - DIRT SILTY WITH RAINFOREST LITTER||||||||||||
+trees|gal:dirt_silty_with_litter_rainforest|0.004|hot_humid|coastal|shelf|cocoa_01;cocoa_02||||||
+trees|gal:dirt_silty_with_litter_rainforest|0.004|hot_humid|lowland|highland|capirona_01;capirona_02||||||
+trees|gal:dirt_silty_with_litter_rainforest|0.004|hot_humid|beach|lowland|ebony||||||
+trees|gal:dirt_silty_with_litter_rainforest|0.004|hot_humid|lowland|highland|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07||||||
+trees|gal:dirt_silty_with_litter_rainforest|0.004|hot_humid|coastal|shelf|kapok_01;kapok_02||||||
+trees|gal:dirt_silty_with_litter_rainforest|0.004|hot_humid|beach|lowland|rubber_01;rubber_02;rubber_03;rubber_04||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.08|hot_humid|beach|lowland|fern_large_1||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.08|hot_humid|beach|lowland|fern_small_1||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.08|hot_humid|beach|shelf|fern_spikefern||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.001|hot_humid|lowland|highland|flower_orchid||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.001|hot_humid|beach|lowland|plant_pineapple_plant||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.08|hot_humid|coastal|shelf|plant_small_jungle_tree||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.08|hot_humid|coastal|highland|shrub_lush_01||||||
+# HOT HUMID - DIRT||||||||||||
+plants|gal:dirt_with_grass_hot_humid|0.08|hot_humid|beach|highland|grass_jungle_1|nil|nil|nil|||
+plants|gal:dirt_with_grass_hot_humid|0.08|hot_humid|beach|highland|grass_jungle|nil|nil|nil|||
+plants|gal:dirt_with_grass_hot_humid|0.004|hot_humid|beach|shelf|plant_gourd_bottle_1||||||
+plants|gal:dirt_with_grass_hot_humid|0.004|hot_humid|beach|highland|plant_creeper||||||
+plants|gal:dirt_with_grass_hot_humid|0.001|hot_humid|shelf|highland|plant_nettle_impatiens|nil|nil|nil|||
+plants|gal:dirt_with_grass_hot_humid|0.08|hot_humid|beach|shelf|plant_small_jungle_tree|nil|nil|nil|||
+plants|gal:dirt_with_grass_hot_humid|0.08|hot_humid|beach|highland|shrub_jungle||||||
+# HOT HUMID - DIRT BLACK||||||||||||
+trees|gal:dirt_black_with_grass_hot_humid|0.004|hot_humid|lowland|shelf|cocoa_01;cocoa_02||||||
+trees|gal:dirt_black_with_grass_hot_humid|0.004|hot_humid|lowland|highland|capirona_01;capirona_02||||||
+trees|gal:dirt_black_with_grass_hot_humid|0.004|hot_humid|beach|lowland|ebony||||||
+trees|gal:dirt_black_with_grass_hot_humid|0.004|hot_humid|lowland|highland|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07||||||
+trees|gal:dirt_black_with_grass_hot_humid|0.004|hot_humid|coastal|shelf|kapok_01;kapok_02||||||
+trees|gal:dirt_black_with_grass_hot_humid|0.004|hot_humid|beach|lowland|mahogany||||||
+trees|gal:dirt_black_with_grass_hot_humid|0.004|hot_humid|beach|lowland|rubber_01;rubber_02;rubber_03;rubber_04||||||
+plants|gal:dirt_black_with_grass_hot_humid|0.08|hot_humid|beach|highland|grass_jungle_1||||||
+plants|gal:dirt_black_with_grass_hot_humid|0.08|hot_humid|beach|shelf|grass_jungle||||||
+plants|gal:dirt_black_with_grass_hot_humid|0.001|hot_humid|coastal|shelf|plant_creeper||||||
+plants|gal:dirt_black_with_grass_hot_humid|0.08|hot_humid|coastal|shelf|plant_small_jungle_tree||||||
+plants|gal:dirt_black_with_grass_hot_humid|0.08|hot_humid|beach|shelf|shrub_jungle||||||
+# HOT HUMID - DIRT BROWN||||||||||||
+trees|gal:dirt_brown_with_grass_hot_humid|0.004|hot_humid|lowland|shelf|capirona_01;capirona_02||||||
+trees|gal:dirt_brown_with_grass_hot_humid|0.004|hot_humid|beach|lowland|ebony||||||
+trees|gal:dirt_brown_with_grass_hot_humid|0.004|hot_humid|lowland|highland|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07||||||
+trees|gal:dirt_brown_with_grass_hot_humid|0.004|hot_humid|coastal|shelf|kapok_01;kapok_02||||||
+trees|gal:dirt_brown_with_grass_hot_humid|0.004|hot_humid|beach|lowland|mahogany||||||
+trees|gal:dirt_brown_with_grass_hot_humid|0.004|hot_humid|beach|lowland|palm_fountain_01;palm_fountain_02;palm_fountain_03||||||
+trees|gal:dirt_brown_with_grass_hot_humid|0.004|hot_humid|beach|shelf|palm_jungle_01;palm_jungle_02||||||
+trees|gal:dirt_brown_with_grass_hot_humid|0.004|hot_humid|beach|lowland|palm_moriche_01;palm_moriche_02;palm_moriche_03||||||
+plants|gal:dirt_brown_with_grass_hot_humid|0.08|hot_humid|beach|highland|grass_jungle_1||||||
+plants|gal:dirt_brown_with_grass_hot_humid|0.08|hot_humid|beach|shelf|grass_jungle||||||
+plants|gal:dirt_brown_with_grass_hot_humid|0.08|hot_humid|beach|shelf|plant_small_jungle_tree||||||
+plants|gal:dirt_brown_with_grass_hot_humid|0.08|hot_humid|beach|highland|shrub_jungle||||||
+# HOT HUMID - DIRT CLAYEY||||||||||||
+trees|gal:dirt_clayey_with_grass_hot_humid|0.004|hot_humid|beach|lowland|bamboo_tropical_01;bamboo_tropical_02;bamboo_tropical_03;bamboo_tropical_04||||||
+trees|gal:dirt_clayey_with_grass_hot_humid|0.004|hot_humid|beach|lowland|bamboo_small||||||
+trees|gal:dirt_clayey_with_grass_hot_humid|0.004|hot_humid|lowland|shelf|capirona_01;capirona_02||||||
+trees|gal:dirt_clayey_with_grass_hot_humid|0.004|hot_humid|lowland|shelf|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07||||||
+trees|gal:dirt_clayey_with_grass_hot_humid|0.004|hot_humid|beach|lowland|palm_fountain_01;palm_fountain_02;palm_fountain_03||||||
+trees|gal:dirt_clayey_with_grass_hot_humid|0.004|hot_humid|beach|shelf|palm_jungle_01;palm_jungle_02||||||
+trees|gal:dirt_clayey_with_grass_hot_humid|0.004|hot_humid|beach|lowland|palm_moriche_01;palm_moriche_02;palm_moriche_03||||||
+plants|gal:dirt_clayey_with_grass_hot_humid|0.08|hot_humid|beach|highland|grass_jungle_1||||||
+plants|gal:dirt_clayey_with_grass_hot_humid|0.08|hot_humid|beach|highland|grass_jungle||||||
+plants|gal:dirt_clayey_with_grass_hot_humid|0.08|hot_humid|beach|shelf|grass_bamboo_grass||||||
+plants|gal:dirt_clayey_with_grass_hot_humid|0.001|hot_humid|beach|shelf|plant_gourd_bottle_1||||||
+plants|gal:dirt_clayey_with_grass_hot_humid|0.001|hot_humid|beach|highland|plant_creeper||||||
+plants|gal:dirt_clayey_with_grass_hot_humid|0.08|hot_humid|beach|shelf|plant_small_jungle_tree||||||
+plants|gal:dirt_clayey_with_grass_hot_humid|0.08|hot_humid|beach|highland|shrub_jungle||||||
+# HOT HUMID - DIRT SANDY||||||||||||
+trees|gal:dirt_sandy_with_grass_hot_humid|0.004|hot_humid|beach|lowland|palm_fountain_01;palm_fountain_02;palm_fountain_03||||||
+trees|gal:dirt_sandy_with_grass_hot_humid|0.004|hot_humid|beach|shelf|palm_jungle_01;palm_jungle_02||||||
+trees|gal:dirt_sandy_with_grass_hot_humid|0.004|hot_humid|beach|lowland|palm_moriche_01;palm_moriche_02;palm_moriche_03||||||
+plants|gal:dirt_sandy_with_grass_hot_humid|0.08|hot_humid|2|highland|grass_jungle_1||||||
+plants|gal:dirt_sandy_with_grass_hot_humid|0.08|hot_humid|2|highland|grass_jungle||||||
+plants|gal:dirt_sandy_with_grass_hot_humid|0.001|hot_humid|coastal|shelf|flower_lantana|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_hot_humid|0.001|hot_humid|beach|shelf|plant_gourd_bottle_1||||||
+plants|gal:dirt_sandy_with_grass_hot_humid|0.001|hot_humid|beach|highland|plant_creeper||||||
+plants|gal:dirt_sandy_with_grass_hot_humid|0.08|hot_humid|beach|shelf|plant_small_jungle_tree|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_hot_humid|0.08|hot_humid|beach|highland|shrub_jungle|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_hot_humid|0.08|hot_humid|coastal|shelf|shrub_lush_01|nil|nil|nil|||
+# HOT HUMID - DIRT SILTY||||||||||||
+trees|gal:dirt_silty_with_grass_hot_humid|0.004|hot_humid|coastal|shelf|cocoa_01;cocoa_02||||||
+trees|gal:dirt_silty_with_grass_hot_humid|0.004|hot_humid|lowland|shelf|capirona_01;capirona_02||||||
+trees|gal:dirt_silty_with_grass_hot_humid|0.004|hot_humid|beach|coastal|ebony||||||
+trees|gal:dirt_silty_with_grass_hot_humid|0.004|hot_humid|lowland|highland|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07|nil|nil|nil|||
+trees|gal:dirt_silty_with_grass_hot_humid|0.004|hot_humid|coastal|shelf|kapok_01;kapok_02||||||
+trees|gal:dirt_silty_with_grass_hot_humid|0.004|hot_humid|beach|coastal|rubber_01;rubber_02;rubber_03;rubber_04||||||
+plants|gal:dirt_silty_with_grass_hot_humid|0.08|hot_humid|beach|highland|grass_jungle_1||||||
+plants|gal:dirt_silty_with_grass_hot_humid|0.08|hot_humid|beach|shelf|grass_jungle||||||
+plants|gal:dirt_silty_with_grass_hot_humid|0.001|hot_humid|beach|shelf|plant_gourd_bottle_1||||||
+plants|gal:dirt_silty_with_grass_hot_humid|0.001|hot_humid|beach|highland|plant_creeper||||||
+plants|gal:dirt_silty_with_grass_hot_humid|0.08|hot_humid|coastal|shelf|plant_small_jungle_tree||||||
+plants|gal:dirt_silty_with_grass_hot_humid|0.08|hot_humid|coastal|highland|shrub_jungle||||||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# HOT SEMIHUMID||||||||||||
+# HOT SEMIHUMID OCEAN||||||||||||
+#||||||||||||
+# HOT SEMIHUMID BEACH||||||||||||
+trees|gal:dirt_silt_01|0.8|hot_semihumid_beach|-1|1|mangrove_red_01;mangrove_red_02;mangrove_red_03||||||
+plants|gal:dirt_silt_01|0.02|hot_semihumid_beach|-1|1|tree_mangrove_black_sapling|nil|nil|nil|||
+# HOT SEMIHUMID - DIRT||||||||||||
+trees|gal:dirt_with_grass_hot_semihumid|0.003|hot_semihumid|lowland|highland|bamboo_tropical_01;bamboo_tropical_02;bamboo_tropical_03;bamboo_tropical_04||||||
+trees|gal:dirt_with_grass_hot_semihumid|0.003|hot_semihumid|beach|shelf|brazilnut_01;brazilnut_02||||||
+trees|gal:dirt_with_grass_hot_semihumid|0.003|hot_semihumid|lowland|highland|capirona_01;capirona_02||||||
+trees|gal:dirt_with_grass_hot_semihumid|0.003|hot_semihumid|beach|lowland|ebony||||||
+trees|gal:dirt_with_grass_hot_semihumid|0.003|hot_semihumid|coastal|lowland|fig_01;fig_02;fig_03||||||
+trees|gal:dirt_with_grass_hot_semihumid|0.003|hot_semihumid|lowland|highland|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07||||||
+trees|gal:dirt_with_grass_hot_semihumid|0.003|hot_semihumid|beach|shelf|jungle_green_01;jungle_green_02;jungle_green_03||||||
+trees|gal:dirt_with_grass_hot_semihumid|0.003|hot_semihumid|beach|coastal|mahogany||||||
+trees|gal:dirt_with_grass_hot_semihumid|0.003|hot_semihumid|beach|coastal|rubber_01;rubber_02;rubber_03;rubber_04||||||
+trees|gal:dirt_with_grass_hot_semihumid|0.003|hot_semihumid|beach|lowland|palm_jungle_01;palm_jungle_02||||||
+trees|gal:dirt_with_grass_hot_semihumid|0.003|hot_semihumid|beach|coastal|palm_moriche_01;palm_moriche_02;palm_moriche_03||||||
+plants|gal:dirt_with_grass_hot_semihumid|0.06|hot_semihumid|beach|highland|grass_jungle_1||||||
+plants|gal:dirt_with_grass_hot_semihumid|0.06|hot_semihumid|beach|shelf|grass_jungle||||||
+plants|gal:dirt_with_grass_hot_semihumid|0.001|hot_semihumid|beach|highland|plant_creeper||||||
+plants|gal:dirt_with_grass_hot_semihumid|0.06|hot_semihumid|beach|shelf|plant_small_jungle_tree|nil|nil|nil|||
+plants|gal:dirt_with_grass_hot_semihumid|0.06|hot_semihumid|beach|highland|shrub_lush_01|nil|nil|nil|||
+plants|gal:dirt_with_grass_hot_semihumid|0.06|hot_semihumid|beach|shelf|shrub_jungle|nil|nil|nil|||
+# HOT SEMIHUMID - DIRT BLACK||||||||||||
+trees|gal:dirt_black_with_grass_hot_semihumid|0.003|hot_semihumid|beach|shelf|brazilnut_01;brazilnut_02||||||
+trees|gal:dirt_black_with_grass_hot_semihumid|0.003|hot_semihumid|lowland|highland|capirona_01;capirona_02|nil|nil|nil|||
+trees|gal:dirt_black_with_grass_hot_semihumid|0.003|hot_semihumid|beach|lowland|ebony||||||
+trees|gal:dirt_black_with_grass_hot_semihumid|0.003|hot_semihumid|coastal|lowland|fig_01;fig_02;fig_03||||||
+trees|gal:dirt_black_with_grass_hot_semihumid|0.003|hot_semihumid|lowland|highland|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07|nil|nil|nil|||
+trees|gal:dirt_black_with_grass_hot_semihumid|0.003|hot_semihumid|beach|shelf|jungle_green_01;jungle_green_02;jungle_green_03||||||
+trees|gal:dirt_black_with_grass_hot_semihumid|0.003|hot_semihumid|beach|coastal|mahogany||||||
+plants|gal:dirt_black_with_grass_hot_semihumid|0.06|hot_semihumid|beach|highland|grass_jungle_1||||||
+plants|gal:dirt_black_with_grass_hot_semihumid|0.06|hot_semihumid|beach|shelf|grass_jungle|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_hot_semihumid|0.001|hot_semihumid|beach|shelf|flower_hibiscus||||||
+plants|gal:dirt_black_with_grass_hot_semihumid|0.001|hot_semihumid|beach|shelf|flower_orchid||||||
+plants|gal:dirt_black_with_grass_hot_semihumid|0.001|hot_semihumid|beach|lowland|flower_lantana||||||
+plants|gal:dirt_black_with_grass_hot_semihumid|0.001|hot_semihumid|beach|lowland|plant_banana_1||||||
+plants|gal:dirt_black_with_grass_hot_semihumid|0.001|hot_semihumid|beach|shelf|plant_gourd_bottle_1||||||
+plants|gal:dirt_black_with_grass_hot_semihumid|0.001|hot_semihumid|beach|lowland|plant_pineapple_plant||||||
+plants|gal:dirt_black_with_grass_hot_semihumid|0.001|hot_semihumid|beach|highland|plant_creeper|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_hot_semihumid|0.06|hot_semihumid|beach|shelf|plant_small_jungle_tree|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_hot_semihumid|0.06|hot_semihumid|beach|highland|shrub_jungle|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_hot_semihumid|0.06|hot_semihumid|beach|shelf|shrub_lush_01|nil|nil|nil|||
+# HOT SEMIHUMID - DIRT BROWN||||||||||||
+trees|gal:dirt_brown_with_grass_hot_semihumid|0.003|hot_semihumid|beach|lowland|ebony||||||
+trees|gal:dirt_brown_with_grass_hot_semihumid|0.003|hot_semihumid|coastal|shelf|fig_01;fig_02;fig_03|nil|nil|nil|||
+trees|gal:dirt_brown_with_grass_hot_semihumid|0.003|hot_semihumid|lowland|highland|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07||||||
+trees|gal:dirt_brown_with_grass_hot_semihumid|0.003|hot_semihumid|beach|shelf|jungle_green_01;jungle_green_02;jungle_green_03||||||
+trees|gal:dirt_brown_with_grass_hot_semihumid|0.003|hot_semihumid|beach|lowland|palm_jungle_01;palm_jungle_02||||||
+trees|gal:dirt_brown_with_grass_hot_semihumid|0.003|hot_semihumid|beach|coastal|palm_moriche_01;palm_moriche_02;palm_moriche_03||||||
+plants|gal:dirt_brown_with_grass_hot_semihumid|0.06|hot_semihumid|beach|highland|grass_jungle_1||||||
+plants|gal:dirt_brown_with_grass_hot_semihumid|0.06|hot_semihumid|beach|shelf|grass_jungle||||||
+plants|gal:dirt_brown_with_grass_hot_semihumid|0.001|hot_semihumid|beach|shelf|flower_hibiscus||||||
+plants|gal:dirt_brown_with_grass_hot_semihumid|0.001|hot_semihumid|beach|shelf|flower_orchid||||||
+plants|gal:dirt_brown_with_grass_hot_semihumid|0.001|hot_semihumid|beach|lowland|flower_lantana||||||
+plants|gal:dirt_brown_with_grass_hot_semihumid|0.001|hot_semihumid|beach|highland|plant_creeper||||||
+plants|gal:dirt_brown_with_grass_hot_semihumid|0.06|hot_semihumid|beach|shelf|plant_small_jungle_tree|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_hot_semihumid|0.06|hot_semihumid|beach|highland|shrub_jungle|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_hot_semihumid|0.06|hot_semihumid|beach|shelf|shrub_lush_01||||||
+# HOT SEMIHUMID - DIRT CLAYEY||||||||||||
+trees|gal:dirt_clayey_with_grass_hot_semihumid|0.003|hot_semihumid|lowland|highland|bamboo_tropical_01;bamboo_tropical_02;bamboo_tropical_03;bamboo_tropical_04|nil|nil|nil|||
+trees|gal:dirt_clayey_with_grass_hot_semihumid|0.003|hot_semihumid|coastal|lowland|fig_01;fig_02;fig_03||||||
+trees|gal:dirt_clayey_with_grass_hot_semihumid|0.003|hot_semihumid|lowland|shelf|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07|nil|nil|nil|||
+trees|gal:dirt_clayey_with_grass_hot_semihumid|0.003|hot_semihumid|beach|coastal|jungle_green_01;jungle_green_02;jungle_green_03||||||
+trees|gal:dirt_clayey_with_grass_hot_semihumid|0.003|hot_semihumid|beach|lowland|palm_jungle_01;palm_jungle_02||||||
+trees|gal:dirt_clayey_with_grass_hot_semihumid|0.003|hot_semihumid|beach|coastal|palm_moriche_01;palm_moriche_02;palm_moriche_03||||||
+plants|gal:dirt_clayey_with_grass_hot_semihumid|0.06|hot_semihumid|beach|highland|grass_jungle_1|nil|nil|nil|||
+plants|gal:dirt_clayey_with_grass_hot_semihumid|0.06|hot_semihumid|beach|shelf|shrub_jungle||||||
+plants|gal:dirt_clayey_with_grass_hot_semihumid|0.06|hot_semihumid|beach|shelf|plant_small_jungle_tree||||||
+# HOT SEMIHUMID - DIRT SANDY||||||||||||
+--schem|gal:dirt_sandy_with_grass_hot_semihumid|0.003|hot_semihumid|2|coastal|gal.plant_tree_palmetto||||||
+schem|gal:dirt_sandy_with_grass_hot_semihumid|0.003|hot_semihumid|2|coastal|gal.plant_tree_palm_small||||||
+trees|gal:dirt_sandy_with_grass_hot_semihumid|0.001|hot_semihumid|beach|lowland|banana||||||
+trees|gal:dirt_sandy_with_grass_hot_semihumid|0.003|hot_semihumid|beach|lowland|palm_jungle_01;palm_jungle_02||||||
+trees|gal:dirt_sandy_with_grass_hot_semihumid|0.003|hot_semihumid|beach|coastal|palm_moriche_01;palm_moriche_02;palm_moriche_03||||||
+plants|gal:dirt_sandy_with_grass_hot_semihumid|0.06|hot_semihumid|beach|highland|grass_jungle_1||||||
+plants|gal:dirt_sandy_with_grass_hot_semihumid|0.06|hot_semihumid|beach|shelf|grass_jungle||||||
+plants|gal:dirt_sandy_with_grass_hot_semihumid|0.001|hot_semihumid|beach|shelf|flower_hibiscus||||||
+plants|gal:dirt_sandy_with_grass_hot_semihumid|0.001|hot_semihumid|beach|shelf|flower_orchid||||||
+plants|gal:dirt_sandy_with_grass_hot_semihumid|0.001|hot_semihumid|beach|lowland|flower_lantana||||||
+plants|gal:dirt_sandy_with_grass_hot_semihumid|0.001|hot_semihumid|beach|lowland|plant_banana_1||||||
+plants|gal:dirt_sandy_with_grass_hot_semihumid|0.001|hot_semihumid|beach|shelf|plant_gourd_bottle_1||||||
+plants|gal:dirt_sandy_with_grass_hot_semihumid|0.001|hot_semihumid|beach|lowland|plant_pineapple_plant||||||
+plants|gal:dirt_sandy_with_grass_hot_semihumid|0.001|hot_semihumid|beach|highland|plant_creeper||||||
+plants|gal:dirt_sandy_with_grass_hot_semihumid|0.06|hot_semihumid|beach|shelf|plant_small_jungle_tree||||||
+plants|gal:dirt_sandy_with_grass_hot_semihumid|0.06|hot_semihumid|beach|highland|shrub_jungle||||||
+plants|gal:dirt_sandy_with_grass_hot_semihumid|0.06|hot_semihumid|beach|shelf|shrub_lush_01||||||
+# HOT SEMIHUMID - DIRT SILTY||||||||||||
+trees|gal:dirt_silty_with_grass_hot_semihumid|0.003|hot_semihumid|beach|shelf|brazilnut_01;brazilnut_02||||||
+trees|gal:dirt_silty_with_grass_hot_semihumid|0.003|hot_semihumid|lowland|highland|capirona_01;capirona_02||||||
+trees|gal:dirt_silty_with_grass_hot_semihumid|0.003|hot_semihumid|beach|lowland|ebony||||||
+trees|gal:dirt_silty_with_grass_hot_semihumid|0.003|hot_semihumid|coastal|lowland|fig_01;fig_02;fig_03||||||
+trees|gal:dirt_silty_with_grass_hot_semihumid|0.003|hot_semihumid|lowland|highland|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07|nil|nil|nil|||
+trees|gal:dirt_silty_with_grass_hot_semihumid|0.003|hot_semihumid|beach|shelf|jungle_green_01;jungle_green_02;jungle_green_03||||||
+trees|gal:dirt_silty_with_grass_hot_semihumid|0.003|hot_semihumid|beach|coastal|rubber_01;rubber_02;rubber_03;rubber_04||||||
+no_rot|gal:dirt_silty_with_grass_hot_semihumid|0.003|hot_semihumid|beach|lowland|schem_tree_fern_giant||||||
+no_rot|gal:dirt_silty_with_grass_hot_semihumid|0.003|hot_semihumid|beach|lowland|schem_tree_fern_giant_2||||||
+trees|gal:dirt_silty_with_grass_hot_semihumid|0.004|hot_semihumid|beach|lowland|fern_small_01;fern_small_02;fern_small_03|nil|nil|nil|||
+trees|gal:dirt_silty_with_grass_hot_semihumid|0.004|hot_semihumid|beach|lowland|fern_silver_01;fern_silver_02|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_hot_semihumid|0.06|hot_semihumid|beach|lowland|grass_jungle_1|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_hot_semihumid|0.06|hot_semihumid|beach|lowland|tree_fern_giant_sapling|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_hot_semihumid|0.06|hot_semihumid|beach|lowland|tree_fern_sapling|nil|nil|nil|||
+# HOT SEMIHUMID - DIRT BLACK WITH RAINFOREST LITTER||||||||||||
+trees|gal:dirt_black_with_litter_rainforest|0.003|hot_semihumid|beach|shelf|brazilnut_01;brazilnut_02||||||
+trees|gal:dirt_black_with_litter_rainforest|0.003|hot_semihumid|lowland|highland|capirona_01;capirona_02||||||
+trees|gal:dirt_black_with_litter_rainforest|0.003|hot_semihumid|beach|coastal|ebony||||||
+trees|gal:dirt_black_with_litter_rainforest|0.003|hot_semihumid|coastal|lowland|fig_01;fig_02;fig_03||||||
+trees|gal:dirt_black_with_litter_rainforest|0.003|hot_semihumid|lowland|highland|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07||||||
+trees|gal:dirt_black_with_litter_rainforest|0.003|hot_semihumid|beach|shelf|jungle_green_01;jungle_green_02;jungle_green_03||||||
+trees|gal:dirt_black_with_litter_rainforest|0.003|hot_semihumid|beach|coastal|mahogany||||||
+plants|gal:dirt_black_with_litter_rainforest|0.06|hot_semihumid|beach|highland|grass_jungle_1||||||
+plants|gal:dirt_black_with_litter_rainforest|0.06|hot_semihumid|beach|shelf|grass_jungle||||||
+plants|gal:dirt_black_with_litter_rainforest|0.001|hot_semihumid|beach|shelf|flower_hibiscus||||||
+plants|gal:dirt_black_with_litter_rainforest|0.001|hot_semihumid|beach|shelf|flower_orchid||||||
+plants|gal:dirt_black_with_litter_rainforest|0.001|hot_semihumid|beach|lowland|flower_lantana||||||
+plants|gal:dirt_black_with_litter_rainforest|0.001|hot_semihumid|beach|lowland|plant_banana_1||||||
+plants|gal:dirt_black_with_litter_rainforest|0.001|hot_semihumid|beach|shelf|plant_gourd_bottle_1||||||
+plants|gal:dirt_black_with_litter_rainforest|0.001|hot_semihumid|beach|lowland|plant_pineapple_plant||||||
+plants|gal:dirt_black_with_litter_rainforest|0.001|hot_semihumid|beach|highland|plant_creeper||||||
+plants|gal:dirt_black_with_litter_rainforest|0.06|hot_semihumid|beach|shelf|plant_small_jungle_tree||||||
+plants|gal:dirt_black_with_litter_rainforest|0.06|hot_semihumid|beach|highland|shrub_jungle||||||
+plants|gal:dirt_black_with_litter_rainforest|0.06|hot_semihumid|beach|shelf|shrub_lush_01||||||
+# HOT SEMIHUMID - DIRT BROWN WITH RAINFOREST LITTER||||||||||||
+trees|gal:dirt_brown_with_litter_rainforest|0.003|hot_semihumid|beach|coastal|ebony||||||
+trees|gal:dirt_brown_with_litter_rainforest|0.003|hot_semihumid|coastal|shelf|fig_01;fig_02;fig_03||||||
+trees|gal:dirt_brown_with_litter_rainforest|0.003|hot_semihumid|lowland|highland|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07||||||
+trees|gal:dirt_brown_with_litter_rainforest|0.003|hot_semihumid|beach|lowland|jungle_green_01;jungle_green_02;jungle_green_03||||||
+trees|gal:dirt_brown_with_litter_rainforest|0.003|hot_semihumid|beach|coastal|palm_jungle_01;palm_jungle_02||||||
+trees|gal:dirt_brown_with_litter_rainforest|0.003|hot_semihumid|beach|coastal|palm_moriche_01;palm_moriche_02;palm_moriche_03||||||
+plants|gal:dirt_brown_with_litter_rainforest|0.06|hot_semihumid|beach|highland|grass_jungle_1||||||
+plants|gal:dirt_brown_with_litter_rainforest|0.06|hot_semihumid|beach|shelf|grass_jungle||||||
+plants|gal:dirt_brown_with_litter_rainforest|0.001|hot_semihumid|beach|shelf|flower_hibiscus||||||
+plants|gal:dirt_brown_with_litter_rainforest|0.001|hot_semihumid|beach|shelf|flower_orchid||||||
+plants|gal:dirt_brown_with_litter_rainforest|0.001|hot_semihumid|beach|lowland|flower_lantana||||||
+plants|gal:dirt_brown_with_litter_rainforest|0.001|hot_semihumid|beach|lowland|plant_banana_1||||||
+plants|gal:dirt_brown_with_litter_rainforest|0.001|hot_semihumid|beach|shelf|plant_gourd_bottle_1||||||
+plants|gal:dirt_brown_with_litter_rainforest|0.001|hot_semihumid|beach|lowland|plant_pineapple_plant||||||
+plants|gal:dirt_brown_with_litter_rainforest|0.001|hot_semihumid|beach|highland|plant_creeper||||||
+plants|gal:dirt_brown_with_litter_rainforest|0.06|hot_semihumid|beach|shelf|plant_small_jungle_tree||||||
+plants|gal:dirt_brown_with_litter_rainforest|0.06|hot_semihumid|beach|highland|shrub_jungle||||||
+plants|gal:dirt_brown_with_litter_rainforest|0.06|hot_semihumid|beach|shelf|shrub_lush_01||||||
+# HOT SEMIHUMID - DIRT CLAYEY WITH RAINFOREST LITTER||||||||||||
+trees|gal:dirt_clayey_with_litter_rainforest|0.003|hot_semihumid|lowland|highland|bamboo_tropical_01;bamboo_tropical_02;bamboo_tropical_03;bamboo_tropical_04||||||
+trees|gal:dirt_clayey_with_litter_rainforest|0.003|hot_semihumid|coastal|lowland|fig_01;fig_02;fig_03||||||
+trees|gal:dirt_clayey_with_litter_rainforest|0.003|hot_semihumid|beach|lowland|jungle_green_01;jungle_green_02;jungle_green_03||||||
+trees|gal:dirt_clayey_with_litter_rainforest|0.003|hot_semihumid|beach|coastal|palm_jungle_01;palm_jungle_02||||||
+trees|gal:dirt_clayey_with_litter_rainforest|0.003|hot_semihumid|beach|coastal|palm_moriche_01;palm_moriche_02;palm_moriche_03||||||
+plants|gal:dirt_clayey_with_litter_rainforest|0.06|hot_semihumid|beach|highland|grass_jungle_1||||||
+plants|gal:dirt_clayey_with_litter_rainforest|0.06|hot_semihumid|beach|shelf|grass_jungle||||||
+plants|gal:dirt_clayey_with_litter_rainforest|0.001|hot_semihumid|beach|shelf|flower_hibiscus||||||
+plants|gal:dirt_clayey_with_litter_rainforest|0.001|hot_semihumid|beach|shelf|flower_orchid||||||
+plants|gal:dirt_clayey_with_litter_rainforest|0.001|hot_semihumid|beach|lowland|flower_lantana||||||
+plants|gal:dirt_clayey_with_litter_rainforest|0.001|hot_semihumid|beach|lowland|plant_banana_1||||||
+plants|gal:dirt_clayey_with_litter_rainforest|0.001|hot_semihumid|beach|shelf|plant_gourd_bottle_1||||||
+plants|gal:dirt_clayey_with_litter_rainforest|0.001|hot_semihumid|beach|lowland|plant_pineapple_plant||||||
+plants|gal:dirt_clayey_with_litter_rainforest|0.001|hot_semihumid|beach|highland|plant_creeper||||||
+plants|gal:dirt_clayey_with_litter_rainforest|0.06|hot_semihumid|beach|shelf|plant_small_jungle_tree||||||
+plants|gal:dirt_clayey_with_litter_rainforest|0.06|hot_semihumid|beach|highland|shrub_jungle||||||
+plants|gal:dirt_clayey_with_litter_rainforest|0.06|hot_semihumid|beach|shelf|shrub_lush_01||||||
+# HOT SEMIHUMID - DIRT SANDY WITH RAINFOREST LITTER||||||||||||
+trees|gal:dirt_sandy_with_litter_rainforest|0.001|hot_semihumid|beach|coastal|banana||||||
+trees|gal:dirt_sandy_with_litter_rainforest|0.003|hot_semihumid|beach|coastal|palm_jungle_01;palm_jungle_02||||||
+trees|gal:dirt_sandy_with_litter_rainforest|0.003|hot_semihumid|beach|coastal|palm_moriche_01;palm_moriche_02;palm_moriche_03||||||
+plants|gal:dirt_sandy_with_litter_rainforest|0.06|hot_semihumid|beach|highland|grass_jungle_1||||||
+plants|gal:dirt_sandy_with_litter_rainforest|0.06|hot_semihumid|beach|shelf|grass_jungle||||||
+plants|gal:dirt_sandy_with_litter_rainforest|0.001|hot_semihumid|beach|shelf|flower_hibiscus||||||
+plants|gal:dirt_sandy_with_litter_rainforest|0.001|hot_semihumid|beach|shelf|flower_orchid||||||
+plants|gal:dirt_sandy_with_litter_rainforest|0.001|hot_semihumid|beach|lowland|flower_lantana||||||
+plants|gal:dirt_sandy_with_litter_rainforest|0.001|hot_semihumid|beach|lowland|plant_banana_1||||||
+plants|gal:dirt_sandy_with_litter_rainforest|0.001|hot_semihumid|beach|shelf|plant_gourd_bottle_1||||||
+plants|gal:dirt_sandy_with_litter_rainforest|0.001|hot_semihumid|beach|lowland|plant_pineapple_plant||||||
+plants|gal:dirt_sandy_with_litter_rainforest|0.001|hot_semihumid|beach|highland|plant_creeper||||||
+plants|gal:dirt_sandy_with_litter_rainforest|0.06|hot_semihumid|beach|shelf|plant_small_jungle_tree||||||
+plants|gal:dirt_sandy_with_litter_rainforest|0.06|hot_semihumid|beach|highland|shrub_jungle||||||
+plants|gal:dirt_sandy_with_litter_rainforest|0.06|hot_semihumid|beach|shelf|shrub_lush_01||||||
+# HOT SEMIHUMID - DIRT SILTY WITH RAINFOREST LITTER||||||||||||
+trees|gal:dirt_silty_with_litter_rainforest|0.003|hot_semihumid|beach|shelf|brazilnut_01;brazilnut_02||||||
+trees|gal:dirt_silty_with_litter_rainforest|0.003|hot_semihumid|lowland|highland|capirona_01;capirona_02||||||
+trees|gal:dirt_silty_with_litter_rainforest|0.003|hot_semihumid|beach|lowland|ebony||||||
+trees|gal:dirt_silty_with_litter_rainforest|0.003|hot_semihumid|coastal|lowland|fig_01;fig_02;fig_03||||||
+trees|gal:dirt_silty_with_litter_rainforest|0.003|hot_semihumid|lowland|highland|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07||||||
+trees|gal:dirt_silty_with_litter_rainforest|0.003|hot_semihumid|beach|shelf|jungle_green_01;jungle_green_02;jungle_green_03||||||
+trees|gal:dirt_silty_with_litter_rainforest|0.003|hot_semihumid|beach|coastal|rubber_01;rubber_02;rubber_03;rubber_04||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.06|hot_semihumid|beach|highland|grass_jungle_1||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.06|hot_semihumid|beach|shelf|grass_jungle||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.001|hot_semihumid|beach|shelf|flower_hibiscus||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.001|hot_semihumid|beach|shelf|flower_orchid||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.001|hot_semihumid|beach|lowland|flower_lantana||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.001|hot_semihumid|beach|lowland|plant_banana_1||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.001|hot_semihumid|beach|shelf|plant_gourd_bottle_1||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.001|hot_semihumid|beach|lowland|plant_pineapple_plant||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.001|hot_semihumid|beach|highland|plant_creeper||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.06|hot_semihumid|beach|shelf|plant_small_jungle_tree||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.06|hot_semihumid|beach|highland|shrub_jungle||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.06|hot_semihumid|beach|shelf|shrub_lush_01||||||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# HOT TEMPERATE||||||||||||
+# HOT TEMPERATE OCEAN||||||||||||
+#||||||||||||
+# HOT TEMPERATE BEACH||||||||||||
+trees|gal:sand_volcanic|0.002|hot_temperate_beach|1|2|palm_doum_01;palm_doum_02;palm_doum_03||||||
+trees|gal:sand_volcanic|0.002|hot_temperate_beach|1|2|palm_moriche_01;palm_moriche_02;palm_moriche_03||||||
+# HOT TEMPERATE - DIRT||||||||||||
+plants|gal:dirt_with_grass_hot_temperate|0.012|hot_temperate|beach|highland|grass_jungle_1||||||
+plants|gal:dirt_with_grass_hot_temperate|0.01|hot_temperate|beach|highland|shrub_jungle|nil|nil|nil|||
+# HOT TEMPERATE - DIRT BLACK||||||||||||
+trees|gal:dirt_black_with_grass_hot_temperate|0.002|hot_temperate|lowland|highland|beech_southern_01;beech_southern_02;beech_southern_03||||||
+trees|gal:dirt_black_with_grass_hot_temperate|0.002|hot_temperate|beach|coastal|ebony||||||
+trees|gal:dirt_black_with_grass_hot_temperate|0.002|hot_temperate|beach|shelf|fig_01;fig_02;fig_03||||||
+trees|gal:dirt_black_with_grass_hot_temperate|0.002|hot_temperate|shelf|highland|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07||||||
+trees|gal:dirt_black_with_grass_hot_temperate|0.002|hot_temperate|beach|lowland|laurel_01;laurel_02;laurel_03||||||
+trees|gal:dirt_black_with_grass_hot_temperate|0.002|hot_temperate|coastal|highland|yellowwood_01;yellowwood_02;yellowwood_03||||||
+plants|gal:dirt_black_with_grass_hot_temperate|0.01|hot_temperate|beach|lowland|fern_dicksonia||||||
+plants|gal:dirt_black_with_grass_hot_temperate|0.01|hot_temperate|beach|lowland|fern_large_1|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_hot_temperate|0.01|hot_temperate|beach|lowland|fern_small_1|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_hot_temperate|0.01|hot_temperate|beach|shelf|fern_spikefern|nil|nil|nil|||
+# HOT TEMPERATE - DIRT BROWN||||||||||||
+#trees|gal:dirt_brown_with_grass_hot_temperate|0.002|hot_temperate|coastal|lowland|acacia_05-L=tree_acacia_2_leaves;acacia_06-L=tree_acacia_2_leaves;acacia_07-L=tree_acacia_2_leaves||||||
+trees|gal:dirt_brown_with_grass_hot_temperate|0.002|hot_temperate|lowland|highland|beech_southern_01;beech_southern_02;beech_southern_03||||||
+trees|gal:dirt_brown_with_grass_hot_temperate|0.002|hot_temperate|beach|lowland|fig_01;fig_02;fig_03||||||
+trees|gal:dirt_brown_with_grass_hot_temperate|0.002|hot_temperate|beach|lowland|laurel_01;laurel_02;laurel_03||||||
+trees|gal:dirt_brown_with_grass_hot_temperate|0.002|hot_temperate|coastal|shelf|yellowwood_01;yellowwood_02;yellowwood_03||||||
+plants|gal:dirt_brown_with_grass_hot_temperate|0.012|hot_temperate|beach|highland|grass_jungle_1||||||
+plants|gal:dirt_brown_with_grass_hot_temperate|0.01|hot_temperate|lowland|shelf|gal:flower_hibiscus|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_hot_temperate|0.004|hot_temperate|beach|highland|shrub_jungle|nil|nil|nil|||
+# HOT TEMPERATE - DIRT CLAYEY||||||||||||
+#trees|gal:dirt_clayey_with_grass_hot_temperate|0.002|hot_temperate|beach|shelf|acacia_05-L=tree_acacia_2_leaves;acacia_06-L=tree_acacia_2_leaves;acacia_07-L=tree_acacia_2_leaves||||||
+trees|gal:dirt_clayey_with_grass_hot_temperate|0.002|hot_temperate|lowland|shelf|beech_southern_01;beech_southern_02;beech_southern_03||||||
+trees|gal:dirt_clayey_with_grass_hot_temperate|0.002|hot_temperate|beach|lowland|laurel_01;laurel_02;laurel_03||||||
+trees|gal:dirt_clayey_with_grass_hot_temperate|0.002|hot_temperate|coastal|lowland|yellowwood_01;yellowwood_02;yellowwood_03||||||
+plants|gal:dirt_clayey_with_grass_hot_temperate|0.004|hot_temperate|beach|highland|grass_jungle_1||||||
+plants|gal:dirt_clayey_with_grass_hot_temperate|0.004|hot_temperate|beach|shelf|shrub_jungle||||||
+plants|gal:dirt_clayey_with_grass_hot_temperate|0.004|hot_temperate|coastal|shelf|flower_lantana||||||
+# HOT TEMPERATE - DIRT SANDY||||||||||||
+#trees|gal:dirt_sandy_with_grass_hot_temperate|0.002|hot_temperate|beach|lowland|acacia_05-L=tree_acacia_2_leaves;acacia_06-L=tree_acacia_2_leaves;acacia_07-L=tree_acacia_2_leaves|nil|nil|nil|||
+trees|gal:dirt_sandy_with_grass_hot_temperate|0.002|hot_temperate|coastal|lowland|yellowwood_01;yellowwood_02;yellowwood_03|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_hot_temperate|0.004|hot_temperate|beach|highland|grass_jungle_1||||||
+plants|gal:dirt_sandy_with_grass_hot_temperate|0.004|hot_temperate|coastal|shelf|flower_lantana|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_hot_temperate|0.004|hot_temperate|coastal|shelf|plant_aloe_vera|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_hot_temperate|0.004|hot_temperate|beach|shelf|shrub_jungle||||||
+# HOT TEMPERATE - DIRT SILTY||||||||||||
+trees|gal:dirt_silty_with_grass_hot_temperate|0.002|hot_temperate|shelf|highland|beech_southern_01;beech_southern_02;beech_southern_03||||||
+trees|gal:dirt_silty_with_grass_hot_temperate|0.002|hot_temperate|beach|coastal|ebony||||||
+trees|gal:dirt_silty_with_grass_hot_temperate|0.002|hot_temperate|beach|lowland|fig_01;fig_02;fig_03||||||
+trees|gal:dirt_silty_with_grass_hot_temperate|0.002|hot_temperate|shelf|highland|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07||||||
+trees|gal:dirt_silty_with_grass_hot_temperate|0.002|hot_temperate|beach|coastal|jungle_green_01;jungle_green_02;jungle_green_03||||||
+trees|gal:dirt_silty_with_grass_hot_temperate|0.002|hot_temperate|beach|lowland|laurel_01;laurel_02;laurel_03||||||
+trees|gal:dirt_silty_with_grass_hot_temperate|0.002|hot_temperate|coastal|shelf|yellowwood_01;yellowwood_02;yellowwood_03||||||
+plants|gal:dirt_silty_with_grass_hot_temperate|0.004|hot_temperate|beach|lowland|fern_large_1||||||
+plants|gal:dirt_silty_with_grass_hot_temperate|0.004|hot_temperate|beach|lowland|fern_small_1||||||
+plants|gal:dirt_silty_with_grass_hot_temperate|0.004|hot_temperate|beach|lowland|fern_spikefern||||||
+plants|gal:dirt_silty_with_grass_hot_temperate|0.004|hot_temperate|beach|shelf|fern_dicksonia||||||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# HOT SEMIARID||||||||||||
+# HOT SEMIARID OCEAN||||||||||||
+#||||||||||||
+# HOT SEMIARID BEACH||||||||||||
+#||||||||||||
+# HOT SEMIARID - DIRT||||||||||||
+plants|gal:dirt_with_grass_hot_semiarid|0.004|hot_semiarid|beach|highland|grass_dry_1|nil|nil|nil|||
+plants|gal:dirt_with_grass_hot_semiarid|0.004|hot_semiarid|beach|shelf|shrub_dry|nil|nil|nil|||
+# HOT SEMIARID - DIRT BLACK||||||||||||
+trees|gal:dirt_black_with_grass_hot_semiarid|0.002|hot_semiarid|coastal|lowland|palm_date_01;palm_date_02;palm_date_03;palm_date_04;palm_date_05||||||
+plants|gal:dirt_black_with_grass_hot_semiarid|0.08|hot_semiarid|beach|highland|grass_dry_1|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_hot_semiarid|0.08|hot_semiarid|beach|shelf|shrub_dry|nil|nil|nil|||
+# HOT SEMIARID - DIRT BROWN||||||||||||
+#trees|gal:dirt_brown_with_grass_hot_semiarid|0.002|hot_semiarid|beach|shelf|acacia_01;acacia_02;acacia_03;acacia_04;acacia_05;acacia_06;acacia_07;acacia_log|place_center_x;place_center_z|||||
+trees|gal:dirt_brown_with_grass_hot_semiarid|0.002|hot_semiarid|beach|shelf|acacia_01;acacia_02;acacia_03;acacia_04;acacia_05;acacia_06;acacia_07||||||
+plants|gal:dirt_brown_with_grass_hot_semiarid|0.06|hot_semiarid|beach|highland|grass_dry_1|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_hot_semiarid|0.06|hot_semiarid|beach|shelf|shrub_dry||||||
+# HOT SEMIARID - DIRT CLAYEY||||||||||||
+#trees|gal:dirt_clayey_with_grass_hot_semiarid|0.002|hot_semiarid|beach|shelf|acacia_01;acacia_02;acacia_03;acacia_04;acacia_05;acacia_06;acacia_07;acacia_log|place_center_x;place_center_z|||||
+trees|gal:dirt_clayey_with_grass_hot_semiarid|0.002|hot_semiarid|beach|shelf|acacia_01;acacia_02;acacia_03;acacia_04;acacia_05;acacia_06;acacia_07||||||
+plants|gal:dirt_clayey_with_grass_hot_semiarid|0.06|hot_semiarid|beach|highland|grass_dry_1||||||
+plants|gal:dirt_clayey_with_grass_hot_semiarid|0.06|hot_semiarid|beach|shelf|shrub_dry||||||
+plants|gal:dirt_clayey_with_grass_hot_semiarid|0.003|hot_semiarid|lowland|highland|plant_heath_gold|nil|nil|nil|||
+# HOT SEMIARID - DIRT SANDY||||||||||||
+#trees|gal:dirt_sandy_with_grass_hot_semiarid|0.002|hot_semiarid|beach|shelf|acacia_01;acacia_02;acacia_03;acacia_04;acacia_05;acacia_06;acacia_07;acacia_log|place_center_x;place_center_z|||||
+trees|gal:dirt_sandy_with_grass_hot_semiarid|0.002|hot_semiarid|beach|shelf|acacia_01;acacia_02;acacia_03;acacia_04;acacia_05;acacia_06;acacia_07||||||
+plants|gal:dirt_sandy_with_grass_hot_semiarid|0.004|hot_semiarid|beach|highland|grass_dry_1||||||
+plants|gal:dirt_sandy_with_grass_hot_semiarid|0.004|hot_semiarid|beach|shelf|shrub_dry||||||
+plants|gal:dirt_sandy_with_grass_hot_semiarid|0.004|hot_semiarid|beach|shelf|plant_aloe_vera|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_hot_semiarid|0.003|hot_semiarid|shelf|highland|plant_heath_gold|nil|nil|nil|||
+# HOT SEMIARID - DIRT SILTY||||||||||||
+#trees|gal:dirt_silty_with_grass_hot_semiarid|0.002|hot_semiarid|coastal|shelf|acacia_01;acacia_02;acacia_03;acacia_04;acacia_05;acacia_06;acacia_07;acacia_log||||||
+trees|gal:dirt_silty_with_grass_hot_semiarid|0.002|hot_semiarid|coastal|shelf|acacia_01;acacia_02;acacia_03;acacia_04;acacia_05;acacia_06;acacia_07||||||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+#HOT ARID||||||||||||
+plants|gal:sand_white|0.01|hot_arid_beach|1|beach|grass_dry_1|nil|nil|nil|||
+plants|gal:stone_sandstone_white_gravel|0.01|hot_arid|beach|coastal|grass_dry_1|nil|nil|nil|||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# WARM HUMID||||||||||||
+# WARM HUMID OCEAN||||||||||||
+node|gal:sand|0.004|warm_humid_ocean|-35|-2|plant_kelp_01|nil|nil|nil|||
+# WARM HUMID BEACH||||||||||||
+trees|gal:dirt_silt_01|0.8|warm_humid_beach|-1|1|mangrove_red_01;mangrove_red_02;mangrove_red_03||||||
+plants|gal:dirt_silt_01|0.02|warm_humid_beach|-1|1|tree_mangrove_black_sapling|nil|nil|nil|||
+# WARM HUMID - DIRT||||||||||||
+plants|gal:dirt_with_grass_warm_humid|0.07|warm_humid|beach|highland|grass_swamp_1|nil|nil|nil|||
+plants|gal:dirt_with_grass_warm_humid|0.07|warm_humid|beach|shelf|grass_tallgrass|nil|nil|nil|||
+# WARM HUMID - DIRT BLACK||||||||||||
+trees|gal:dirt_black_with_grass_warm_humid|0.003|warm_humid|beach|coastal|cypress_01;cypress_02;cypress_03||||||
+trees|gal:dirt_black_with_grass_warm_humid|0.003|warm_humid|beach|shelf|ebony||||||
+trees|gal:dirt_black_with_grass_warm_humid|0.003|warm_humid|beach|lowland|mahogany||||||
+no_rot|gal:dirt_black_with_grass_warm_humid|0.003|warm_humid|lowland|shelf|gal.big_tree_fern||||||
+no_rot|gal:dirt_black_with_grass_warm_humid|0.003|warm_humid|lowland|shelf|gal.giant_tree_fern||||||
+no_rot|gal:dirt_black_with_grass_warm_humid|0.003|warm_humid|lowland|shelf|gal.giant_tree_fern_2||||||
+trees|gal:dirt_black_with_grass_warm_humid|0.004|warm_humid|beach|lowland|fern_small_01;fern_small_02;fern_small_03|nil|nil|nil|||
+trees|gal:dirt_black_with_grass_warm_humid|0.004|warm_humid|beach|lowland|fern_silver_01;fern_silver_02|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_warm_humid|0.07|warm_humid|beach|highland|grass_swamp_1|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_warm_humid|0.001|warm_humid|beach|lowland|flower_hibiscus|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_warm_humid|0.07|warm_humid|beach|coastal|fern_large_1|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_warm_humid|0.07|warm_humid|beach|lowland|fern_small_1|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_warm_humid|0.001|warm_humid|beach|shelf|fern_spikefern|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_warm_humid|0.07|warm_humid|beach|lowland|plant_manna_reed|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_warm_humid|0.001|warm_humid|beach|coastal|plant_palmetto_01|nil|nil|nil|||
+# WARM HUMID - DIRT BROWN||||||||||||
+trees|gal:dirt_brown_with_grass_warm_humid|0.003|warm_humid|beach|shelf|bamboo_temperate_01;bamboo_temperate_02||||||
+trees|gal:dirt_brown_with_grass_warm_humid|0.003|warm_humid|beach|shelf|ebony||||||
+trees|gal:dirt_brown_with_grass_warm_humid|0.003|warm_humid|beach|lowland|lemon||||||
+trees|gal:dirt_brown_with_grass_warm_humid|0.003|warm_humid|beach|lowland|mahogany||||||
+trees|gal:dirt_brown_with_grass_warm_humid|0.003|warm_humid|beach|shelf|teak_01;teak_02;teak_03;teak_04||||||
+plants|gal:dirt_brown_with_grass_warm_humid|0.07|warm_humid|beach|highland|grass_swamp_1|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_warm_humid|0.07|warm_humid|beach|coastal|fern_large_1|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_warm_humid|0.07|warm_humid|beach|lowland|fern_small_1|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_warm_humid|0.07|warm_humid|beach|shelf|fern_spikefern|nil|nil|nil|||
+# WARM HUMID - DIRT CLAYEY||||||||||||
+trees|gal:dirt_clayey_with_grass_warm_humid|0.003|warm_humid|beach|shelf|bamboo_temperate_01;bamboo_temperate_02||||||
+trees|gal:dirt_clayey_with_grass_warm_humid|0.003|warm_humid|beach|shelf|ebony||||||
+trees|gal:dirt_clayey_with_grass_warm_humid|0.003|warm_humid|beach|shelf|teak_01;teak_02;teak_03;teak_04||||||
+trees|gal:dirt_clayey_with_grass_warm_humid|0.003|warm_humid|beach|coastal|palm_royal_01;palm_royal_02;palm_royal_03||||||
+plants|gal:dirt_clayey_with_grass_warm_humid|0.07|warm_humid|beach|highland|grass_swamp_1|nil|nil|nil|||
+# WARM HUMID - DIRT SANDY||||||||||||
+trees|gal:dirt_sandy_with_grass_warm_humid|0.003|warm_humid|beach|coastal|palm_royal_01;palm_royal_02;palm_royal_03||||||
+plants|gal:dirt_sandy_with_grass_warm_humid|0.07|warm_humid|beach|highland|grass_swamp_1|nil|nil|nil|||
+# WARM HUMID - DIRT SILTY||||||||||||
+trees|gal:dirt_silty_with_grass_warm_humid|0.003|warm_humid|beach|coastal|cypress_01;cypress_03||||||
+trees|gal:dirt_silty_with_grass_warm_humid|0.003|warm_humid|beach|shelf|ebony||||||
+trees|gal:dirt_silty_with_grass_warm_humid|0.003|warm_humid|beach|lowland|mahogany|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_warm_humid|0.07|warm_humid|beach|highland|grass_swamp_1||||||
+plants|gal:dirt_silty_with_grass_warm_humid|0.07|warm_humid|beach|coastal|fern_large_1|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_warm_humid|0.07|warm_humid|beach|lowland|fern_small_1|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_warm_humid|0.07|warm_humid|beach|shelf|fern_spikefern|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_warm_humid|0.07|warm_humid|beach|lowland|plant_manna_reed||||||
+# WARM HUMID - DIRT BLACK WITH RAINFOREST LITTER||||||||||||
+trees|gal:dirt_black_with_litter_rainforest|0.003|warm_humid|beach|coastal|cypress_01;cypress_02;cypress_03||||||
+trees|gal:dirt_black_with_litter_rainforest|0.003|warm_humid|beach|shelf|ebony||||||
+trees|gal:dirt_black_with_litter_rainforest|0.003|warm_humid|beach|lowland|mahogany||||||
+no_rot|gal:dirt_black_with_litter_rainforest|0.003|warm_humid|lowland|shelf|lib_ecology.big_tree_fern||||||
+no_rot|gal:dirt_black_with_litter_rainforest|0.003|warm_humid|lowland|shelf|lib_ecology.giant_tree_fern||||||
+no_rot|gal:dirt_black_with_litter_rainforest|0.003|warm_humid|lowland|shelf|lib_ecology.giant_tree_fern_2||||||
+trees|gal:dirt_black_with_litter_rainforest|0.004|warm_humid|beach|lowland|fern_small_01;fern_small_02;fern_small_03|nil|nil|nil|||
+trees|gal:dirt_black_with_litter_rainforest|0.004|warm_humid|beach|lowland|fern_silver_01;fern_silver_02|nil|nil|nil|||
+plants|gal:dirt_black_with_litter_rainforest|0.07|warm_humid|beach|highland|grass_swamp_1||||||
+plants|gal:dirt_black_with_litter_rainforest|0.001|warm_humid|beach|lowland|flower_hibiscus||||||
+plants|gal:dirt_black_with_litter_rainforest|0.07|warm_humid|beach|coastal|fern_large_1||||||
+plants|gal:dirt_black_with_litter_rainforest|0.07|warm_humid|beach|lowland|fern_small_1||||||
+plants|gal:dirt_black_with_litter_rainforest|0.07|warm_humid|beach|shelf|fern_spikefern||||||
+plants|gal:dirt_black_with_litter_rainforest|0.07|warm_humid|beach|lowland|plant_manna_reed||||||
+plants|gal:dirt_black_with_litter_rainforest|0.001|warm_humid|beach|coastal|plant_palmetto_01||||||
+# WARM HUMID - DIRT BROWN WITH RAINFOREST LITTER||||||||||||
+trees|gal:dirt_brown_with_litter_rainforest|0.003|warm_humid|beach|shelf|bamboo_temperate_01;bamboo_temperate_02||||||
+trees|gal:dirt_brown_with_litter_rainforest|0.003|warm_humid|beach|shelf|ebony||||||
+trees|gal:dirt_brown_with_litter_rainforest|0.003|warm_humid|beach|lowland|lemon||||||
+trees|gal:dirt_brown_with_litter_rainforest|0.003|warm_humid|beach|lowland|mahogany||||||
+trees|gal:dirt_brown_with_litter_rainforest|0.003|warm_humid|beach|shelf|teak_01;teak_02;teak_03;teak_04||||||
+plants|gal:dirt_brown_with_litter_rainforest|0.07|warm_humid|beach|highland|grass_swamp_1||||||
+plants|gal:dirt_brown_with_litter_rainforest|0.07|warm_humid|beach|coastal|fern_large_1||||||
+plants|gal:dirt_brown_with_litter_rainforest|0.07|warm_humid|beach|lowland|fern_small_1||||||
+plants|gal:dirt_brown_with_litter_rainforest|0.07|warm_humid|beach|shelf|fern_spikefern||||||
+# WARM HUMID - DIRT CLAYEY WITH RAINFOREST LITTER||||||||||||
+trees|gal:dirt_clayey_with_litter_rainforest|0.003|warm_humid|beach|shelf|bamboo_temperate_01;bamboo_temperate_02||||||
+trees|gal:dirt_clayey_with_litter_rainforest|0.003|warm_humid|beach|shelf|ebony||||||
+trees|gal:dirt_clayey_with_litter_rainforest|0.003|warm_humid|beach|lowland|mahogany||||||
+trees|gal:dirt_clayey_with_litter_rainforest|0.003|warm_humid|beach|shelf|teak_01;teak_02;teak_03;teak_04||||||
+trees|gal:dirt_clayey_with_litter_rainforest|0.003|warm_humid|beach|coastal|palm_royal_01;palm_royal_02;palm_royal_03||||||
+plants|gal:dirt_clayey_with_litter_rainforest|0.07|warm_humid|beach|highland|grass_swamp_1||||||
+# WARM HUMID - DIRT SANDY WITH RAINFOREST LITTER||||||||||||
+trees|gal:dirt_sandy_with_litter_rainforest|0.003|warm_humid|beach|coastal|palm_royal_01;palm_royal_02;palm_royal_03||||||
+plants|gal:dirt_sandy_with_litter_rainforest|0.07|warm_humid|beach|highland|grass_swamp_1||||||
+# WARM HUMID - DIRT SILTY WITH RAINFOREST LITTER||||||||||||
+trees|gal:dirt_silty_with_litter_rainforest|0.003|warm_humid|beach|coastal|cypress_01;cypress_03||||||
+trees|gal:dirt_silty_with_litter_rainforest|0.003|warm_humid|beach|shelf|ebony||||||
+trees|gal:dirt_silty_with_litter_rainforest|0.003|warm_humid|beach|lowland|mahogany||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.07|warm_humid|beach|highland|grass_swamp_1||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.07|warm_humid|beach|coastal|fern_large_1||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.07|warm_humid|beach|lowland|fern_small_1||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.07|warm_humid|beach|shelf|fern_spikefern||||||
+plants|gal:dirt_silty_with_litter_rainforest|0.07|warm_humid|beach|lowland|plant_manna_reed||||||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# WARM SEMIHUMID||||||||||||
+# WARM SEMIHUMID OCEAN||||||||||||
+#||||||||||||
+# WARM SEMIHUMID BEACH||||||||||||
+#||||||||||||
+# WARM SEMIHUMID - DIRT||||||||||||
+plants|gal:dirt_with_grass_warm_semihumid|0.06|warm_semihumid|beach|highland|grass_swamp_1|nil|nil|nil|||
+plants|gal:dirt_with_grass_warm_semihumid|0.06|warm_semihumid|beach|shelf|grass_swamp|nil|nil|nil|||
+plants|gal:dirt_with_grass_warm_semihumid|0.001|warm_semihumid|beach|lowland|plant_crabgrass||||||
+plants|gal:dirt_with_grass_warm_semihumid|0.06|warm_semihumid|beach|coastal|plant_juncus_1;plant_juncus_2;plant_juncus_3||||||
+plants|gal:dirt_with_grass_warm_semihumid|0.06|warm_semihumid|beach|coastal|plant_manna_reed||||||
+plants|gal:dirt_with_grass_warm_semihumid|0.001|warm_semihumid|coastal|lowland|plant_nettle_cleavers|nil|nil|nil|||
+plants|gal:dirt_with_grass_warm_semihumid|0.06|warm_semihumid|coastal|highland|shrub_lush_01|nil|nil|nil|||
+plants|gal:dirt_with_grass_warm_semihumid|0.06|warm_semihumid|lowland|highland|shrub_lush_02|nil|nil|nil|||
+# WARM SEMIHUMID - DIRT SOIL WET||||||||||||
+plants|gal:dirt_with_soil_wet|0.06|warm_semihumid|beach|lowland|plant_wheat_1|nil|nil|nil|||
+# WARM SEMIHUMID - DIRT BLACK||||||||||||
+trees|gal:dirt_black_with_grass_warm_semihumid|0.003|warm_semihumid|shelf|highland|beech_southern_01;beech_southern_02;beech_southern_03||||||
+trees|gal:dirt_black_with_grass_warm_semihumid|0.003|warm_semihumid|6|lowland|ebony||||||
+trees|gal:dirt_black_with_grass_warm_semihumid|0.003|warm_semihumid|6|shelf|eucalyptus_01;eucalyptus_02||||||
+trees|gal:dirt_black_with_grass_warm_semihumid|0.003|warm_semihumid|shelf|highland|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07||||||
+trees|gal:dirt_black_with_grass_warm_semihumid|0.003|warm_semihumid|6|shelf|teak_01;teak_02;teak_03;teak_04||||||
+trees|gal:dirt_black_with_grass_warm_semihumid|0.003|warm_semihumid|coastal|shelf|yellowwood_01;yellowwood_02;yellowwood_03||||||
+plants|gal:dirt_black_with_grass_warm_semihumid|0.06|warm_semihumid|beach|highland|grass_swamp_1|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_warm_semihumid|0.06|warm_semihumid|beach|coastal|fern_small_1|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_warm_semihumid|0.06|warm_semihumid|beach|lowland|fern_spikefern|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_warm_semihumid|0.001|warm_semihumid|beach|shelf|flower_hibiscus|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_warm_semihumid|0.06|warm_semihumid|beach|coastal|plant_manna_reed|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_warm_semihumid|0.06|warm_semihumid|coastal|lowland|plant_bush||||||
+plants|gal:dirt_black_with_grass_warm_semihumid|0.06|warm_semihumid|lowland|highland|shrub_lush_01|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_warm_semihumid|0.06|warm_semihumid|lowland|highland|shrub_lush_02|nil|nil|nil|||
+# WARM SEMIHUMID - DIRT BROWN||||||||||||
+trees|gal:dirt_brown_with_grass_warm_semihumid|0.003|warm_semihumid|lowland|highland|beech_southern_01;beech_southern_02;beech_southern_03||||||
+trees|gal:dirt_brown_with_grass_warm_semihumid|0.003|warm_semihumid|beach|coastal|ebony||||||
+trees|gal:dirt_brown_with_grass_warm_semihumid|0.003|warm_semihumid|beach|shelf|teak_01;teak_02;teak_03;teak_04||||||
+trees|gal:dirt_brown_with_grass_warm_semihumid|0.003|warm_semihumid|beach|lowland|orange||||||
+trees|gal:dirt_brown_with_grass_warm_semihumid|0.003|warm_semihumid|shelf|highland|pine_pinyon_01;pine_pinyon_02;pine_pinyon_03||||||
+trees|gal:dirt_brown_with_grass_warm_semihumid|0.003|warm_semihumid|coastal|shelf|yellowwood_01;yellowwood_02;yellowwood_03||||||
+plants|gal:dirt_brown_with_grass_warm_semihumid|0.06|warm_semihumid|beach|coastal|fern_spikefern|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_warm_semihumid|0.06|warm_semihumid|beach|highland|grass_swamp_1|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_warm_semihumid|0.06|warm_semihumid|lowland|shelf|grass_swamp|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_warm_semihumid|0.06|warm_semihumid|lowland|highland|shrub_lush_01|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_warm_semihumid|0.06|warm_semihumid|lowland|highland|shrub_lush_02|nil|nil|nil|||
+# WARM SEMIHUMID - DIRT CLAYEY||||||||||||
+trees|gal:dirt_clayey_with_grass_warm_semihumid|0.003|warm_semihumid|beach|lowland|bamboo_temperate_01;bamboo_temperate_02||||||
+trees|gal:dirt_clayey_with_grass_warm_semihumid|0.001|warm_semihumid|beach|lowland|banana|nil|nil|nil|||
+trees|gal:dirt_clayey_with_grass_warm_semihumid|0.003|warm_semihumid|lowland|shelf|beech_southern_01;beech_southern_02;beech_southern_03|nil|nil|nil|||
+trees|gal:dirt_clayey_with_grass_warm_semihumid|0.003|warm_semihumid|shelf|highland|pine_pinyon_01;pine_pinyon_02;pine_pinyon_03||||||
+trees|gal:dirt_clayey_with_grass_warm_semihumid|0.003|warm_semihumid|beach|lowland|teak_01;teak_02;teak_03;teak_04||||||
+trees|gal:dirt_clayey_with_grass_warm_semihumid|0.003|warm_semihumid|coastal|shelf|yellowwood_01;yellowwood_02;yellowwood_03||||||
+trees|gal:dirt_clayey_with_grass_warm_semihumid|0.003|warm_semihumid|beach|coastal|palm_royal_01;palm_royal_02;palm_royal_03||||||
+plants|gal:dirt_clayey_with_grass_warm_semihumid|0.06|warm_semihumid|beach|highland|grass_swamp_1|nil|nil|nil|||
+plants|gal:dirt_clayey_with_grass_warm_semihumid|0.06|warm_semihumid|beach|shelf|grass_swamp||||||
+plants|gal:dirt_clayey_with_grass_warm_semihumid|0.06|warm_semihumid|beach|lowland|plant_crabgrass||||||
+plants|gal:dirt_clayey_with_grass_warm_semihumid|0.06|warm_semihumid|beach|coastal|plant_juncus_1;plant_juncus_2;plant_juncus_3||||||
+plants|gal:dirt_clayey_with_grass_warm_semihumid|0.06|warm_semihumid|beach|coastal|plant_manna_reed||||||
+plants|gal:dirt_clayey_with_grass_warm_semihumid|0.001|warm_semihumid|beach|lowland|plant_banana_1|nil|nil|nil|||
+plants|gal:dirt_clayey_with_grass_warm_semihumid|0.06|warm_semihumid|lowland|highland|shrub_lush_01|nil|nil|nil|||
+plants|gal:dirt_clayey_with_grass_warm_semihumid|0.06|warm_semihumid|lowland|highland|shrub_lush_02|nil|nil|nil|||
+# WARM SEMIHUMID - DIRT SANDY||||||||||||
+trees|gal:dirt_sandy_with_grass_warm_semihumid|0.003|warm_semihumid|beach|lowland|bamboo_temperate_01;bamboo_temperate_02||||||
+trees|gal:dirt_sandy_with_grass_warm_semihumid|0.001|warm_semihumid|beach|lowland|banana|nil|nil|nil|||
+trees|gal:dirt_sandy_with_grass_warm_semihumid|0.003|warm_semihumid|shelf|highland|pine_01;pine_02;pine_03||||||
+trees|gal:dirt_sandy_with_grass_warm_semihumid|0.003|warm_semihumid|lowland|highland|pine_pinyon_01;pine_pinyon_02;pine_pinyon_03||||||
+trees|gal:dirt_sandy_with_grass_warm_semihumid|0.003|warm_semihumid|beach|coastal|palm_royal_01;palm_royal_02;palm_royal_03||||||
+plants|gal:dirt_sandy_with_grass_warm_semihumid|0.06|warm_semihumid|beach|highland|grass_swamp_1|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_warm_semihumid|0.06|warm_semihumid|beach|shelf|grass_swamp|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_warm_semihumid|0.06|warm_semihumid|beach|lowland|plant_crabgrass||||||
+plants|gal:dirt_sandy_with_grass_warm_semihumid|0.06|warm_semihumid|coastal|shelf|grass_tallgrass||||||
+plants|gal:dirt_sandy_with_grass_warm_semihumid|0.06|warm_semihumid|beach|coastal|plant_juncus_1;plant_juncus_2;plant_juncus_3||||||
+plants|gal:dirt_sandy_with_grass_warm_semihumid|0.06|warm_semihumid|beach|coastal|plant_manna_reed||||||
+plants|gal:dirt_sandy_with_grass_warm_semihumid|0.001|warm_semihumid|beach|lowland|plant_banana_1|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_warm_semihumid|0.06|warm_semihumid|lowland|highland|shrub_lush_01|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_warm_semihumid|0.06|warm_semihumid|lowland|highland|shrub_lush_02|nil|nil|nil|||
+# WARM SEMIHUMID - DIRT SILTY||||||||||||
+trees|gal:dirt_silty_with_grass_warm_semihumid|0.003|warm_semihumid|shelf|highland|beech_southern_01;beech_southern_02;beech_southern_03||||||
+trees|gal:dirt_silty_with_grass_warm_semihumid|0.003|warm_semihumid|beach|lowland|ebony||||||
+trees|gal:dirt_silty_with_grass_warm_semihumid|0.003|warm_semihumid|beach|shelf|eucalyptus_01;eucalyptus_02||||||
+trees|gal:dirt_silty_with_grass_warm_semihumid|0.003|warm_semihumid|shelf|highland|jungle_01;jungle_02;jungle_04;jungle_05;jungle_06;jungle_07||||||
+trees|gal:dirt_silty_with_grass_warm_semihumid|0.003|warm_semihumid|beach|shelf|teak_01;teak_02;teak_03;teak_04||||||
+trees|gal:dirt_silty_with_grass_warm_semihumid|0.003|warm_semihumid|coastal|shelf|yellowwood_01;yellowwood_02;yellowwood_03||||||
+no_rot|gal:dirt_silty_with_grass_warm_semihumid|0.003|warm_semihumid|beach|lowland|lib_ecology.big_tree_fern||||||
+no_rot|gal:dirt_silty_with_grass_warm_semihumid|0.003|warm_semihumid|beach|lowland|lib_ecology.giant_tree_fern||||||
+no_rot|gal:dirt_silty_with_grass_warm_semihumid|0.003|warm_semihumid|beach|lowland|lib_ecology.giant_tree_fern_2||||||
+trees|gal:dirt_silty_with_grass_warm_semihumid|0.004|warm_semihumid|beach|lowland|fern_small_01;fern_small_02;fern_small_03|nil|nil|nil|||
+trees|gal:dirt_silty_with_grass_warm_semihumid|0.004|warm_semihumid|beach|lowland|fern_silver_01;fern_silver_02|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_warm_semihumid|0.06|warm_semihumid|beach|coastal|fern_large_1|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_warm_semihumid|0.06|warm_semihumid|beach|coastal|fern_small_1|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_warm_semihumid|0.06|warm_semihumid|beach|lowland|fern_spikefern|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_warm_semihumid|0.001|warm_semihumid|beach|shelf|plant_nettle_cleavers|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_warm_semihumid|0.06|warm_semihumid|lowland|highland|shrub_lush_01|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_warm_semihumid|0.06|warm_semihumid|lowland|highland|shrub_lush_02|nil|nil|nil|||
+#||||||||||||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# WARM TEMPERATE||||||||||||
+# WARM TEMPERATE OCEAN||||||||||||
+#||||||||||||
+# WARM TEMPERATE BEACH||||||||||||
+trees|gal:sand_beach|0.002|warm_temperate_beach|1|2|palm_fountain_01;palm_fountain_02;palm_fountain_03||||||
+trees|gal:sand_beach|0.002|warm_temperate_beach|1|2|palm_moriche_01;palm_moriche_02;palm_moriche_03||||||
+#||||||||||||
+# WARM TEMPERATE - DIRT||||||||||||
+plants|gal:dirt_with_grass_warm_temperate|0.05|warm_temperate|beach|highland|grass_swamp_1|nil|nil|nil|||
+plants|gal:dirt_with_grass_warm_temperate|0.05|warm_temperate|beach|lowland|plant_weed|nil|nil|nil|||
+plants|gal:dirt_with_grass_warm_temperate|0.05|warm_temperate|lowland|highland|shrub_lush_01|nil|nil|nil|||
+plants|gal:dirt_with_grass_warm_temperate|0.05|warm_temperate|lowland|highland|shrub_lush_02|nil|nil|nil|||
+# WARM TEMPERATE - DIRT BLACK||||||||||||
+#trees|gal:dirt_black_with_grass_warm_temperate|0.002|warm_temperate|6|shelf|acacia_05-L=tree_acacia_2_leaves;acacia_06-L=tree_acacia_2_leaves;acacia_07-L=tree_acacia_2_leaves||||||
+trees|gal:dirt_black_with_grass_warm_temperate|0.002|warm_temperate|shelf|highland|beech_southern_01;beech_southern_02;beech_southern_03||||||
+trees|gal:dirt_black_with_grass_warm_temperate|0.002|warm_temperate|6|shelf|eucalyptus_01;eucalyptus_02||||||
+trees|gal:dirt_black_with_grass_warm_temperate|0.002|warm_temperate|coastal|shelf|ipe_yellow||||||
+trees|gal:dirt_black_with_grass_warm_temperate|0.002|warm_temperate|6|lowland|mirabelle||||||
+trees|gal:dirt_black_with_grass_warm_temperate|0.002|warm_temperate|shelf|highland|pine_pinyon_01;pine_pinyon_02;pine_pinyon_03||||||
+trees|gal:dirt_black_with_grass_warm_temperate|0.002|warm_temperate|6|lowland|teak_01;teak_02;teak_03;teak_04||||||
+plants|gal:dirt_black_with_grass_warm_temperate|0.05|warm_temperate|beach|highland|grass_swamp_1|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_warm_temperate|0.001|warm_temperate|shelf|highland|flower_hibiscus|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_warm_temperate|0.05|warm_temperate|lowland|highland|shrub_lush_01|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_warm_temperate|0.05|warm_temperate|lowland|highland|shrub_lush_02|nil|nil|nil|||
+# WARM TEMPERATE - DIRT BROWN||||||||||||
+#trees|gal:dirt_brown_with_grass_warm_temperate|0.002|warm_temperate|6|shelf|acacia_05-L=tree_acacia_2_leaves;acacia_06-L=tree_acacia_2_leaves;acacia_07-L=tree_acacia_2_leaves||||||
+trees|gal:dirt_brown_with_grass_warm_temperate|0.002|warm_temperate|lowland|shelf|beech_southern_01;beech_southern_02;beech_southern_03||||||
+trees|gal:dirt_brown_with_grass_warm_temperate|0.002|warm_temperate|coastal|shelf|ipe_yellow||||||
+trees|gal:dirt_brown_with_grass_warm_temperate|0.002|warm_temperate|6|coastal|mirabelle||||||
+trees|gal:dirt_brown_with_grass_warm_temperate|0.002|warm_temperate|shelf|highland|pine_pinyon_01;pine_pinyon_02;pine_pinyon_03|nil|nil|nil|||
+trees|gal:dirt_brown_with_grass_warm_temperate|0.002|warm_temperate|6|lowland|teak_01;teak_02;teak_03;teak_04||||||
+plants|gal:dirt_brown_with_grass_warm_temperate|0.05|warm_temperate|6|highland|grass_swamp_1||||||
+plants|gal:dirt_brown_with_grass_warm_temperate|0.05|warm_temperate|lowland|highland|shrub_lush_01|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_warm_temperate|0.05|warm_temperate|lowland|highland|shrub_lush_02|nil|nil|nil|||
+# WARM TEMPERATE - DIRT CLAYEY||||||||||||
+#trees|gal:dirt_clayey_with_grass_warm_temperate|0.002|warm_temperate|6|shelf|acacia_05-L=tree_acacia_2_leaves;acacia_06-L=tree_acacia_2_leaves;acacia_07-L=tree_acacia_2_leaves||||||
+trees|gal:dirt_clayey_with_grass_warm_temperate|0.002|warm_temperate|lowland|shelf|beech_southern_01;beech_southern_02;beech_southern_03||||||
+trees|gal:dirt_clayey_with_grass_warm_temperate|0.002|warm_temperate|coastal|lowland|ipe_yellow||||||
+plants|gal:dirt_clayey_with_grass_warm_temperate|0.05|warm_temperate|8|highland|grass_swamp_1||||||
+plants|gal:dirt_clayey_with_grass_warm_temperate|0.05|warm_temperate|beach|lowland|plant_weed|nil|nil|nil|||
+plants|gal:dirt_clayey_with_grass_warm_temperate|0.05|warm_temperate|lowland|highland|shrub_lush_01|nil|nil|nil|||
+plants|gal:dirt_clayey_with_grass_warm_temperate|0.05|warm_temperate|lowland|highland|shrub_lush_02|nil|nil|nil|||
+# WARM TEMPERATE - DIRT SANDY||||||||||||
+trees|gal:dirt_sandy_with_grass_warm_temperate|0.002|warm_temperate|6|coastal|bamboo_temperate_01;bamboo_temperate_02||||||
+plants|gal:dirt_sandy_with_grass_warm_temperate|0.05|warm_temperate|6|highland|grass_swamp_1||||||
+plants|gal:dirt_sandy_with_grass_warm_temperate|0.05|warm_temperate|6|coastal|grass_bamboo_grass||||||
+plants|gal:dirt_sandy_with_grass_warm_temperate|0.05|warm_temperate|beach|lowland|plant_weed||||||
+plants|gal:dirt_sandy_with_grass_warm_temperate|0.05|warm_temperate|lowland|highland|shrub_lush_01|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_warm_temperate|0.05|warm_temperate|lowland|highland|shrub_lush_02|nil|nil|nil|||
+# WARM TEMPERATE - DIRT SILTY||||||||||||
+trees|gal:dirt_silty_with_grass_warm_temperate|0.002|warm_temperate|beach|shelf|eucalyptus_01;eucalyptus_02||||||
+trees|gal:dirt_silty_with_grass_warm_temperate|0.002|warm_temperate|coastal|shelf|ipe_yellow||||||
+trees|gal:dirt_silty_with_grass_warm_temperate|0.002|warm_temperate|beach|coastal|mirabelle||||||
+trees|gal:dirt_silty_with_grass_warm_temperate|0.002|warm_temperate|beach|lowland|teak_01;teak_02;teak_03;teak_04|nil|nil|nil|||
+trees|gal:dirt_silty_with_grass_warm_temperate|0.002|warm_temperate|coastal|lowland|yellowwood_01;yellowwood_02;yellowwood_03||||||
+plants|gal:dirt_silty_with_grass_warm_temperate|0.05|warm_temperate|beach|highland|grass_swamp_1||||||
+plants|gal:dirt_silty_with_grass_warm_temperate|0.001|warm_temperate|coastal|shelf|plant_nettle_cleavers|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_warm_temperate|0.05|warm_temperate|beach|lowland|plant_weed||||||
+plants|gal:dirt_silty_with_grass_warm_temperate|0.05|warm_temperate|lowland|highland|shrub_lush_01|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_warm_temperate|0.05|warm_temperate|lowland|highland|shrub_lush_02|nil|nil|nil|||
+#||||||||||||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# WARM SEMIARID||||||||||||
+# WARM SEMIARID OCEAN||||||||||||
+#||||||||||||
+# WARM SEMIARID BEACH||||||||||||
+#||||||||||||
+# WARM SEMIARID - DIRT||||||||||||
+plants|gal:dirt_with_grass_warm_semiarid|0.004|warm_semiarid|beach|highland|grass_dry_1|nil|nil|nil|||
+plants|gal:dirt_with_grass_warm_semiarid|0.001|warm_semiarid|lowland|highland|plant_nettle_giant_hogweed|nil|nil|nil|||
+# WARM SEMIARID - DIRT BLACK||||||||||||
+#trees|gal:dirt_black_with_grass_warm_semiarid|0.002|warm_semiarid|beach|lowland|acacia_01-L=tree_acacia_leaves_blooms;acacia_02-L=tree_acacia_leaves_blooms;acacia_03-L=tree_acacia_leaves_blooms;acacia_04-L=tree_acacia_leaves_blooms||||||
+#trees|gal:dirt_black_with_grass_warm_semiarid|0.002|warm_semiarid|beach|lowland|acacia_05-L=tree_acacia_2_leaves;acacia_06-L=tree_acacia_2_leaves;acacia_07-L=tree_acacia_2_leaves||||||
+plants|gal:dirt_black_with_grass_warm_semiarid|0.004|warm_semiarid|beach|highland|grass_dry_1|nil|nil|nil|||
+# WARM SEMIARID - DIRT BROWN||||||||||||
+#trees|gal:dirt_brown_with_grass_warm_semiarid|0.002|warm_semiarid|beach|shelf|acacia_01;acacia_02;acacia_03;acacia_04;acacia_05;acacia_06;acacia_07;acacia_log||||||
+trees|gal:dirt_brown_with_grass_warm_semiarid|0.002|warm_semiarid|beach|shelf|acacia_01;acacia_02;acacia_03;acacia_04;acacia_05;acacia_06;acacia_07||||||
+#trees|gal:dirt_brown_with_grass_warm_semiarid|0.002|warm_semiarid|beach|lowland|acacia_01-L=tree_acacia_leaves_blooms;acacia_02-L=tree_acacia_leaves_blooms;acacia_03-L=tree_acacia_leaves_blooms;acacia_04-L=tree_acacia_leaves_blooms||||||
+trees|gal:dirt_brown_with_grass_warm_semiarid|0.002|warm_semiarid|lowland|shelf|baobab_01;baobab_02;baobab_03;baobab_04||||||
+trees|gal:dirt_brown_with_grass_warm_semiarid|0.002|warm_semiarid|beach|coastal|mesquite_01;mesquite_02||||||
+plants|gal:dirt_brown_with_grass_warm_semiarid|0.004|warm_semiarid|beach|highland|grass_dry_1||||||
+# WARM SEMIARID - DIRT CLAYEY||||||||||||
+#trees|gal:dirt_clayey_with_grass_warm_semiarid|0.002|warm_semiarid|beach|shelf|acacia_01;acacia_02;acacia_03;acacia_04;acacia_05;acacia_06;acacia_07;acacia_log||||||
+trees|gal:dirt_clayey_with_grass_warm_semiarid|0.002|warm_semiarid|beach|shelf|acacia_01;acacia_02;acacia_03;acacia_04;acacia_05;acacia_06;acacia_07||||||
+trees|gal:dirt_clayey_with_grass_warm_semiarid|0.002|warm_semiarid|beach|lowland|mesquite_01;mesquite_02||||||
+plants|gal:dirt_clayey_with_grass_warm_semiarid|0.004|warm_semiarid|beach|highland|grass_dry_1||||||
+plants|gal:dirt_clayey_with_grass_warm_semiarid|0.001|warm_semiarid|shelf|highland|plant_heath_red|nil|nil|nil|||
+# WARM SEMIARID - DIRT SANDY||||||||||||
+#trees|gal:dirt_sandy_with_grass_warm_semiarid|0.002|warm_semiarid|beach|shelf|acacia_05-L=tree_acacia_2_leaves;acacia_06-L=tree_acacia_2_leaves;acacia_07-L=tree_acacia_2_leaves||||||
+trees|gal:dirt_sandy_with_grass_warm_semiarid|0.002|warm_semiarid|beach|lowland|mesquite_01;mesquite_02||||||
+plants|gal:dirt_sandy_with_grass_warm_semiarid|0.004|warm_semiarid|coastal|highland|grass_dry_1||||||
+plants|gal:dirt_sandy_with_grass_warm_semiarid|0.001|warm_semiarid|shelf|highland|plant_heath_purple|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_warm_semiarid|0.001|warm_semiarid|lowland|highland|plant_heath_red|nil|nil|nil|||
+# WARM SEMIARID - DIRT SILTY||||||||||||
+#trees|gal:dirt_silty_with_grass_warm_semiarid|0.002|warm_semiarid|beach|shelf|acacia_05-L=tree_acacia_2_leaves;acacia_06-L=tree_acacia_2_leaves;acacia_07-L=tree_acacia_2_leaves||||||
+plants|gal:dirt_silty_with_grass_warm_semiarid|0.004|warm_semiarid|beach|highland|grass_dry_1||||||
+#||||||||||||
+#||||||||||||
+#WARM ARID||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+#||||||||||||
+#||||||||||||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# TEMPERATE HUMID||||||||||||
+# TEMPERATE HUMID OCEAN||||||||||||
+#||||||||||||
+# TEMPERATE HUMID BEACH||||||||||||
+plants|gal:sand_beach|0.08|temperate_humid_beach|1|4|grass_marram_1|nil|nil|nil|||
+#||||||||||||
+# TEMPERATE HUMID - DIRT||||||||||||
+plants|gal:dirt_with_grass_temperate_humid|0.08|temperate_humid|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_with_grass_temperate_humid|0.08|temperate_humid|beach|coastal|fern_large_1;fern_large_2;fern_large_3|nil|nil|nil|||
+plants|gal:dirt_with_grass_temperate_humid|0.08|temperate_humid|beach|coastal|fern_small_1;fern_small_2;fern_small_3|nil|nil|nil|||
+plants|gal:dirt_with_grass_temperate_humid|0.08|temperate_humid|beach|lowland|plant_crabgrass||||||
+plants|gal:dirt_with_grass_temperate_humid|0.08|temperate_humid|beach|lowland|plant_juncus_1;plant_juncus_2;plant_juncus_3||||||
+plants|gal:dirt_with_grass_temperate_humid|0.08|temperate_humid|beach|lowland|plant_manna_reed||||||
+plants|gal:dirt_with_grass_temperate_humid|0.08|temperate_humid|beach|highland|plant_weed||||||
+plants|gal:dirt_with_grass_temperate_humid|0.08|temperate_humid|beach|highland|shrub_lush_01;shrub_lush_02||||||
+# TEMPERATE HUMID - DIRT BLACK||||||||||||
+trees|gal:dirt_black_with_grass_temperate_humid|0.003|temperate_humid|beach|coastal|ash_01;ash_02||||||
+trees|gal:dirt_black_with_grass_temperate_humid|0.003|temperate_humid|beach|coastal|beech_01;beech_02;beech_03||||||
+trees|gal:dirt_black_with_grass_temperate_humid|0.003|temperate_humid|coastal|lowland|chestnut_american_01;chestnut_american_02;chestnut_american_03||||||
+trees|gal:dirt_black_with_grass_temperate_humid|0.003|temperate_humid|coastal|lowland|chestnut_01;chestnut_02;chestnut_03||||||
+trees|gal:dirt_black_with_grass_temperate_humid|0.003|temperate_humid|beach|coastal|maple_01;maple_02||||||
+trees|gal:dirt_black_with_grass_temperate_humid|0.003|temperate_humid|beach|coastal|poplar_small_01;poplar_small_02;poplar_small_03||||||
+trees|gal:dirt_black_with_grass_temperate_humid|0.003|temperate_humid|beach|coastal|willow_01;willow_02;willow_03||||||
+plants|gal:dirt_black_with_grass_temperate_humid|0.08|temperate_humid|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_temperate_humid|0.08|temperate_humid|shelf|highland|fern_03|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_temperate_humid|0.08|temperate_humid|shelf|highland|fern_broadleaf_fern|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_temperate_humid|0.08|temperate_humid|shelf|highland|fern_broadleaf_fern2|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_temperate_humid|0.08|temperate_humid|shelf|highland|fern_large|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_temperate_humid|0.08|temperate_humid|shelf|highland|fern_tree_small|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_temperate_humid|0.08|temperate_humid|beach|coastal|fern_large_1;fern_large_2;fern_large_3||||||
+plants|gal:dirt_black_with_grass_temperate_humid|0.08|temperate_humid|beach|coastal|plant_crabgrass|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_temperate_humid|0.08|temperate_humid|beach|coastal|plant_juncus_1;plant_juncus_2;plant_juncus_3|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_temperate_humid|0.08|temperate_humid|beach|coastal|plant_manna_reed||||||
+plants|gal:dirt_black_with_grass_temperate_humid|0.08|temperate_humid|lowland|shelf|plant_weed|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_temperate_humid|0.001|temperate_humid|shelf|highland|shrub_hog_peanut|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_temperate_humid|0.08|temperate_humid|beach|coastal|shrub_lush_01;shrub_lush_02|nil|nil|nil|||
+# TEMPERATE HUMID - DIRT BROWN||||||||||||
+trees|gal:dirt_brown_with_grass_temperate_humid|0.003|temperate_humid|beach|shelf|ash_01;ash_02||||||
+trees|gal:dirt_brown_with_grass_temperate_humid|0.003|temperate_humid|beach|shelf|beech_01;beech_02;beech_03||||||
+trees|gal:dirt_brown_with_grass_temperate_humid|0.003|temperate_humid|beach|shelf|chestnut_01;chestnut_02;chestnut_03||||||
+trees|gal:dirt_brown_with_grass_temperate_humid|0.003|temperate_humid|shelf|highland|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_brown_with_grass_temperate_humid|0.003|temperate_humid|coastal|shelf|lavender||||||
+trees|gal:dirt_brown_with_grass_temperate_humid|0.003|temperate_humid|beach|lowland|maple_01;maple_02||||||
+trees|gal:dirt_brown_with_grass_temperate_humid|0.003|temperate_humid|beach|coastal|oak_01;oak_02;oak_03||||||
+trees|gal:dirt_brown_with_grass_temperate_humid|0.003|temperate_humid|beach|coastal|maple_01;maple_02||||||
+trees|gal:dirt_brown_with_grass_temperate_humid|0.003|temperate_humid|beach|lowland|poplar_small_01;poplar_small_02;poplar_small_03||||||
+trees|gal:dirt_brown_with_grass_temperate_humid|0.003|temperate_humid|shelf|highland|spruce_01;spruce_02;spruce_03;spruce_04||||||
+trees|gal:dirt_brown_with_grass_temperate_humid|0.003|temperate_humid|beach|lowland|yew_01;yew_02;yew_03||||||
+plants|gal:dirt_brown_with_grass_temperate_humid|0.08|temperate_humid|beach|coastal|grass_1|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_temperate_humid|0.08|temperate_humid|beach|coastal|fern_03|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_temperate_humid|0.08|temperate_humid|beach|coastal|fern_broadleaf_fern|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_temperate_humid|0.08|temperate_humid|beach|coastal|fern_broadleaf_fern2|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_temperate_humid|0.08|temperate_humid|beach|coastal|fern_large|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_temperate_humid|0.08|temperate_humid|beach|coastal|fern_tree_small|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_temperate_humid|0.08|temperate_humid|beach|coastal|plant_crabgrass||||||
+plants|gal:dirt_brown_with_grass_temperate_humid|0.08|temperate_humid|beach|coastal|plant_juncus_1;plant_juncus_2;plant_juncus_3||||||
+plants|gal:dirt_brown_with_grass_temperate_humid|0.08|temperate_humid|beach|shelf|plant_weed|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_temperate_humid|0.08|temperate_humid|beach|highland|shrub_lush_01;shrub_lush_02||||||
+# TEMPERATE HUMID - DIRT CLAYEY||||||||||||
+trees|gal:dirt_clayey_with_grass_temperate_humid|0.003|temperate_humid|beach|coastal|ash_01;ash_02||||||
+trees|gal:dirt_clayey_with_grass_temperate_humid|0.003|temperate_humid|shelf|highland|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_clayey_with_grass_temperate_humid|0.003|temperate_humid|beach|coastal|oak_01;oak_02;oak_03||||||
+trees|gal:dirt_clayey_with_grass_temperate_humid|0.003|temperate_humid|beach|coastal|pine_01;pine_02;pine_03||||||
+trees|gal:dirt_clayey_with_grass_temperate_humid|0.003|temperate_humid|shelf|highland|spruce_01;spruce_02;spruce_03;spruce_04||||||
+plants|gal:dirt_clayey_with_grass_temperate_humid|0.08|temperate_humid|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_clayey_with_grass_temperate_humid|0.08|temperate_humid|lowland|shelf|shrub_lush_01;shrub_lush_02||||||
+# TEMPERATE HUMID - DIRT SANDY||||||||||||
+trees|gal:dirt_sandy_with_grass_temperate_humid|0.003|temperate_humid|beach|coastal|oak_01;oak_02;oak_03||||||
+trees|gal:dirt_sandy_with_grass_temperate_humid|0.003|temperate_humid|beach|coastal|pine_01;pine_02;pine_03||||||
+trees|gal:dirt_sandy_with_grass_temperate_humid|0.003|temperate_humid|shelf|highland|spruce_01;spruce_02;spruce_03;spruce_04||||||
+plants|gal:dirt_sandy_with_grass_temperate_humid|0.08|temperate_humid|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_temperate_humid|0.08|temperate_humid|lowland|shelf|shrub_lush_01;shrub_lush_02||||||
+# TEMPERATE HUMID - DIRT SILTY||||||||||||
+trees|gal:dirt_silty_with_grass_temperate_humid|0.003|temperate_humid|coastal|lowland|ash_01;ash_02||||||
+trees|gal:dirt_silty_with_grass_temperate_humid|0.003|temperate_humid|coastal|lowland|beech_01;beech_02;beech_03||||||
+trees|gal:dirt_silty_with_grass_temperate_humid|0.003|temperate_humid|coastal|lowland|chestnut_american_01;chestnut_american_02;chestnut_american_03||||||
+trees|gal:dirt_silty_with_grass_temperate_humid|0.003|temperate_humid|beach|coastal|cypress_01;cypress_02;cypress_03||||||
+trees|gal:dirt_silty_with_grass_temperate_humid|0.003|temperate_humid|beach|coastal|maple_01;maple_02||||||
+trees|gal:dirt_silty_with_grass_temperate_humid|0.003|temperate_humid|beach|coastal|poplar_01;poplar_02;poplar_03||||||
+trees|gal:dirt_silty_with_grass_temperate_humid|0.003|temperate_humid|beach|coastal|willow_01;willow_02;willow_03||||||
+plants|gal:dirt_silty_with_grass_temperate_humid|0.08|temperate_humid|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_temperate_humid|0.08|temperate_humid|shelf|highland|fern_03|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_temperate_humid|0.08|temperate_humid|shelf|highland|fern_broadleaf_fern|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_temperate_humid|0.08|temperate_humid|shelf|highland|fern_broadleaf_fern2|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_temperate_humid|0.08|temperate_humid|shelf|highland|fern_large|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_temperate_humid|0.08|temperate_humid|shelf|highland|fern_tree_small|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_temperate_humid|0.08|temperate_humid|beach|coastal|fern_large_1;fern_large_2;fern_large_3|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_temperate_humid|0.08|temperate_humid|beach|coastal|fern_small_1;fern_small_2;fern_small_3|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_temperate_humid|0.001|temperate_humid|beach|coastal|plant_arrow_arum|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_temperate_humid|0.001|temperate_humid|beach|coastal|plant_nettle_nettle|nil|nil|nil|||
+# TEMPERATE HUMID - DIRT BLACK WITH CONIFEROUS LITTER||||||||||||
+trees|gal:dirt_black_with_litter_coniferous|0.003|temperate_humid|beach|coastal|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_black_with_litter_coniferous|0.003|temperate_humid|beach|coastal|larch_01;larch_02;larch_03||||||
+trees|gal:dirt_black_with_litter_coniferous|0.003|temperate_humid|beach|coastal|spruce_01;spruce_02;spruce_03;spruce_04||||||
+plants|gal:dirt_black_with_litter_coniferous|0.08|temperate_humid|beach|coastal|fern_large_1;fern_large_2;fern_large_3||||||
+plants|gal:dirt_black_with_litter_coniferous|0.08|temperate_humid|beach|coastal|fern_small_1;fern_small_2;fern_small_3||||||
+# TEMPERATE HUMID - DIRT BROWN WITH CONIFEROUS LITTER||||||||||||
+trees|gal:dirt_brown_with_litter_coniferous|0.003|temperate_humid|beach|coastal|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_brown_with_litter_coniferous|0.003|temperate_humid|beach|coastal|pine_01;pine_02;pine_03||||||
+trees|gal:dirt_brown_with_litter_coniferous|0.003|temperate_humid|beach|coastal|spruce_01;spruce_02;spruce_03;spruce_04||||||
+plants|gal:dirt_brown_with_litter_coniferous|0.08|temperate_humid|beach|coastal|fern_large_1;fern_large_2;fern_large_3||||||
+plants|gal:dirt_brown_with_litter_coniferous|0.08|temperate_humid|beach|coastal|fern_small_1;fern_small_2;fern_small_3||||||
+# TEMPERATE HUMID - DIRT CLAYEY WITH CONIFEROUS LITTER||||||||||||
+trees|gal:dirt_clayey_with_litter_coniferous|0.003|temperate_humid|beach|coastal|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_clayey_with_litter_coniferous|0.003|temperate_humid|beach|coastal|fir_coast_01;fir_coast_02||||||
+trees|gal:dirt_clayey_with_litter_coniferous|0.003|temperate_humid|beach|coastal|pine_01;pine_02;pine_03||||||
+trees|gal:dirt_clayey_with_litter_coniferous|0.003|temperate_humid|lowland|shelf|sequoia_01;sequoia_02;sequoia_03||||||
+trees|gal:dirt_clayey_with_litter_coniferous|0.001|temperate_humid|lowland|shelf|sequoia_giant_01;sequoia_giant_02;sequoia_giant_03;sequoia_giant_04||||||
+plants|gal:dirt_clayey_with_litter_coniferous|0.08|temperate_humid|beach|coastal|fern_large_1;fern_large_2;fern_large_3||||||
+plants|gal:dirt_clayey_with_litter_coniferous|0.08|temperate_humid|beach|coastal|fern_small_1;fern_small_2;fern_small_3||||||
+# TEMPERATE HUMID - DIRT SANDY WITH CONIFEROUS LITTER||||||||||||
+trees|gal:dirt_sandy_with_litter_coniferous|0.003|temperate_humid|beach|coastal|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_sandy_with_litter_coniferous|0.003|temperate_humid|beach|coastal|fir_coast_01;fir_coast_02||||||
+trees|gal:dirt_sandy_with_litter_coniferous|0.003|temperate_humid|beach|coastal|pine_01;pine_02;pine_03||||||
+trees|gal:dirt_sandy_with_litter_coniferous|0.003|temperate_humid|lowland|shelf|sequoia_01;sequoia_02;sequoia_03||||||
+plants|gal:dirt_sandy_with_litter_coniferous|0.08|temperate_humid|beach|coastal|fern_large_1;fern_large_2;fern_large_3||||||
+plants|gal:dirt_sandy_with_litter_coniferous|0.08|temperate_humid|beach|coastal|fern_small_1;fern_small_2;fern_small_3||||||
+# TEMPERATE HUMID - DIRT SILTY WITH CONIFEROUS LITTER||||||||||||
+trees|gal:dirt_silty_with_litter_coniferous|0.003|temperate_humid|beach|lowland|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_silty_with_litter_coniferous|0.003|temperate_humid|coastal|lowland|larch_01;larch_02;larch_03||||||
+trees|gal:dirt_silty_with_litter_coniferous|0.003|temperate_humid|coastal|shelf|spruce_01;spruce_02;spruce_03;spruce_04||||||
+plants|gal:dirt_silty_with_litter_coniferous|0.08|temperate_humid|beach|coastal|fern_large_1;fern_large_2;fern_large_3||||||
+plants|gal:dirt_silty_with_litter_coniferous|0.08|temperate_humid|beach|coastal|fern_small_1;fern_small_2;fern_small_3||||||
+#||||||||||||
+#||||||||||||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# TEMPERATE SEMIHUMID||||||||||||
+# TEMPERATE SEMIHUMID OCEAN||||||||||||
+#||||||||||||
+# TEMPERATE SEMIHUMID BEACH||||||||||||
+plants|gal:sand_beach|0.05|temperate_semihumid_beach|1|4|grass_marram_1|nil|nil|nil|||
+#||||||||||||
+# TEMPERATE SEMIHUMID - DIRT||||||||||||
+plants|gal:dirt_with_grass_temperate_semihumid|0.06|temperate_semihumid|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_with_grass_temperate_semihumid|0.06|temperate_semihumid|beach|shelf|shrub_deciduous|nil|nil|nil|||
+plants|gal:dirt_with_grass_temperate_semihumid|0.06|temperate_semihumid|lowland|highland|shrub_deciduous_forest|nil|nil|nil|||
+# TEMPERATE SEMIHUMID - DIRT BLACK||||||||||||
+schem|gal:dirt_black_with_grass_temperate_semihumid|0.002|temperate_semihumid|beach|lowland|schem_bush_hawthorne||||||
+schem|gal:dirt_black_with_grass_temperate_semihumid|0.002|temperate_semihumid|coastal|shelf|schem_bush_rhodedendron||||||
+trees|gal:dirt_black_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|lowland|ash_01;ash_02||||||
+trees|gal:dirt_black_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|shelf|beech_01;beech_02;beech_03||||||
+trees|gal:dirt_black_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|lowland|cherry||||||
+trees|gal:dirt_black_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|lowland|cherry_blossom||||||
+trees|gal:dirt_black_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|shelf|chestnut_01;chestnut_02;chestnut_03||||||
+trees|gal:dirt_black_with_grass_temperate_semihumid|0.003|temperate_semihumid|coastal|highland|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_black_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|lowland|maple_01;maple_02||||||
+trees|gal:dirt_black_with_grass_temperate_semihumid|0.003|temperate_semihumid|coastal|highland|pine_01;pine_02;pine_03||||||
+trees|gal:dirt_black_with_grass_temperate_semihumid|0.003|temperate_semihumid|shelf|highland|pine_pinyon_01;pine_pinyon_02;pine_pinyon_03||||||
+trees|gal:dirt_black_with_grass_temperate_semihumid|0.003|temperate_semihumid|lowland|highland|pine_lodgepole_01;pine_lodgepole_02;pine_lodgepole_03||||||
+trees|gal:dirt_black_with_grass_temperate_semihumid|0.003|temperate_semihumid|lowland|highland|spruce_01;spruce_02;spruce_03;spruce_04||||||
+trees|gal:dirt_black_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|lowland|yew_01;yew_02;yew_03||||||
+plants|gal:dirt_black_with_grass_temperate_semihumid|0.08|temperate_semihumid|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_temperate_semihumid|0.06|temperate_semihumid|beach|shelf|shrub_deciduous||||||
+plants|gal:dirt_black_with_grass_temperate_semihumid|0.001|temperate_semihumid|coastal|highland|plant_nettle_cleavers||||||
+# TEMPERATE SEMIHUMID - DIRT BROWN||||||||||||
+schem|gal:dirt_brown_with_grass_temperate_semihumid|0.002|temperate_semihumid|beach|lowland|schem_bush_hawthorne||||||
+schem|gal:dirt_brown_with_grass_temperate_semihumid|0.002|temperate_semihumid|coastal|shelf|schem_bush_rhodedendron||||||
+trees|gal:dirt_brown_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|lowland|ash_01;ash_02||||||
+trees|gal:dirt_brown_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|shelf|beech_01;beech_02;beech_03||||||
+trees|gal:dirt_brown_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|lowland|cherry||||||
+trees|gal:dirt_brown_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|lowland|cherry_blossom||||||
+trees|gal:dirt_brown_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|shelf|chestnut_01;chestnut_02;chestnut_03||||||
+trees|gal:dirt_brown_with_grass_temperate_semihumid|0.003|temperate_semihumid|coastal|lowland|clementine||||||
+trees|gal:dirt_brown_with_grass_temperate_semihumid|0.003|temperate_semihumid|coastal|highland|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_brown_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|lowland|maple_01;maple_02||||||
+trees|gal:dirt_brown_with_grass_temperate_semihumid|0.003|temperate_semihumid|lowland|shelf|oak_01;oak_02;oak_03||||||
+trees|gal:dirt_brown_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|lowland|oak_red_01;oak_red_02;oak_red_03||||||
+trees|gal:dirt_brown_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|shelf|oak_white_01;oak_white_02;oak_white_03||||||
+trees|gal:dirt_brown_with_grass_temperate_semihumid|0.003|temperate_semihumid|coastal|highland|pine_01;pine_02;pine_03||||||
+trees|gal:dirt_brown_with_grass_temperate_semihumid|0.003|temperate_semihumid|shelf|highland|pine_pinyon_01;pine_pinyon_02;pine_pinyon_03||||||
+trees|gal:dirt_brown_with_grass_temperate_semihumid|0.003|temperate_semihumid|lowland|highland|pine_lodgepole_01;pine_lodgepole_02;pine_lodgepole_03||||||
+trees|gal:dirt_brown_with_grass_temperate_semihumid|0.003|temperate_semihumid|lowland|highland|spruce_01;spruce_02;spruce_03;spruce_04||||||
+trees|gal:dirt_brown_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|lowland|yew_01;yew_02;yew_03||||||
+plants|gal:dirt_brown_with_grass_temperate_semihumid|0.06|temperate_semihumid|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_temperate_semihumid|0.001|temperate_semihumid|coastal|highland|plant_nettle_cleavers|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_temperate_semihumid|0.06|temperate_semihumid|beach|shelf|shrub_deciduous||||||
+plants|gal:dirt_brown_with_grass_temperate_semihumid|0.06|temperate_semihumid|shelf|highland|shrub_hog_peanut|nil|nil|nil|||
+# TEMPERATE SEMIHUMID - DIRT CLAYEY||||||||||||
+trees|gal:dirt_clayey_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|coastal|ash_01;ash_02||||||
+trees|gal:dirt_clayey_with_grass_temperate_semihumid|0.003|temperate_semihumid|lowland|shelf|oak_01;oak_02;oak_03||||||
+trees|gal:dirt_clayey_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|lowland|oak_red_01;oak_red_02;oak_red_03||||||
+trees|gal:dirt_clayey_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|shelf|oak_white_01;oak_white_02;oak_white_03||||||
+trees|gal:dirt_clayey_with_grass_temperate_semihumid|0.003|temperate_semihumid|coastal|highland|pine_01;pine_02;pine_03||||||
+trees|gal:dirt_clayey_with_grass_temperate_semihumid|0.003|temperate_semihumid|shelf|highland|pine_pinyon_01;pine_pinyon_02;pine_pinyon_03||||||
+trees|gal:dirt_clayey_with_grass_temperate_semihumid|0.003|temperate_semihumid|lowland|highland|pine_lodgepole_01;pine_lodgepole_02;pine_lodgepole_03||||||
+trees|gal:dirt_clayey_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|lowland|yew_01;yew_02;yew_03||||||
+plants|gal:dirt_clayey_with_grass_temperate_semihumid|0.06|temperate_semihumid|beach|highland|grass_1||||||
+plants|gal:dirt_clayey_with_grass_temperate_semihumid|0.06|temperate_semihumid|beach|shelf|shrub_deciduous||||||
+# TEMPERATE SEMIHUMID - DIRT SANDY||||||||||||
+trees|gal:dirt_sandy_with_grass_temperate_semihumid|0.003|temperate_semihumid|lowland|shelf|oak_01;oak_02;oak_03||||||
+trees|gal:dirt_sandy_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|lowland|oak_red_01;oak_red_02;oak_red_03||||||
+trees|gal:dirt_sandy_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|shelf|oak_white_01;oak_white_02;oak_white_03||||||
+trees|gal:dirt_sandy_with_grass_temperate_semihumid|0.003|temperate_semihumid|coastal|highland|pine_01;pine_02;pine_03||||||
+trees|gal:dirt_sandy_with_grass_temperate_semihumid|0.003|temperate_semihumid|shelf|highland|pine_pinyon_01;pine_pinyon_02;pine_pinyon_03||||||
+trees|gal:dirt_sandy_with_grass_temperate_semihumid|0.003|temperate_semihumid|lowland|highland|pine_lodgepole_01;pine_lodgepole_02;pine_lodgepole_03||||||
+plants|gal:dirt_sandy_with_grass_temperate_semihumid|0.06|temperate_semihumid|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_temperate_semihumid|0.06|temperate_semihumid|beach|shelf|shrub_deciduous||||||
+plants|gal:dirt_sandy_with_grass_temperate_semihumid|0.06|temperate_semihumid|shelf|highland|shrub_hog_peanut|nil|nil|nil|||
+# TEMPERATE SEMIHUMID - DIRT SILTY||||||||||||
+trees|gal:dirt_silty_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|lowland|ash_01;ash_02||||||
+trees|gal:dirt_silty_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|shelf|beech_01;beech_02;beech_03||||||
+trees|gal:dirt_silty_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|lowland|cherry||||||
+trees|gal:dirt_silty_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|lowland|cherry_blossom||||||
+trees|gal:dirt_silty_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|shelf|chestnut_01;chestnut_02;chestnut_03||||||
+trees|gal:dirt_silty_with_grass_temperate_semihumid|0.003|temperate_semihumid|coastal|highland|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_silty_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|lowland|maple_01;maple_02||||||
+trees|gal:dirt_silty_with_grass_temperate_semihumid|0.003|temperate_semihumid|coastal|highland|pine_01;pine_02;pine_03||||||
+trees|gal:dirt_silty_with_grass_temperate_semihumid|0.003|temperate_semihumid|shelf|highland|pine_pinyon_01;pine_pinyon_02;pine_pinyon_03||||||
+trees|gal:dirt_silty_with_grass_temperate_semihumid|0.003|temperate_semihumid|lowland|highland|pine_lodgepole_01;pine_lodgepole_02;pine_lodgepole_03||||||
+trees|gal:dirt_silty_with_grass_temperate_semihumid|0.003|temperate_semihumid|lowland|highland|spruce_01;spruce_02;spruce_03;spruce_04||||||
+trees|gal:dirt_silty_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|coastal|willow_01;willow_02;willow_03||||||
+trees|gal:dirt_silty_with_grass_temperate_semihumid|0.003|temperate_semihumid|beach|lowland|yew_01;yew_02;yew_03||||||
+plants|gal:dirt_silty_with_grass_temperate_semihumid|0.06|temperate_semihumid|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_temperate_semihumid|0.001|temperate_semihumid|beach|coastal|plant_arrow_arum|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_temperate_semihumid|0.001|temperate_semihumid|coastal|highland|plant_nettle_cleavers|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_temperate_semihumid|0.001|temperate_semihumid|beach|lowland|plant_nettle_nettle|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_temperate_semihumid|0.06|temperate_semihumid|beach|shelf|shrub_deciduous||||||
+plants|gal:dirt_silty_with_grass_temperate_semihumid|0.06|temperate_semihumid|shelf|highland|shrub_hog_peanut||||||
+#||||||||||||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# TEMPERATE TEMPERATE||||||||||||
+# TEMPERATE TEMPERATE OCEAN||||||||||||
+#||||||||||||
+# TEMPERATE TEMPERATE BEACH||||||||||||
+plants|gal:sand_beach|0.004|temperate_temperate_beach|1|4|grass_marram_1|nil|nil|nil|||
+#||||||||||||
+# TEMPERATE TEMPERATE - DIRT||||||||||||
+plants|gal:dirt_with_grass_temperate_temperate|0.04|temperate_temperate|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_with_grass_temperate_temperate|0.04|temperate_temperate|coastal|shelf|grass_tall|nil|nil|nil|||
+plants|gal:dirt_with_grass_temperate_temperate|0.001|temperate_temperate|beach|lowland|flower_oxeye_daisy|nil|nil|nil|||
+plants|gal:dirt_with_grass_temperate_temperate|0.04|temperate_temperate|coastal|highland|plant_bush_01|nil|nil|nil|||
+plants|gal:dirt_with_grass_temperate_temperate|0.04|temperate_temperate|beach|highland|shrub_deciduous_forest|nil|nil|nil|||
+# TEMPERATE TEMPERATE - DIRT SCORCHED||||||||||||
+trees|gal:dirt_with_grass_gray|0.002|temperate_temperate|coastal|shelf|scorched_01;scorched_02||||||
+# TEMPERATE TEMPERATE - DIRT BLACK||||||||||||
+schem|gal:dirt_black_with_grass_temperate_temperate|0.001|temperate_temperate|beach|lowland|schem_bush_hawthorne||||||
+schem|gal:dirt_black_with_grass_temperate_temperate|0.001|temperate_temperate|coastal|shelf|schem_bush_rhodedendron||||||
+#trees|gal:dirt_black_with_grass_temperate_temperate|0.002|temperate_temperate|lowland|shelf|apple_01;apple_02;apple_03;apple_04;apple_05;apple_log||||||
+trees|gal:dirt_black_with_grass_temperate_temperate|0.002|temperate_temperate|lowland|shelf|apple_01;apple_02;apple_03;apple_04;apple_05||||||
+trees|gal:dirt_black_with_grass_temperate_temperate|0.002|temperate_temperate|beach|shelf|chestnut_01;chestnut_02;chestnut_03||||||
+trees|gal:dirt_black_with_grass_temperate_temperate|0.002|temperate_temperate|beach|shelf|oak_01;oak_02;oak_03||||||
+trees|gal:dirt_black_with_grass_temperate_temperate|0.002|temperate_temperate|beach|coastal|oak_southern_01;oak_southern_02;oak_southern_03||||||
+trees|gal:dirt_black_with_grass_temperate_temperate|0.002|temperate_temperate|coastal|lowland|pine_01;pine_02;pine_03||||||
+trees|gal:dirt_black_with_grass_temperate_temperate|0.002|temperate_temperate|beach|coastal|willow_01;willow_02;willow_03||||||
+plants|gal:dirt_black_with_grass_temperate_temperate|0.04|temperate_temperate|beach|highland|grass_1|nil|nil|nil|||
+# TEMPERATE TEMPERATE - DIRT BROWN||||||||||||
+schem|gal:dirt_brown_with_grass_temperate_temperate|0.001|temperate_temperate|beach|coastal|schem_bush_hawthorne||||||
+schem|gal:dirt_brown_with_grass_temperate_temperate|0.001|temperate_temperate|coastal|lowland|schem_bush_rhodedendron||||||
+trees|gal:dirt_brown_with_grass_temperate_temperate|0.002|temperate_temperate|lowland|shelf|apple_01;apple_02;apple_03;apple_04;apple_05;apple_log||||||
+#trees|gal:dirt_brown_with_grass_temperate_temperate|0.002|temperate_temperate|lowland|shelf|apple_01;apple_02;apple_03;apple_04;apple_05||||||
+trees|gal:dirt_brown_with_grass_temperate_temperate|0.002|temperate_temperate|beach|lowland|cherry_blossom||||||
+trees|gal:dirt_brown_with_grass_temperate_temperate|0.002|temperate_temperate|beach|lowland|cherry||||||
+trees|gal:dirt_brown_with_grass_temperate_temperate|0.002|temperate_temperate|beach|coastal|chestnut_01;chestnut_02;chestnut_03||||||
+trees|gal:dirt_brown_with_grass_temperate_temperate|0.002|temperate_temperate|beach|shelf|oak_01;oak_02;oak_03||||||
+trees|gal:dirt_brown_with_grass_temperate_temperate|0.002|temperate_temperate|coastal|lowland|pine_01;pine_02;pine_03||||||
+trees|gal:dirt_brown_with_grass_temperate_temperate|0.002|temperate_temperate|beach|shelf|sakura||||||
+plants|gal:dirt_brown_with_grass_temperate_temperate|0.04|temperate_temperate|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_temperate_temperate|0.001|temperate_temperate|beach|coastal|flower_petunia_pink|nil|nil|nil|||
+# TEMPERATE TEMPERATE - DIRT CLAYEY||||||||||||
+trees|gal:dirt_clayey_with_grass_temperate_temperate|0.002|temperate_temperate|lowland|highland|cedar_01;cedar_02||||||
+trees|gal:dirt_clayey_with_grass_temperate_temperate|0.002|temperate_temperate|beach|shelf|chestnut_01;chestnut_02;chestnut_03||||||
+trees|gal:dirt_clayey_with_grass_temperate_temperate|0.002|temperate_temperate|beach|shelf|oak_01;oak_02;oak_03||||||
+trees|gal:dirt_clayey_with_grass_temperate_temperate|0.002|temperate_temperate|coastal|shelf|pine_01;pine_02;pine_03||||||
+trees|gal:dirt_clayey_with_grass_temperate_temperate|0.002|temperate_temperate|lowland|highland|pine_lodgepole_01;pine_lodgepole_02;pine_lodgepole_03||||||
+plants|gal:dirt_clayey_with_grass_temperate_temperate|0.04|temperate_temperate|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_clayey_with_grass_temperate_temperate|0.001|temperate_temperate|beach|coastal|flower_petunia_blue|nil|nil|nil|||
+plants|gal:dirt_clayey_with_grass_temperate_temperate|0.001|temperate_temperate|beach|coastal|flower_petunia_white|nil|nil|nil|||
+# TEMPERATE TEMPERATE - DIRT SANDY||||||||||||
+trees|gal:dirt_sandy_with_grass_temperate_temperate|0.002|temperate_temperate|beach|shelf|oak_01;oak_02;oak_03||||||
+trees|gal:dirt_sandy_with_grass_temperate_temperate|0.002|temperate_temperate|coastal|shelf|pine_01;pine_02;pine_03||||||
+plants|gal:dirt_sandy_with_grass_temperate_temperate|0.04|temperate_temperate|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_temperate_temperate|0.001|temperate_temperate|beach|coastal|flower_lavender|nil|nil|nil|||
+# TEMPERATE TEMPERATE - DIRT SILTY||||||||||||
+trees|gal:dirt_silty_with_grass_temperate_temperate|0.002|temperate_temperate|beach|shelf|oak_southern_01;oak_southern_02;oak_southern_03||||||
+trees|gal:dirt_silty_with_grass_temperate_temperate|0.002|temperate_temperate|coastal|shelf|pine_01;pine_02;pine_03||||||
+trees|gal:dirt_silty_with_grass_temperate_temperate|0.002|temperate_temperate|beach|coastal|willow_01;willow_02;willow_03||||||
+plants|gal:dirt_silty_with_grass_temperate_temperate|0.04|temperate_temperate|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_temperate_temperate|0.001|temperate_temperate|beach|coastal|plant_nettle_cleavers|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_temperate_temperate|0.001|temperate_temperate|beach|coastal|plant_nettle_nettle|nil|nil|nil|||
+#||||||||||||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# TEMPERATE SEMIARID||||||||||||
+# TEMPERATE TEMPERATE OCEAN||||||||||||
+#||||||||||||
+# TEMPERATE TEMPERATE BEACH||||||||||||
+#||||||||||||
+#COASTAL# TEMPERATE SEMIARID - DIRT||||||||||||
+plants|gal:dirt_with_grass_temperate_semiarid|0.01|temperate_semiarid|beach|highland|grass_dry_1|nil|nil|nil|||
+plants|gal:dirt_with_grass_temperate_semiarid|0.004|temperate_semiarid|beach|shelf|cactus_prickly_pear|nil|nil|nil|||
+plants|gal:dirt_with_grass_temperate_semiarid|0.003|temperate_semiarid|beach|shelf|flower_dandelions_yellow|nil|nil|nil|||
+plants|gal:dirt_with_grass_temperate_semiarid|0.001|temperate_semiarid|shelf|highland|flower_delphinium|nil|nil|nil|||
+plants|gal:dirt_with_grass_temperate_semiarid|0.002|temperate_semiarid|coastal|highland|flower_geranium_blue|nil|nil|nil|||
+plants|gal:dirt_with_grass_temperate_semiarid|0.003|temperate_semiarid|beach|shelf|flower_thistle|nil|nil|nil|||
+plants|gal:dirt_with_grass_temperate_semiarid|0.004|temperate_semiarid|beach|shelf|plant_nettle_giant_hogweed|nil|nil|nil|||
+plants|gal:dirt_with_grass_temperate_semiarid|0.004|temperate_semiarid|beach|lowland|plant_small_desert_palm|nil|nil|nil|||
+# TEMPERATE SEMIARID - DIRT BLACK||||||||||||
+plants|gal:dirt_black_with_grass_temperate_semiarid|0.01|temperate_semiarid|beach|highland|grass_dry_1|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_temperate_semiarid|0.003|temperate_semiarid|beach|coastal|fern_spike|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_temperate_semiarid|0.004|temperate_semiarid|beach|lowland|plant_wild_onion_1;plant_wild_onion_2;plant_wild_onion_3|nil|nil|nil|||
+# TEMPERATE SEMIARID - DIRT BROWN||||||||||||
+trees|gal:dirt_brown_with_grass_temperate_semiarid|0.001|temperate_semiarid|lowland|highland|cedar_01;cedar_02;cedar_03||||||
+trees|gal:dirt_brown_with_grass_temperate_semiarid|0.001|temperate_semiarid|coastal|shelf|pine_01;pine_02;pine_03||||||
+trees|gal:dirt_brown_with_grass_temperate_semiarid|0.001|temperate_semiarid|lowland|highland|pine_lodgepole_01;pine_lodgepole_02;pine_lodgepole_03||||||
+plants|gal:dirt_brown_with_grass_temperate_semiarid|0.01|temperate_semiarid|beach|highland|grass_dry_1|nil|nil|nil|||
+# TEMPERATE SEMIARID - DIRT CLAYEY||||||||||||
+trees|gal:dirt_clayey_with_grass_temperate_semiarid|0.001|temperate_semiarid|coastal|highland|pine_01;pine_02;pine_03||||||
+trees|gal:dirt_clayey_with_grass_temperate_semiarid|0.001|temperate_semiarid|lowland|highland|pine_lodgepole_01;pine_lodgepole_02;pine_lodgepole_03||||||
+plants|gal:dirt_clayey_with_grass_temperate_semiarid|0.01|temperate_semiarid|beach|highland|grass_dry_1|nil|nil|nil|||
+plants|gal:dirt_clayey_with_grass_temperate_semiarid|0.004|temperate_semiarid|beach|lowland|cactus_globe|nil|nil|nil|||
+plants|gal:dirt_clayey_with_grass_temperate_semiarid|0.004|temperate_semiarid|beach|shelf|cactus_small_column_02|nil|nil|nil|||
+# TEMPERATE SEMIARID - DIRT SANDY||||||||||||
+trees|gal:dirt_sandy_with_grass_temperate_semiarid|0.001|temperate_semiarid|beach|coastal|pine_01;pine_02;pine_03||||||
+trees|gal:dirt_sandy_with_grass_temperate_semiarid|0.001|temperate_semiarid|beach|coastal|pine_lodgepole_01;pine_lodgepole_02;pine_lodgepole_03||||||
+plants|gal:dirt_sandy_with_grass_temperate_semiarid|0.01|temperate_semiarid|beach|highland|grass_dry_1|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_temperate_semiarid|0.004|temperate_semiarid|beach|lowland|cactus_purple_button|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_temperate_semiarid|0.003|temperate_semiarid|beach|coastal|flower_bird_of_paradise|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_temperate_semiarid|0.003|temperate_semiarid|beach|coastal|flower_lavender|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_temperate_semiarid|0.001|temperate_semiarid|shelf|highland|flower_tulip_orange|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_temperate_semiarid|0.002|temperate_semiarid|lowland|highland|plant_heath_gold|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_temperate_semiarid|0.002|temperate_semiarid|shelf|highland|plant_heath_green|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_temperate_semiarid|0.002|temperate_semiarid|lowland|highland|plant_heath_purple|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_temperate_semiarid|0.004|temperate_semiarid|beach|shelf|plant_heath_sandwort|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_temperate_semiarid|0.004|temperate_semiarid|beach|shelf|plant_nettle_scotch_broom|nil|nil|nil|||
+# TEMPERATE SEMIARID - DIRT SILTY||||||||||||
+plants|gal:dirt_silty_with_grass_temperate_semiarid|0.01|temperate_semiarid|beach|highland|grass_dry_1|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_temperate_semiarid|0.002|temperate_semiarid|coastal|shelf|plant_heath_sandwort|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_temperate_semiarid|0.004|temperate_semiarid|beach|shelf|plant_nettle_scotch_broom|nil|nil|nil|||
+#||||||||||||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# TEMPERATE ARID||||||||||||
+# TEMPERATE ARID OCEAN||||||||||||
+#||||||||||||
+# TEMPERATE ARID BEACH||||||||||||
+#||||||||||||
+# TEMPERATE ARID - DIRT||||||||||||
+plants|gal:dirt_coarse|0.005|temperate_arid|beach|highland|grass_dry_1|nil|nil|nil|||
+plants|gal:dirt_coarse|0.001|temperate_arid|beach|lowland|cactus_column_01|nil|nil|nil|||
+plants|gal:dirt_coarse|0.001|temperate_arid|beach|shelf|cactus_globe|nil|nil|nil|||
+plants|gal:dirt_coarse|0.001|temperate_arid|coastal|shelf|cactus_purple_column|nil|nil|nil|||
+plants|gal:dirt_coarse|0.001|temperate_arid|beach|coastal|cactus_vine|nil|nil|nil|||
+plants|gal:dirt_coarse|0.001|temperate_arid|beach|highland|plant_nettle_scotch_broom|nil|nil|nil|||
+#||||||||||||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# COOL HUMID||||||||||||
+# COOL HUMID OCEAN||||||||||||
+#||||||||||||
+# COOL HUMID BEACH||||||||||||
+#||||||||||||
+# COOL HUMID - DIRT WITH CONIFEROUS LITTER||||||||||||
+trees|gal:dirt_with_litter_coniferous|0.004|cool_humid|beach|lowland|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+plants|gal:dirt_with_litter_coniferous|0.08|cool_humid|beach|highland|grass_1|nil|nil|nil|||
+# COOL HUMID - DIRT BLACK WITH CONIFEROUS LITTER||||||||||||
+trees|gal:dirt_black_with_litter_coniferous|0.004|cool_humid|coastal|lowland|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_black_with_litter_coniferous|0.004|cool_humid|coastal|shelf|fir_01;fir_02||||||
+trees|gal:dirt_black_with_litter_coniferous|0.004|cool_humid|coastal|shelf|fir_coast_01;fir_coast_02||||||
+trees|gal:dirt_black_with_litter_coniferous|0.004|cool_humid|coastal|shelf|fir_doug_01;fir_doug_02||||||
+trees|gal:dirt_black_with_litter_coniferous|0.004|cool_humid|lowland|shelf|spruce_01;spruce_02;spruce_03;spruce_04||||||
+plants|gal:dirt_black_with_litter_coniferous|0.08|cool_humid|beach|coastal|fern_broadleaf_fern;fern_broadleaf_fern2|nil|nil|nil|||
+plants|gal:dirt_black_with_litter_coniferous|0.08|cool_humid|beach|lowland|fern_ladyfern;fern_ladyfern2|nil|nil|nil|||
+plants|gal:dirt_black_with_litter_coniferous|0.08|cool_humid|beach|shelf|fern_fiddlehead|nil|nil|nil|||
+plants|gal:dirt_black_with_litter_coniferous|0.08|cool_humid|beach|lowland|mushroom_brown;mushroom_red|nil|nil|nil|||
+# COOL HUMID - DIRT BROWN WITH CONIFEROUS LITTER||||||||||||
+trees|gal:dirt_brown_with_litter_coniferous|0.004|cool_humid|beach|shelf|beech_01;beech_02;beech_03||||||
+trees|gal:dirt_brown_with_litter_coniferous|0.004|cool_humid|coastal|lowland|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_brown_with_litter_coniferous|0.004|cool_humid|beach|shelf|maple_01;maple_02||||||
+trees|gal:dirt_brown_with_litter_coniferous|0.004|cool_humid|beach|lowland|maple_sugar_01;maple_sugar_02||||||
+trees|gal:dirt_brown_with_litter_coniferous|0.004|cool_humid|coastal|shelf|fir_01;fir_02||||||
+trees|gal:dirt_brown_with_litter_coniferous|0.004|cool_humid|coastal|shelf|fir_coast_01;fir_coast_02||||||
+trees|gal:dirt_brown_with_litter_coniferous|0.004|cool_humid|coastal|shelf|fir_doug_01;fir_doug_02||||||
+trees|gal:dirt_brown_with_litter_coniferous|0.004|cool_humid|lowland|shelf|spruce_01;spruce_02;spruce_03;spruce_04||||||
+plants|gal:dirt_brown_with_litter_coniferous|0.08|cool_humid|beach|coastal|fern_broadleaf_fern;fern_broadleaf_fern2|nil|nil|nil|||
+plants|gal:dirt_brown_with_litter_coniferous|0.08|cool_humid|beach|lowland|fern_ladyfern;fern_ladyfern2|nil|nil|nil|||
+plants|gal:dirt_brown_with_litter_coniferous|0.08|cool_humid|beach|shelf|fern_fiddlehead|nil|nil|nil|||
+plants|gal:dirt_brown_with_litter_coniferous|0.08|cool_humid|beach|lowland|mushroom_brown;mushroom_red|nil|nil|nil|||
+# COOL HUMID - DIRT CLAYEY WITH CONIFEROUS LITTER||||||||||||
+trees|gal:dirt_clayey_with_litter_coniferous|0.004|cool_humid|beach|shelf|beech_01;beech_02;beech_03||||||
+trees|gal:dirt_clayey_with_litter_coniferous|0.004|cool_humid|beach|shelf|maple_01;maple_02||||||
+trees|gal:dirt_clayey_with_litter_coniferous|0.004|cool_humid|beach|lowland|maple_sugar_01;maple_sugar_02||||||
+trees|gal:dirt_clayey_with_litter_coniferous|0.004|cool_humid|coastal|shelf|fir_01;fir_02||||||
+trees|gal:dirt_clayey_with_litter_coniferous|0.004|cool_humid|coastal|shelf|fir_coast_01;fir_coast_02||||||
+trees|gal:dirt_clayey_with_litter_coniferous|0.004|cool_humid|coastal|shelf|fir_doug_01;fir_doug_02||||||
+trees|gal:dirt_clayey_with_litter_coniferous|0.004|cool_humid|lowland|shelf|spruce_01;spruce_02;spruce_03;spruce_04||||||
+plants|gal:dirt_clayey_with_litter_coniferous|0.08|cool_humid|beach|coastal|fern_broadleaf_fern;fern_broadleaf_fern2|nil|nil|nil|||
+plants|gal:dirt_clayey_with_litter_coniferous|0.08|cool_humid|beach|lowland|fern_ladyfern;fern_ladyfern2|nil|nil|nil|||
+plants|gal:dirt_clayey_with_litter_coniferous|0.08|cool_humid|beach|shelf|fern_fiddlehead|nil|nil|nil|||
+# COOL HUMID - DIRT SANDY WITH CONIFEROUS LITTER||||||||||||
+trees|gal:dirt_sandy_with_litter_coniferous|0.004|cool_humid|beach|shelf|beech_01;beech_02;beech_03||||||
+trees|gal:dirt_sandy_with_litter_coniferous|0.004|cool_humid|beach|shelf|maple_01;maple_02||||||
+trees|gal:dirt_sandy_with_litter_coniferous|0.004|cool_humid|beach|lowland|maple_sugar_01;maple_sugar_02||||||
+trees|gal:dirt_sandy_with_litter_coniferous|0.004|cool_humid|coastal|shelf|fir_01;fir_02||||||
+trees|gal:dirt_sandy_with_litter_coniferous|0.004|cool_humid|coastal|shelf|fir_coast_01;fir_coast_02||||||
+trees|gal:dirt_sandy_with_litter_coniferous|0.004|cool_humid|coastal|shelf|fir_doug_01;fir_doug_02||||||
+plants|gal:dirt_sandy_with_litter_coniferous|0.08|cool_humid|beach|coastal|fern_broadleaf_fern;fern_broadleaf_fern2|nil|nil|nil|||
+plants|gal:dirt_sandy_with_litter_coniferous|0.08|cool_humid|beach|lowland|fern_ladyfern;fern_ladyfern2|nil|nil|nil|||
+plants|gal:dirt_sandy_with_litter_coniferous|0.08|cool_humid|beach|shelf|fern_fiddlehead|nil|nil|nil|||
+# COOL HUMID - DIRT SILTY WITH CONIFEROUS LITTER||||||||||||
+trees|gal:dirt_silty_with_litter_coniferous|0.004|cool_humid|beach|lowland|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_silty_with_litter_coniferous|0.004|cool_humid|coastal|shelf|fir_01;fir_02||||||
+trees|gal:dirt_silty_with_litter_coniferous|0.004|cool_humid|coastal|shelf|fir_coast_01;fir_coast_02||||||
+trees|gal:dirt_silty_with_litter_coniferous|0.004|cool_humid|coastal|shelf|fir_doug_01;fir_doug_02||||||
+trees|gal:dirt_silty_with_litter_coniferous|0.004|cool_humid|lowland|shelf|spruce_01;spruce_02;spruce_03;spruce_04||||||
+plants|gal:dirt_silty_with_litter_coniferous|0.08|cool_humid|beach|coastal|fern_broadleaf_fern;fern_broadleaf_fern2|nil|nil|nil|||
+plants|gal:dirt_silty_with_litter_coniferous|0.08|cool_humid|beach|lowland|fern_ladyfern;fern_ladyfern2|nil|nil|nil|||
+plants|gal:dirt_silty_with_litter_coniferous|0.08|cool_humid|beach|shelf|fern_fiddlehead|nil|nil|nil|||
+plants|gal:dirt_silty_with_litter_coniferous|0.08|cool_humid|beach|lowland|mushroom_brown;mushroom_red|nil|nil|nil|||
+# COOL HUMID - DIRT||||||||||||
+plants|gal:dirt_with_grass_cool_humid|0.08|cool_humid|beach|highland|grass_1|nil|nil|nil|||
+# COOL HUMID - DIRT BLACK||||||||||||
+trees|gal:dirt_black_with_grass_cool_humid|0.004|cool_humid|beach|shelf|beech_01;beech_02;beech_03||||||
+trees|gal:dirt_black_with_grass_cool_humid|0.004|cool_humid|beach|coastal|cherry||||||
+trees|gal:dirt_black_with_grass_cool_humid|0.004|cool_humid|beach|coastal|cherry_blossom||||||
+trees|gal:dirt_black_with_grass_cool_humid|0.004|cool_humid|beach|shelf|maple_01;maple_02||||||
+trees|gal:dirt_black_with_grass_cool_humid|0.004|cool_humid|beach|lowland|maple_sugar_01;maple_sugar_02||||||
+trees|gal:dirt_black_with_grass_cool_humid|0.004|cool_humid|beach|coastal|sakura||||||
+plants|gal:dirt_black_with_grass_cool_humid|0.08|cool_humid|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_cool_humid|0.08|cool_humid|beach|coastal|fern_broadleaf_fern;fern_broadleaf_fern2|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_cool_humid|0.08|cool_humid|beach|lowland|fern_ladyfern;fern_ladyfern2|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_cool_humid|0.08|cool_humid|beach|shelf|fern_fiddlehead|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_cool_humid|0.08|cool_humid|beach|lowland|mushroom_brown;mushroom_red|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_cool_humid|0.08|cool_humid|shelf|highland|shrub_hog_peanut|nil|nil|nil|||
+# COOL HUMID - DIRT BROWN||||||||||||
+trees|gal:dirt_brown_with_grass_cool_humid|0.004|cool_humid|beach|shelf|beech_01;beech_02;beech_03||||||
+trees|gal:dirt_brown_with_grass_cool_humid|0.004|cool_humid|beach|shelf|maple_01;maple_02||||||
+trees|gal:dirt_brown_with_grass_cool_humid|0.004|cool_humid|beach|lowland|maple_sugar_01;maple_sugar_02||||||
+trees|gal:dirt_brown_with_grass_cool_humid|0.004|cool_humid|beach|shelf|oak_01;oak_02;oak_03||||||
+trees|gal:dirt_brown_with_grass_cool_humid|0.004|cool_humid|beach|shelf|oak_red_01;oak_red_02;oak_red_03||||||
+plants|gal:dirt_brown_with_grass_cool_humid|0.08|cool_humid|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_cool_humid|0.08|cool_humid|beach|coastal|fern_broadleaf_fern;fern_broadleaf_fern2|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_cool_humid|0.08|cool_humid|beach|lowland|fern_ladyfern;fern_ladyfern2|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_cool_humid|0.08|cool_humid|beach|shelf|fern_fiddlehead|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_cool_humid|0.08|cool_humid|beach|lowland|mushroom_brown;mushroom_red|nil|nil|nil|||
+# COOL HUMID - DIRT CLAYEY||||||||||||
+trees|gal:dirt_clayey_with_grass_cool_humid|0.004|cool_humid|beach|shelf|beech_01;beech_02;beech_03||||||
+trees|gal:dirt_clayey_with_grass_cool_humid|0.004|cool_humid|beach|lowland|birch_sweet_01;birch_sweet_02;birch_sweet_03;birch_sweet_04||||||
+#trees|gal:dirt_clayey_with_grass_cool_humid|0.004|cool_humid|beach|shelf|birch_yellow_01;birch_yellow_02;birch_yellow_03;birch_yellow_04;birch_yellow_log||||||
+trees|gal:dirt_clayey_with_grass_cool_humid|0.004|cool_humid|beach|shelf|birch_yellow_01;birch_yellow_02;birch_yellow_03;birch_yellow_04||||||
+trees|gal:dirt_clayey_with_grass_cool_humid|0.004|cool_humid|lowland|highland|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_clayey_with_grass_cool_humid|0.004|cool_humid|lowland|highland|fir_doug_01;fir_doug_02||||||
+trees|gal:dirt_clayey_with_grass_cool_humid|0.004|cool_humid|beach|shelf|maple_01;maple_02||||||
+trees|gal:dirt_clayey_with_grass_cool_humid|0.004|cool_humid|beach|lowland|maple_sugar_01;maple_sugar_02||||||
+trees|gal:dirt_clayey_with_grass_cool_humid|0.004|cool_humid|lowland|highland|spruce_01;spruce_02;spruce_03;spruce_04||||||
+plants|gal:dirt_clayey_with_grass_cool_humid|0.08|cool_humid|beach|coastal|grass_1|nil|nil|nil|||
+# COOL HUMID - DIRT SANDY||||||||||||
+trees|gal:dirt_sandy_with_grass_cool_humid|0.004|cool_humid|beach|shelf|beech_01;beech_02;beech_03||||||
+trees|gal:dirt_sandy_with_grass_cool_humid|0.004|cool_humid|beach|lowland|birch_sweet_01;birch_sweet_02;birch_sweet_03;birch_sweet_04||||||
+trees|gal:dirt_sandy_with_grass_cool_humid|0.004|cool_humid|beach|shelf|birch_yellow_01;birch_yellow_02;birch_yellow_03;birch_yellow_04;birch_yellow_log||||||
+#trees|gal:dirt_sandy_with_grass_cool_humid|0.004|cool_humid|beach|shelf|birch_yellow_01;birch_yellow_02;birch_yellow_03;birch_yellow_04||||||
+trees|gal:dirt_sandy_with_grass_cool_humid|0.004|cool_humid|beach|shelf|maple_01;maple_02||||||
+trees|gal:dirt_sandy_with_grass_cool_humid|0.004|cool_humid|beach|lowland|maple_sugar_01;maple_sugar_02||||||
+trees|gal:dirt_sandy_with_grass_cool_humid|0.004|cool_humid|beach|shelf|oak_01;oak_02;oak_03||||||
+trees|gal:dirt_sandy_with_grass_cool_humid|0.004|cool_humid|beach|shelf|oak_red_01;oak_red_02;oak_red_03||||||
+plants|gal:dirt_sandy_with_grass_cool_humid|0.08|cool_humid|beach|highland|grass_1|nil|nil|nil|||
+# COOL HUMID - DIRT SILTY||||||||||||
+trees|gal:dirt_silty_with_grass_cool_humid|0.004|cool_humid|beach|shelf|beech_01;beech_02;beech_03||||||
+trees|gal:dirt_silty_with_grass_cool_humid|0.004|cool_humid|beach|shelf|maple_01;maple_02||||||
+trees|gal:dirt_silty_with_grass_cool_humid|0.004|cool_humid|beach|lowland|maple_sugar_01;maple_sugar_02||||||
+trees|gal:dirt_silty_with_grass_cool_humid|0.004|cool_humid|beach|coastal|poplar_small_01;poplar_small_02;poplar_small_03;poplar_small_04;poplar_small_05||||||
+trees|gal:dirt_silty_with_grass_cool_humid|0.004|cool_humid|beach|coastal|willow_01;willow_02;willow_03||||||
+plants|gal:dirt_silty_with_grass_cool_humid|0.08|cool_humid|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_cool_humid|0.08|cool_humid|beach|coastal|fern_broadleaf_fern;fern_broadleaf_fern2|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_cool_humid|0.08|cool_humid|beach|lowland|fern_ladyfern;fern_ladyfern2|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_cool_humid|0.08|cool_humid|beach|shelf|fern_fiddlehead|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_cool_humid|0.08|cool_humid|beach|lowland|mushroom_brown;mushroom_red|nil|nil|nil|||
+#||||||||||||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# COOL SEMIHUMID||||||||||||
+# COOL SEMIHUMID OCEAN||||||||||||
+#||||||||||||
+# COOL SEMIHUMID BEACH||||||||||||
+#||||||||||||
+# COOL SEMIHUMID - DIRT||||||||||||
+plants|gal:dirt_with_grass_cool_semihumid|0.08|cool_semihumid|beach|highland|grass_1|nil|nil|nil|||
+# COOL SEMIHUMID - DIRT BLACK||||||||||||
+schem|gal:dirt_black_with_grass_cool_semihumid|0.001|cool_semihumid|coastal|lowland|schem_bush_rhodedendron||||||
+trees|gal:dirt_black_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|beech_01;beech_02;beech_03||||||
+trees|gal:dirt_black_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|cherry||||||
+trees|gal:dirt_black_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|cherry_blossom||||||
+trees|gal:dirt_black_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|maple_01;maple_02||||||
+trees|gal:dirt_black_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|maple_sugar_01;maple_sugar_02||||||
+trees|gal:dirt_black_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|sakura||||||
+plants|gal:dirt_black_with_grass_cool_semihumid|0.07|cool_semihumid|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_cool_semihumid|0.07|cool_semihumid|beach|coastal|fern_broadleaf_fern;fern_broadleaf_fern2|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_cool_semihumid|0.07|cool_semihumid|beach|coastal|fern_ladyfern;fern_ladyfern2|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_cool_semihumid|0.07|cool_semihumid|beach|coastal|fern_fiddlehead|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_cool_semihumid|0.07|cool_semihumid|beach|coastal|mushroom_brown;mushroom_red|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_cool_semihumid|0.07|cool_semihumid|shelf|highland|shrub_hog_peanut|nil|nil|nil|||
+# COOL SEMIHUMID - DIRT BROWN||||||||||||
+schem|gal:dirt_brown_with_grass_cool_semihumid|0.001|cool_semihumid|coastal|lowland|schem_bush_rhodedendron||||||
+trees|gal:dirt_brown_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|beech_01;beech_02;beech_03||||||
+trees|gal:dirt_brown_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|birch_sweet_01;birch_sweet_02;birch_sweet_03;birch_sweet_04||||||
+#trees|gal:dirt_brown_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|birch_yellow_01;birch_yellow_02;birch_yellow_03;birch_yellow_04;birch_yellow_log||||||
+trees|gal:dirt_brown_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|birch_yellow_01;birch_yellow_02;birch_yellow_03;birch_yellow_04||||||
+trees|gal:dirt_brown_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|maple_01;maple_02||||||
+trees|gal:dirt_brown_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|maple_sugar_01;maple_sugar_02||||||
+trees|gal:dirt_brown_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|oak_01;oak_02;oak_03||||||
+trees|gal:dirt_brown_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|oak_red_01;oak_red_02;oak_red_03||||||
+plants|gal:dirt_brown_with_grass_cool_semihumid|0.07|cool_semihumid|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_cool_semihumid|0.07|cool_semihumid|beach|coastal|fern_broadleaf_fern;fern_broadleaf_fern2|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_cool_semihumid|0.07|cool_semihumid|beach|coastal|fern_ladyfern;fern_ladyfern2|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_cool_semihumid|0.07|cool_semihumid|beach|coastal|fern_fiddlehead|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_cool_semihumid|0.07|cool_semihumid|beach|coastal|mushroom_brown;mushroom_red|nil|nil|nil|||
+# COOL SEMIHUMID - DIRT CLAYEY||||||||||||
+trees|gal:dirt_clayey_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_clayey_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|fir_doug_01;fir_doug_02||||||
+trees|gal:dirt_clayey_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|spruce_01;spruce_02;spruce_03;spruce_04||||||
+plants|gal:dirt_clayey_with_grass_cool_semihumid|0.07|cool_semihumid|beach|highland|grass_1|nil|nil|nil|||
+# COOL SEMIHUMID - DIRT SANDY||||||||||||
+trees|gal:dirt_sandy_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|birch_sweet_01;birch_sweet_02;birch_sweet_03;birch_sweet_04||||||
+#trees|gal:dirt_sandy_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|birch_yellow_01;birch_yellow_02;birch_yellow_03;birch_yellow_04;birch_yellow_log||||||
+trees|gal:dirt_sandy_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|birch_yellow_01;birch_yellow_02;birch_yellow_03;birch_yellow_04||||||
+trees|gal:dirt_sandy_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|maple_01;maple_02||||||
+trees|gal:dirt_sandy_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|maple_sugar_01;maple_sugar_02||||||
+trees|gal:dirt_sandy_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|oak_01;oak_02;oak_03||||||
+trees|gal:dirt_sandy_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|oak_red_01;oak_red_02;oak_red_03||||||
+plants|gal:dirt_sandy_with_grass_cool_semihumid|0.07|cool_semihumid|beach|highland|grass_1|nil|nil|nil|||
+# COOL SEMIHUMID - DIRT SILTY||||||||||||
+trees|gal:dirt_silty_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|poplar_small_01;poplar_small_02;poplar_small_03;poplar_small_04;poplar_small_05||||||
+trees|gal:dirt_silty_with_grass_cool_semihumid|0.003|cool_semihumid|beach|coastal|willow_01;willow_02;willow_03||||||
+plants|gal:dirt_silty_with_grass_cool_semihumid|0.07|cool_semihumid|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_cool_semihumid|0.07|cool_semihumid|beach|coastal|fern_broadleaf_fern;fern_broadleaf_fern2|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_cool_semihumid|0.07|cool_semihumid|beach|coastal|fern_ladyfern;fern_ladyfern2|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_cool_semihumid|0.07|cool_semihumid|beach|coastal|fern_fiddlehead|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_cool_semihumid|0.07|cool_semihumid|beach|coastal|mushroom_brown;mushroom_red|nil|nil|nil|||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# COOL TEMPERATE||||||||||||
+# COOL TEMPERATE OCEAN||||||||||||
+#||||||||||||
+# COOL TEMPERATE BEACH||||||||||||
+#||||||||||||
+# COOL TEMPERATE - DIRT||||||||||||
+plants|gal:dirt_with_grass_cool_temperate|0.06|cool_temperate|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_with_grass_cool_temperate|0.06|cool_temperate|beach|shelf|bush_01|nil|nil|nil|||
+plants|gal:dirt_with_grass_cool_temperate|0.06|cool_temperate|coastal|highland|bush_02|nil|nil|nil|||
+plants|gal:dirt_with_grass_cool_temperate|0.001|cool_temperate|beach|coastal|flower_calla_lily|nil|nil|nil|||
+plants|gal:dirt_with_grass_cool_temperate|0.06|cool_temperate|beach|lowland|wild_oat_dry|nil|nil|nil|||
+# COOL TEMPERATE - DIRT BLACK||||||||||||
+schem|gal:dirt_black_with_grass_cool_temperate|0.001|cool_temperate|coastal|lowland|schem_bush_rhodedendron||||||
+trees|gal:dirt_black_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|birch_sweet_01;birch_sweet_02;birch_sweet_03;birch_sweet_04||||||
+#trees|gal:dirt_black_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|birch_yellow_01;birch_yellow_02;birch_yellow_03;birch_yellow_04;birch_yellow_log||||||
+trees|gal:dirt_black_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|birch_yellow_01;birch_yellow_02;birch_yellow_03;birch_yellow_04||||||
+trees|gal:dirt_black_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|cherry_blossom||||||
+trees|gal:dirt_black_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|maple_01;maple_02||||||
+trees|gal:dirt_black_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|maple_sugar_01;maple_sugar_02||||||
+plants|gal:dirt_black_with_grass_cool_temperate|0.06|cool_temperate|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_cool_temperate|0.06|cool_temperate|beach|coastal|fern_broadleaf_fern;fern_broadleaf_fern2|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_cool_temperate|0.06|cool_temperate|beach|coastal|fern_ladyfern;fern_ladyfern2|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_cool_temperate|0.06|cool_temperate|beach|coastal|fern_fiddlehead|nil|nil|nil|||
+plants|gal:dirt_black_with_grass_cool_temperate|0.06|cool_temperate|beach|coastal|mushroom_brown;mushroom_red|nil|nil|nil|||
+# COOL TEMPERATE - DIRT BROWN||||||||||||
+schem|gal:dirt_brown_with_grass_cool_temperate|0.001|cool_temperate|coastal|lowland|schem_bush_rhodedendron||||||
+#trees|gal:dirt_brown_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|birch_yellow_01;birch_yellow_02;birch_yellow_03;birch_yellow_04;birch_yellow_log||||||
+trees|gal:dirt_brown_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|birch_yellow_01;birch_yellow_02;birch_yellow_03;birch_yellow_04||||||
+trees|gal:dirt_brown_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|maple_01;maple_02||||||
+trees|gal:dirt_brown_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|oak_01;oak_02;oak_03||||||
+trees|gal:dirt_brown_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|oak_red_01;oak_red_02;oak_red_03||||||
+plants|gal:dirt_brown_with_grass_cool_temperate|0.06|cool_temperate|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_cool_temperate|0.06|cool_temperate|beach|coastal|fern_broadleaf_fern;fern_broadleaf_fern2|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_cool_temperate|0.06|cool_temperate|beach|coastal|fern_ladyfern;fern_ladyfern2|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_cool_temperate|0.06|cool_temperate|beach|coastal|fern_fiddlehead|nil|nil|nil|||
+plants|gal:dirt_brown_with_grass_cool_temperate|0.06|cool_temperate|beach|coastal|mushroom_brown;mushroom_red|nil|nil|nil|||
+# COOL TEMPERATE - DIRT CLAYEY||||||||||||
+trees|gal:dirt_clayey_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_clayey_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|fir_doug_01;fir_doug_02||||||
+trees|gal:dirt_clayey_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|spruce_01;spruce_02;spruce_03;spruce_04||||||
+plants|gal:dirt_clayey_with_grass_cool_temperate|0.06|cool_temperate|beach|coastal|grass_1|nil|nil|nil|||
+# COOL TEMPERATE - DIRT SANDY||||||||||||
+#trees|gal:dirt_sandy_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|birch_yellow_01;birch_yellow_02;birch_yellow_03;birch_yellow_04;birch_yellow_log||||||
+trees|gal:dirt_sandy_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|birch_yellow_01;birch_yellow_02;birch_yellow_03;birch_yellow_04||||||
+trees|gal:dirt_sandy_with_grass_cool_temperate|0.002|cool_temperate|shelf|highland|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_sandy_with_grass_cool_temperate|0.002|cool_temperate|shelf|highland|larch_01;larch_02;larch_03||||||
+trees|gal:dirt_sandy_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|maple_01;maple_02||||||
+trees|gal:dirt_sandy_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|maple_sugar_01;maple_sugar_02||||||
+trees|gal:dirt_sandy_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|oak_01;oak_02;oak_03||||||
+trees|gal:dirt_sandy_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|oak_red_01;oak_red_02;oak_red_03||||||
+trees|gal:dirt_sandy_with_grass_cool_temperate|0.002|cool_temperate|shelf|highland|spruce_01;spruce_02;spruce_03;spruce_04||||||
+plants|gal:dirt_sandy_with_grass_cool_temperate|0.06|cool_temperate|beach|coastal|grass_1|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_cool_temperate|0.06|cool_temperate|beach|coastal|plant_heath_saxifrage_purple|nil|nil|nil|||
+# COOL TEMPERATE - DIRT SILTY||||||||||||
+trees|gal:dirt_silty_with_grass_cool_temperate|0.002|cool_temperate|beach|lowland|poplar_small_01;poplar_small_02;poplar_small_03;poplar_small_04;poplar_small_05||||||
+trees|gal:dirt_silty_with_grass_cool_temperate|0.002|cool_temperate|beach|coastal|willow_01;willow_02;willow_03||||||
+plants|gal:dirt_silty_with_grass_cool_temperate|0.06|cool_temperate|beach|highland|grass_1|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_cool_temperate|0.06|cool_temperate|beach|coastal|fern_broadleaf_fern;fern_broadleaf_fern2|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_cool_temperate|0.06|cool_temperate|beach|coastal|fern_ladyfern;fern_ladyfern2|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_cool_temperate|0.06|cool_temperate|beach|coastal|fern_fiddlehead|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_cool_temperate|0.06|cool_temperate|beach|coastal|mushroom_brown;mushroom_red|nil|nil|nil|||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# COOL SEMIARID||||||||||||
+# COOL SEMIARID OCEAN||||||||||||
+#||||||||||||
+# COOL SEMIARID BEACH||||||||||||
+#||||||||||||
+# COOL SEMIARID - DIRT||||||||||||
+trees|gal:dirt_with_grass_cool_semiarid|0.002|cool_semiarid|beach|coastal|pine_01;pine_02;pine_03||||||
+plants|gal:dirt_with_grass_cool_semiarid|0.01|cool_semiarid|beach|coastal|grass_dry_1|nil|nil|nil|||
+plants|gal:dirt_with_grass_cool_semiarid|0.01|cool_semiarid|beach|coastal|plant_heath_red|nil|nil|nil|||
+plants|gal:dirt_with_grass_cool_semiarid|0.01|cool_semiarid|beach|coastal|plant_heath_sandwort|nil|nil|nil|||
+# COOL SEMIARID - DIRT CLAYEY||||||||||||
+plants|gal:dirt_clayey_with_grass_cool_semiarid|0.01|cool_semiarid|beach|coastal|grass_dry_1|nil|nil|nil|||
+plants|gal:dirt_clayey_with_grass_cool_semiarid|0.01|cool_semiarid|shelf|highland|plant_heath_gold|nil|nil|nil|||
+# COOL SEMIARID - DIRT SANDY||||||||||||
+plants|gal:dirt_sandy_with_grass_cool_semiarid|0.01|cool_semiarid|beach|coastal|grass_dry_1|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_cool_semiarid|0.01|cool_semiarid|coastal|lowland|plant_heath_purple|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_cool_semiarid|0.01|cool_semiarid|beach|coastal|plant_heath_red|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_cool_semiarid|0.01|cool_semiarid|beach|coastal|plant_heath_sandwort|nil|nil|nil|||
+plants|gal:dirt_sandy_with_grass_cool_semiarid|0.01|cool_semiarid|beach|coastal|plant_heath_saxifrage_purple|nil|nil|nil|||
+# COOL SEMIARID - DIRT SILTY||||||||||||
+plants|gal:dirt_silty_with_grass_cool_semiarid|0.01|cool_semiarid|beach|coastal|grass_dry_1|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_cool_semiarid|0.01|cool_semiarid|lowland|shelf|plant_heath_green|nil|nil|nil|||
+plants|gal:dirt_silty_with_grass_cool_semiarid|0.01|cool_semiarid|beach|coastal|plant_heath_sandwort|nil|nil|nil|||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# COOL ARID||||||||||||
+# COOL ARID OCEAN||||||||||||
+#||||||||||||
+# COOL ARID BEACH||||||||||||
+#||||||||||||
+# COOL ARID - DESERT GRAVEL||||||||||||
+schem|gal:stone_desert_gravel|0.08|cool_arid|coastal|lowland|gal_geology.schem_rock_desert_02_01||||||
+schem|gal:stone_desert_gravel|0.08|cool_arid|coastal|lowland|gal_geology.schem_rock_desert_02_02||||||
+schem|gal:stone_desert_gravel|0.08|cool_arid|coastal|lowland|gal_geology.schem_rock_desert_02_03||||||
+schem|gal:stone_desert_gravel|0.08|cool_arid|coastal|lowland|gal_geology.schem_rock_desert_03_01||||||
+plants|gal:stone_desert_gravel|0.01|cool_arid|beach|coastal|grass_dry_1|gal:grass_dry_2|gal:grass_dry_3|gal:grass_dry_4|nil|nil|nil
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# COLD HUMID||||||||||||
+# COLD HUMID OCEAN||||||||||||
+#||||||||||||
+# COLD HUMID BEACH||||||||||||
+node|gal:dirt_with_snow|0.001|cold_humid_beach|1|beach|gal:shrub_snowy|nil|nil|nil|||
+node|gal:dirt_with_snow|0.01|cold_humid_beach|1|beach|gal:stone_brown|nil|nil|nil|||
+node|gal:dirt_with_snow|0.01|cold_humid_beach|2|beach|grass_snow_1;grass_snow_2;grass_snow_3;grass_snow_4;grass_snow_5|nil|nil|nil|||
+#||||||||||||
+# COLD HUMID - DIRT WITH SNOW||||||||||||
+trees|gal:dirt_with_snow|0.004|cold_humid|beach|coastal|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_with_snow|0.004|cold_humid|beach|coastal|fir_01;fir_02||||||
+trees|gal:dirt_with_snow|0.004|cold_humid|beach|coastal|larch_01;larch_02;larch_03||||||
+trees|gal:dirt_with_snow|0.004|cold_humid|beach|coastal|spruce_01;spruce_02;spruce_03;spruce_04||||||
+plants|gal:dirt_with_snow|0.01|cold_humid|beach|highland|grass_snow_1;grass_snow_2;grass_snow_3;grass_snow_4;grass_snow_5|nil|nil|nil|||
+plants|gal:dirt_with_snow|0.01|cold_humid|beach|lowland|shrub_snowy|nil|nil|nil|||
+plants|gal:dirt_with_snow|0.01|cold_humid|beach|shelf|shrub_taiga|nil|nil|nil|||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# COLD SEMIHUMID||||||||||||
+# COLD SEMIHUMID OCEAN||||||||||||
+#||||||||||||
+# COLD SEMIHUMID BEACH||||||||||||
+plants|gal:dirt_silty_with_snow|0.01|cold_semihumid_beach|1|beach|grass_snow_1;grass_snow_2;grass_snow_3;grass_snow_4;grass_snow_5|nil|nil|nil|||
+plants|gal:dirt_silty_with_snow|0.01|cold_semihumid_beach|1|beach|shrub_snowy|nil|nil|nil|||
+node|gal:dirt_silty_with_snow|0.01|cold_semihumid_beach|1|beach|gal:stone_brown|nil|nil|nil|||
+#||||||||||||
+# COLD SEMIHUMID - DIRT WITH SNOW||||||||||||
+node|gal:dirt_with_snow|0.001|cold_semihumid|beach|coastal|gal:stone_brown|nil|nil|nil|||
+trees|gal:dirt_with_snow|0.003|cold_semihumid|beach|coastal|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_with_snow|0.003|cold_semihumid|beach|coastal|fir_01;fir_02||||||
+trees|gal:dirt_with_snow|0.003|cold_semihumid|beach|coastal|larch_01;larch_02;larch_03||||||
+plants|gal:dirt_with_snow|0.01|cold_semihumid|beach|highland|grass_snow_1;grass_snow_2;grass_snow_3;grass_snow_4;grass_snow_5|nil|nil|nil|||
+plants|gal:dirt_with_snow|0.01|cold_semihumid|beach|coastal|plant_nettle_carduus|nil|nil|nil|||
+plants|gal:dirt_with_snow|0.001|cold_semihumid|beach|lowland|shrub_snowy|nil|nil|nil|||
+plants|gal:dirt_with_snow|0.001|cold_semihumid|beach|shelf|shrub_taiga|nil|nil|nil|||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# COLD TEMPERATE||||||||||||
+# COLD TEMPERATE OCEAN||||||||||||
+#||||||||||||
+# COLD TEMPERATE BEACH||||||||||||
+plants|gal:dirt_with_snow|0.01|cold_temperate_beach|1|beach|grass_snow_1;grass_snow_2;grass_snow_3;grass_snow_4;grass_snow_5|nil|nil|nil|||
+plants|gal:dirt_with_snow|0.01|cold_temperate_beach|1|beach|plant_nettle_carduus|nil|nil|nil|||
+node|gal:dirt_with_snow|0.005|cold_temperate_beach|1|beach|gal:stone_basalt_01|nil|nil|nil|||
+node|gal:dirt_with_snow|0.005|cold_temperate_beach|1|beach|gal:stone_gneiss_02|nil|nil|nil|||
+#||||||||||||
+# COLD TEMPERATE - DIRT WITH SNOW||||||||||||
+trees|gal:dirt_with_snow|0.002|cold_temperate|beach|coastal|conifers_01;conifers_02;conifers_03;conifers_04;conifers_05;conifers_06;conifers_07||||||
+trees|gal:dirt_with_snow|0.002|cold_temperate|beach|coastal|fir_01;fir_02||||||
+plants|gal:dirt_permafrost_with_snow|0.01|cold_temperate|beach|highland|grass_snow_1;grass_snow_2;grass_snow_3;grass_snow_4;grass_snow_5|nil|nil|nil|||
+plants|gal:dirt_permafrost_with_snow|0.005|cold_temperate|beach|coastal|mushroom_stone|nil|nil|nil|||
+plants|gal:dirt_permafrost_with_snow|0.01|cold_temperate|beach|coastal|plant_heath_saxifrage_purple|nil|nil|nil|||
+plants|gal:dirt_permafrost_with_snow|0.01|cold_temperate|beach|coastal|plant_nettle_carduus|nil|nil|nil|||
+plants|gal:dirt_permafrost_with_snow|0.01|cold_temperate|beach|lowland|shrub_snowy|nil|nil|nil|||
+plants|gal:dirt_permafrost_with_snow|0.01|cold_temperate|beach|shelf|shrub_taiga|nil|nil|nil|||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# COLD SEMIARID||||||||||||
+# COLD SEMIARID OCEAN||||||||||||
+#||||||||||||
+# COLD SEMIARID BEACH||||||||||||
+plants|gal:dirt_with_snow|0.005|cold_semiarid_beach|1|4|grass_snow_1;grass_snow_2;grass_snow_3;grass_snow_4;grass_snow_5|nil|nil|nil|||
+plants|gal:dirt_with_snow|0.005|cold_semiarid_beach|1|4|plant_nettle_carduus|nil|nil|nil|||
+#||||||||||||
+# COLD SEMIARID - DIRT PERMAFROST||||||||||||
+plants|gal:dirt_permafrost|0.01|cold_semiarid|beach|highland|grass_snow_1;grass_snow_2;grass_snow_3;grass_snow_4;grass_snow_5|nil|nil|nil|||
+plants|gal:dirt_permafrost|0.005|cold_semiarid|beach|shelf|mushroom_stone|nil|nil|nil|||
+plants|gal:dirt_permafrost|0.005|cold_semiarid|beach|highland|plant_heath_saxifrage_purple|nil|nil|nil|||
+plants|gal:dirt_permafrost|0.005|cold_semiarid|beach|highland|plant_nettle_carduus|nil|nil|nil|||
+plants|gal:dirt_permafrost|0.005|cold_semiarid|beach|lowland|shrub_snowy|nil|nil|nil|||
+#||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+# COLD ARID||||||||||||
+# COLD ARID OCEAN||||||||||||
+#||||||||||||
+# COLD ARID BEACH||||||||||||
+node|gal:dirt_with_snow|0.005|cold_arid_beach|1|4|gal:stone_basalt_01|nil|nil|nil|||
+node|gal:dirt_with_snow|0.005|cold_arid_beach|1|4|gal:stone_granite_01|nil|nil|nil|||
+#||||||||||||
+# COLD ARID - DIRT WITH SNOW||||||||||||
+node|gal:dirt_with_snow|0.005|cold_arid|beach|coastal|gal:stone_basalt_01|nil|nil|nil|||
+node|gal:dirt_permafrost|0.005|cold_arid|coastal|lowland|gal:stone_gabbro|nil|nil|nil|||
+node|gal:dirt_with_snow|0.005|cold_arid|beach|coastal|gal:stone_granite_01|nil|nil|nil|||
+plants|gal:dirt_with_snow|0.005|cold_arid|beach|coastal|mushroom_ground_fungus|nil|nil|nil|||
+plants|gal:dirt_with_snow|0.005|cold_arid|beach|coastal|mushroom_stone|nil|nil|nil|||
+#||||||||||||
+#||||||||||||
+#||||||||||||
+#||||||||||||
+#||||||||||||
+#||||||||||||
+#||||||||||||
+#||||||||||||
+#||||||||||||
+#||||||||||||
+#TEMPERATE RAINFOREST SWAMP||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+#water_schem|gal:liquid_water_source|0.05|temperate_humid_swamp|-2|2|gal:plant_waterlily_pink|1|nil|nil|||
+#water_schem|gal:liquid_water_source|0.05|temperate_humid_swamp|-2|2|gal:plant_waterlily_yellow|1|nil|nil|||
+plants|gal:liquid_water_source|0.05|temperate_humid_swamp|-2|2|gal:plant_waterlily_pink|1|nil|nil|||
+plants|gal:liquid_water_source|0.05|temperate_humid_swamp|-2|2|gal:plant_waterlily_yellow|1|nil|nil|||
+plants|gal:dirt_mud_01|0.08|temperate_humid_swamp|-1|1|plant_papyrus|3|gal:dirt_mud_01|1|||
+plants|gal:dirt_mud_01|0.1|temperate_humid_swamp|1|2|plant_nettle_impatiens|1|nil|nil|||
+plants|gal:dirt_mud_01|0.1|temperate_humid_swamp|2|4|grass_giant|1|nil|nil|||
+plants|gal:dirt_mud_01|0.1|temperate_humid_swamp|2|4|ground_grass|1|nil|nil|||
+plants|gal:dirt_mud_01|0.2|temperate_humid_swamp|-1|1|plant_papyrus|4|gal:liquid_water_source|1|||
+plants|gal:dirt_mud_01|0.2|temperate_humid_swamp|1|2|plant_cattail|1|nil|nil|||
+plants|gal:dirt_silt_01|0.08|temperate_humid_swamp|1|beach|grass_giant||||||
+plants|gal:dirt_silt_01|0.08|temperate_humid_swamp|1|beach|grass_swamp||||||
+#SUBTROPICAL RAINFOREST SWAMP||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+#water_schem|gal:dirt_mud_01|0.05|warm_humid_swamp|-2|2|schem_waterlily_pink||||||
+#water_schem|gal:dirt_mud_01|0.05|warm_humid_swamp|-2|2|schem_waterlily_yellow||||||
+plants|gal:liquid_water_source|0.05|warm_humid_swamp|-2|2|gal:plant_waterlily_pink|1|nil|nil|||
+plants|gal:liquid_water_source|0.05|warm_humid_swamp|-2|2|gal:plant_waterlily_yellow|1|nil|nil|||
+plants|gal:dirt_mud_01|0.1|warm_humid_swamp|1|2|plant_nettle_impatiens|1|nil|nil|||
+plants|gal:dirt_mud_01|0.1|warm_humid_swamp|2|4|grass_giant|1|nil|nil|||
+plants|gal:dirt_mud_01|0.1|warm_humid_swamp|2|4|ground_grass|1|nil|nil|||
+plants|gal:dirt_mud_01|0.2|warm_humid_swamp|-1|1|plant_papyrus|4|gal:liquid_water_source|1|||
+plants|gal:dirt_mud_01|0.2|warm_humid_swamp|1|2|plant_bulrush|1|nil|nil|||
+plants|gal:dirt_mud_01|0.2|warm_humid_swamp|1|2|plant_cattail|1|nil|nil|||
+#TROPICAL RAINFOREST SWAMP||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+#water_schem|gal:dirt_mud_01|0.05|hot_humid_swamp|-2|2|gal:plant_waterlily_pink||||||
+#water_schem|gal:dirt_mud_01|0.05|hot_humid_swamp|-2|2|gal:plant_waterlily_yellow||||||
+plants|gal:liquid_water_source|0.05|hot_humid_swamp|-2|2|plant_waterlily_pink|1|nil|nil|||
+plants|gal:liquid_water_source|0.05|hot_humid_swamp|beach_depth|beach|plant_waterlily_yellow|1|nil|nil|||
+plants|gal:dirt_mud_01|0.08|hot_humid_swamp|beach_depth|beach|plant_papyrus|3|gal:dirt_mud_01|1|||
+plants|gal:dirt_mud_01|0.1|hot_humid_swamp|beach_depth|beach|plant_nettle_impatiens|1|nil|nil|||
+plants|gal:dirt_mud_01|0.1|hot_humid_swamp|beach_depth|beach|grass_giant|1|nil|nil|||
+plants|gal:dirt_mud_01|0.1|hot_humid_swamp|beach_depth|beach|ground_grass|1|nil|nil|||
+plants|gal:dirt_mud_01|0.2|hot_humid_swamp|beach_depth|beach|plant_papyrus|4|gal:liquid_water_source|1|||
+plants|gal:dirt_mud_01|0.2|hot_humid_swamp|beach_depth|beach|plant_bulrush|1|nil|nil|||
+#water_node|gal:liquid_water_source|0.1|hot_humid_swamp|beach_depth|beach|gal:plant_waterlily_pink|4|nil|nil|||
+#water_node|gal:liquid_water_source|0.1|hot_humid_swamp|beach_depth|beach|gal:plant_waterlily_yellow|4|nil|nil|||
+#||||||||||||
+#||||||||||||
+#||||||||||||
+#||||||||||||
+#||||||||||||
+#||||||||||||
+#||||||||||||
+#||||||||||||
+#||||||||||||
+#||||||||||||
+#DECIDUOUS FOREST SWAMP||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+#trees|gal:liquid_water_source|0.05|deciduous_forest_swamp|0|1|plant_waterlily_pink|1|nil|nil|||
+#trees|gal:liquid_water_source|0.05|deciduous_forest_swamp|0|1|plant_waterlily_yellow|1|nil|nil|||
+#plants|gal:dirt_mud_01|0.08|deciduous_forest_swamp|-1|1|plant_papyrus|3|gal:dirt_mud_01|1|||
+#plants|gal:dirt_mud_01|0.1|deciduous_forest_swamp|1|2|plant_nettle_impatiens|1|nil|nil|||
+#plants|gal:dirt_mud_01|0.1|deciduous_forest_swamp|2|4|grass_giant|1|nil|nil|||
+#plants|gal:dirt_mud_01|0.1|deciduous_forest_swamp|2|4|ground_grass|1|nil|nil|||
+#plants|gal:dirt_mud_01|0.2|deciduous_forest_swamp|-1|1|plant_papyrus|4|gal:liquid_water_source|1|||
+#||||||||||||
+#||||||||||||
+#SUBTROPICAL RAINFOREST SWAMP||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+##water_schem|gal:dirt_mud_01|0.05|warm_humid|beach_depth|lowland|schem_waterlily_pink||||||
+##water_schem|gal:dirt_mud_01|0.05|warm_humid|beach_depth|lowland|schem_waterlily_yellow||||||
+#plants|gal:dirt_mud_01|0.1|warm_humid|beach_depth|lowland|plant_nettle_impatiens|1|nil|nil|||
+#plants|gal:dirt_mud_01|0.1|warm_humid|beach_depth|lowland|grass_giant|1|nil|nil|||
+#plants|gal:dirt_mud_01|0.1|warm_humid|beach_depth|lowland|ground_grass|1|nil|nil|||
+#plants|gal:dirt_mud_01|0.2|warm_humid|beach_depth|lowland|plant_papyrus|4|gal:liquid_water_source|1|||
+#plants|gal:dirt_mud_01|0.2|warm_humid|beach_depth|lowland|plant_bulrush|1|nil|nil|||
+#plants|gal:dirt_mud_01|0.2|warm_humid|beach_depth|lowland|plant_cattail|1|nil|nil|||
+#||||||||||||
+#||||||||||||
+#TROPICAL RAINFOREST SWAMP||||||||||||
+#Deco_Type|Place_On|FillRatio|Biome|Y_Min|Y_Max|Deco_Node|HeightMax|SpawnBy|NumSpawnBy|||
+##water_schem|gal:dirt_mud_01|0.05|hot_humid|beach_depth|lowland|gal:plant_waterlily_pink||||||
+##water_schem|gal:dirt_mud_01|0.05|hot_humid|beach_depth|lowland|gal:plant_waterlily_yellow||||||
+#plants|gal:liquid_water_source|0.05|hot_humid|beach_depth|lowland|plant_waterlily_pink|1|nil|nil|||
+#plants|gal:liquid_water_source|0.05|hot_humid|beach_depth|lowland|plant_waterlily_yellow|1|nil|nil|||
+#plants|gal:dirt_mud_01|0.08|hot_humid|beach_depth|lowland|plant_papyrus|3|gal:dirt_mud_01|1|||
+#plants|gal:dirt_mud_01|0.1|hot_humid|beach_depth|lowland|plant_nettle_impatiens|1|nil|nil|||
+#plants|gal:dirt_mud_01|0.1|hot_humid|beach_depth|lowland|grass_giant|1|nil|nil|||
+#plants|gal:dirt_mud_01|0.1|hot_humid|beach_depth|lowland|ground_grass|1|nil|nil|||
+#plants|gal:dirt_mud_01|0.2|hot_humid|beach_depth|lowland|plant_papyrus|4|gal:liquid_water_source|1|||
+#plants|gal:dirt_mud_01|0.2|hot_humid|beach_depth|lowland|plant_bulrush|1|nil|nil|||
+##water_node|gal:liquid_water_source|0.1|hot_humid|beach_depth|lowland|gal:plant_waterlily_pink|4|nil|nil|||
+##water_node|gal:liquid_water_source|0.1|hot_humid|beach_depth|lowland|gal:plant_waterlily_yellow|4|nil|nil|||
+#||||||||||||
