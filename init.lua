@@ -141,9 +141,9 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 	--minetest.set_mapgen_setting("seed", "16096304901732432682", true)
 	gal.mg_seed = minetest.get_mapgen_setting("seed")
 	minetest.set_mapgen_setting("mg_flags", "nocaves, nodungeons, light, decorations, biomes, ores", true)
-	if minetest.get_mapgen_setting("mg_name") == "v7" then
-		minetest.set_mapgen_setting("mgv7_spflags", "nomountains, noridges, nofloatlands, nocaverns", true)
-	end
+	--if minetest.get_mapgen_setting("mg_name") == "v7" then
+		--minetest.set_mapgen_setting("mgv7_spflags", "nomountains, noridges, nofloatlands, nocaverns", true)
+	--end
 
 --[[
 		--gal.mapgen_scale_factor = minetest.setting_get("gal_geology_mgv7_mapgen_scale_factor") or 8

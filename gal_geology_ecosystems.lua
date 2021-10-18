@@ -26,135 +26,135 @@ local function read_node_str(node_str)
 	end
 end
 
+if minetest.get_mapgen_setting("mg_name") == "v5" or minetest.get_mapgen_setting("mg_name") == "v7"
+	or minetest.get_mapgen_setting("mg_name") == "flat" or minetest.get_mapgen_setting("mg_name") == "fractal"
+	or minetest.get_mapgen_setting("mg_name") == "carpathian" or minetest.get_mapgen_setting("mg_name") == "valleys" then
 
---[[
-for i, ecosystem in ipairs(gal.lib.csv.read("|", gal.path .. "/" .. gal.ecosystem_data_file .. ".csv")) do
-	local oretype, orename, wherein, threshold, ymin, ymax, biome = unpack(ecosystem)
-	--minetest.log(oretype .. ", " .. orename .. ", " .. wherein .. ", " .. threshold .. ", " .. ymin .. ", " .. ymax .. ", " .. biome)
+	
+	for i, ecosystem in ipairs(gal.lib.csv.read("|", gal.path .. "/" .. gal.ecosystem_data_file .. ".csv")) do
+		local oretype, orename, wherein, threshold, ymin, ymax, biome = unpack(ecosystem)
+		--minetest.log(oretype .. ", " .. orename .. ", " .. wherein .. ", " .. threshold .. ", " .. ymin .. ", " .. ymax .. ", " .. biome)
 
-	-- Parse node names: transform empty strings into nil and separate node and count
-	--b = read_node_str(b)
-	--local c1, c2 = read_node_str(c)
+		-- Parse node names: transform empty strings into nil and separate node and count
+		--b = read_node_str(b)
+		--local c1, c2 = read_node_str(c)
 
-	local spread_val = 2^(tonumber(threshold) * 10)
-	----local ore_seed = math.random(1, spread_val)
-	--local ore_seed = tonumber(minetest.sha1(biome .. "_" .. orename))
-	local ore_seed = i
+		local spread_val = 2^(tonumber(threshold) * 10)
+		----local ore_seed = math.random(1, spread_val)
+		--local ore_seed = tonumber(minetest.sha1(biome .. "_" .. orename))
+		local ore_seed = i
 
-	--gal.add_oredef(orename, ore_seed)
+		--gal.add_oredef(orename, ore_seed)
 
-	if oretype == "dirt" then
-		minetest.register_ore({
-			ore_type = "sheet",
-			ore = "gal:" .. orename,
-			wherein = "gal:" .. wherein,
-			clust_size = 8,
-			y_min = tonumber(ymin) or (heights[ymin] - gal.mapgen.biome_vertical_blend),
-			y_max = tonumber(ymax) or (heights[ymax] + gal.mapgen.biome_vertical_blend),
-			noise_threshold = tonumber(threshold),
-			noise_params = {
-				offset = 0,
-				scale = 1,
-				spread = {x = 128, y = 128, z = 128},
-				seed = ore_seed,
-				octaves = 5,
-				persist = 0.60
-			},
-			column_height_min = (gal.mapgen.biome_vertical_range / 2) + gal.mapgen.biome_vertical_blend,  --1
-			column_height_max = gal.mapgen.biome_vertical_range + (gal.mapgen.biome_vertical_blend * 2),
-			column_midpoint_factor = 0.5,
-	 		biomes = biome or nil
-		})
-	elseif oretype == "fungi" then
-		minetest.register_ore({
-			ore_type = "sheet",
-			ore = "gal:" .. orename,
-			wherein = "gal:" .. wherein,
-			clust_size = (tonumber(threshold) * 10),
-			y_min = tonumber(ymin),
-			y_max = tonumber(ymax),
-			noise_threshold = tonumber(threshold),
-			noise_params = {
-				offset = 0,
-				scale = 1,
-				spread = {x = spread_val, y = spread_val, z = spread_val},
-				seed = ore_seed,
-				octaves = 5,
-				persist = 0.60
-			},
-		        column_height_min = 1,
-		        column_height_max = gal.mapgen.biome_vertical_range,
-		        column_midpoint_factor = 0.5,
-	 		biomes = biome or nil
-		})
-	elseif oretype == "blob" then
+		if oretype == "dirt" then
+			minetest.register_ore({
+				ore_type = "sheet",
+				ore = "gal:" .. orename,
+				wherein = "gal:" .. wherein,
+				clust_size = 8,
+				y_min = tonumber(ymin) or (heights[ymin] - gal.mapgen.biome_vertical_blend),
+				y_max = tonumber(ymax) or (heights[ymax] + gal.mapgen.biome_vertical_blend),
+				noise_threshold = tonumber(threshold),
+				noise_params = {
+					offset = 0,
+					scale = 1,
+					spread = {x = 128, y = 128, z = 128},
+					seed = ore_seed,
+					octaves = 5,
+					persist = 0.60
+				},
+				column_height_min = (gal.mapgen.biome_vertical_range / 2) + gal.mapgen.biome_vertical_blend,  --1
+				column_height_max = gal.mapgen.biome_vertical_range + (gal.mapgen.biome_vertical_blend * 2),
+				column_midpoint_factor = 0.5,
+				biomes = biome or nil
+			})
+		elseif oretype == "fungi" then
+			minetest.register_ore({
+				ore_type = "sheet",
+				ore = "gal:" .. orename,
+				wherein = "gal:" .. wherein,
+				clust_size = (tonumber(threshold) * 10),
+				y_min = tonumber(ymin),
+				y_max = tonumber(ymax),
+				noise_threshold = tonumber(threshold),
+				noise_params = {
+					offset = 0,
+					scale = 1,
+					spread = {x = spread_val, y = spread_val, z = spread_val},
+					seed = ore_seed,
+					octaves = 5,
+					persist = 0.60
+				},
+					column_height_min = 1,
+					column_height_max = gal.mapgen.biome_vertical_range,
+					column_midpoint_factor = 0.5,
+				biomes = biome or nil
+			})
+		elseif oretype == "blob" then
 
-		minetest.register_ore({
-			ore_type = "sheet",
-			ore = "gal:" .. orename,
-			wherein = "gal:" .. wherein,
-			clust_size = 8,
-			y_min = tonumber(ymin) or (heights[ymin] - gal.mapgen.biome_vertical_blend),
-			y_max = tonumber(ymax) or (heights[ymax] + gal.mapgen.biome_vertical_blend),
-			noise_threshold = tonumber(threshold),
-			noise_params = {
-				offset = 0,
-				scale = 1,
-				spread = {x = 128, y = 128, z = 128},
-				seed = ore_seed,
-				octaves = 5,
-				persist = 0.60
-			},
-			column_height_min = (gal.mapgen.biome_vertical_range / 2) + gal.mapgen.biome_vertical_blend,  --1
-			column_height_max = gal.mapgen.biome_vertical_range + (gal.mapgen.biome_vertical_blend * 2),
-			column_midpoint_factor = 0.5,
-	 		biomes = biome or nil
-		})
+			minetest.register_ore({
+				ore_type = "sheet",
+				ore = "gal:" .. orename,
+				wherein = "gal:" .. wherein,
+				clust_size = 8,
+				y_min = tonumber(ymin) or (heights[ymin] - gal.mapgen.biome_vertical_blend),
+				y_max = tonumber(ymax) or (heights[ymax] + gal.mapgen.biome_vertical_blend),
+				noise_threshold = tonumber(threshold),
+				noise_params = {
+					offset = 0,
+					scale = 1,
+					spread = {x = 128, y = 128, z = 128},
+					seed = ore_seed,
+					octaves = 5,
+					persist = 0.60
+				},
+				column_height_min = (gal.mapgen.biome_vertical_range / 2) + gal.mapgen.biome_vertical_blend,  --1
+				column_height_max = gal.mapgen.biome_vertical_range + (gal.mapgen.biome_vertical_blend * 2),
+				column_midpoint_factor = 0.5,
+				biomes = biome or nil
+			})
 
---
-		-- minetest.register_ore({
-			-- ore_type         = "blob",
-			-- ore              = "gal:" .. orename,
-			-- wherein          = "gal:" .. wherein,
-			-- --clust_scarcity   = 4 * 4 * 4,
-			-- clust_scarcity   = (tonumber(threshold) * 10) * (tonumber(threshold) * 10) * (tonumber(threshold) * 10),
-			-- --clust_num_ores = 8,
-			-- clust_num_ores = 128,
-			-- --clust_size       = 6,
-			-- clust_size       = (tonumber(threshold) * 10),
-			-- y_min = tonumber(ymin),
-			-- y_max = tonumber(ymax),
-			-- noise_params     = {
-				-- offset = 0,
-				-- scale = 1,
-				-- spread = {x = 128, y = 128, z = 128},
-				-- seed = ore_seed,
-				-- octaves = 5,
-				-- persist = 0.60
-				-- -- offset = 0.35,
-				-- -- scale = 0.2,
-				-- -- --spread = {x = 5, y = 5, z = 5},
-				-- -- spread = {x = spread_val, y = spread_val, z = spread_val},
-				-- -- --seed = -316,
-				-- -- seed = ore_seed,
-				-- -- octaves = 1,
-				-- -- persist = 0.5
-			-- },
-			-- biomes = biome or nil,
-			-- random_factor = 1.0
-		-- })
---
+	--
+			-- minetest.register_ore({
+				-- ore_type         = "blob",
+				-- ore              = "gal:" .. orename,
+				-- wherein          = "gal:" .. wherein,
+				-- --clust_scarcity   = 4 * 4 * 4,
+				-- clust_scarcity   = (tonumber(threshold) * 10) * (tonumber(threshold) * 10) * (tonumber(threshold) * 10),
+				-- --clust_num_ores = 8,
+				-- clust_num_ores = 128,
+				-- --clust_size       = 6,
+				-- clust_size       = (tonumber(threshold) * 10),
+				-- y_min = tonumber(ymin),
+				-- y_max = tonumber(ymax),
+				-- noise_params     = {
+					-- offset = 0,
+					-- scale = 1,
+					-- spread = {x = 128, y = 128, z = 128},
+					-- seed = ore_seed,
+					-- octaves = 5,
+					-- persist = 0.60
+					-- -- offset = 0.35,
+					-- -- scale = 0.2,
+					-- -- --spread = {x = 5, y = 5, z = 5},
+					-- -- spread = {x = spread_val, y = spread_val, z = spread_val},
+					-- -- --seed = -316,
+					-- -- seed = ore_seed,
+					-- -- octaves = 1,
+					-- -- persist = 0.5
+				-- },
+				-- biomes = biome or nil,
+				-- random_factor = 1.0
+			-- })
+	--
 
-	elseif oretype == "" then
+		elseif oretype == "" then
 
-	else
+		else
 
+		end
 	end
-
 end
---]]
-
-
 
 local biome_list = {
 	"hot_humid",
@@ -675,7 +675,7 @@ for b, bdef in pairs(eco_list) do
 		gal.ecosystems[b][e].river			= minetest.get_content_id("" .. edef.river .. "")
 		
 		--print(edef.name)
-		minetest.log(b .. ", " .. e)
+		--minetest.log(b .. ", " .. e)
 		
 	end
 end

@@ -58,6 +58,31 @@ for i, biome in ipairs(gal.lib.csv.read("|", gal.path .. "/" .. gal.biome_data_f
 --	g = read_node_str(g)
 --	h = read_node_str(h)
 
+	a = read_node_str(a)
+	b = read_node_str(b)
+	c = read_node_str(c)
+	d = read_node_str(d)
+	e = read_node_str(e)
+	f = read_node_str(f)
+	g = read_node_str(g)
+	h = read_node_str(h)
+	i = read_node_str(i)
+	j = read_node_str(j)
+	k = read_node_str(k)
+	l = read_node_str(l)
+	m = read_node_str(m)
+	n = read_node_str(n)
+	o = read_node_str(o)
+	p = read_node_str(p)
+	q = read_node_str(q)
+	r = read_node_str(r)
+	s = read_node_str(s)
+	t = read_node_str(t)
+	u = read_node_str(u)
+	v = read_node_str(v)
+	w = read_node_str(w)
+	x = read_node_str(x)
+
 	minetest.register_biome({
 		name = a,
 		node_dust = b or nil,
