@@ -487,6 +487,9 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/" .. gal.nodes_data_f
 
 	if alpha ~= "" then
 		--new_node_def.alpha = tonumber(alpha)
+		if string.lower(alpha) == "true" then
+			new_node_def.use_texture_alpha = "blend"
+		end
 	end
 
 	if sun_prop ~= "" then
@@ -1056,49 +1059,6 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/" .. gal.nodes_data_f
 				--end
 			end
 		end
---
-		-- for _, t in pairs(temperatures) do
-			-- for _, h in pairs(humidities) do
-				-- --for _, e in pairs(elevations) do
-				-- for _, g in pairs(grass_types) do
-	
-					-- --local id = node_name .. "_with_grass_" .. t .. "_" .. h .. "_" .. e
-					-- local id = node_name .. "_with_grass_" .. t .. "_" .. h
-	
-					-- local new_cloned_node = table.copy(minetest.registered_nodes["gal:"..node_name..""])
-					-- --local new_cloned_node = new_node_def
-			
-					-- --new_cloned_node.description = descript .. " with Grass (" .. t .. "_" .. h .. "_" .. e .. ")"
-					-- new_cloned_node.description = descript .. " with Grass (" .. t .. "_" .. h .. ") (color)"
-
-					-- new_cloned_node.tiles = {
-						-- textures[g][1] .. "^[colorize:" .. palettes1_default[t .. "_" .. h],
-						-- new_tile1,
-						-- new_tile1 .. "^(" .. textures[g][2] .. "^[colorize:" .. palettes1_default[t .. "_" .. h] .. ")"
-					-- }
-					-- new_cloned_node.soil = {
-						-- base = id,
-						-- dry = "gal:"..node_name.."_with_soil",
-						-- wet = "gal:"..node_name.."_with_soil_wet"
-					-- }
-					-- new_cloned_node.groups["not_in_creative_inventory"] = 1
-			
-					-- --minetest.register_node("gal:" .. id .. "", new_cloned_node)
-					-- gal.lib.node.register_to_game(""..id .. "_color", new_cloned_node)
-					-- --minetest.register_alias(id, "gal:"..id.."")
-
-					-- ----gal.lib.naturalslopes.register_slope("gal:"..id.."", {
-					-- --naturalslopeslib.register_slope("gal:"..id.."", {
-					-- --	description = S(""..descript.." Slope"),
-					-- --	},
-					-- --	100
-					-- --)
-
-				-- end
-				-- --end
-			-- end
-		-- end
---
 
 		if gal.color_grass_reg == "true" then
 			for _, g in pairs(grasses) do
@@ -1150,127 +1110,86 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/" .. gal.nodes_data_f
 		gal.lib.node.register_to_game(""..node_name.."", new_node_def)
 		--minetest.register_alias(""..node_name.."", "gal:"..node_name.."")
 
-		--if string.find(node_name, "stone") or string.find(node_name, "dirt") or string.find(node_name, "clay") or string.find(node_name, "sand") or string.find(node_name, "clay") then
-		--	--gal.lib.naturalslopes.register_slope("gal:"..node_name.."", {
-		--	naturalslopeslib.register_slope("gal:"..node_name.."", {
+		if gal.enable_lib_shapes then
+			if node_name == "stone" or node_name == "stone_block" or node_name == "stone_brick" or node_name == "stone_cobble" or node_name == "stone_cobble_mossy" or node_name == "stone_rockwall" then
+				gal.lib.shapes.register_basic_set(""..node_name.."")
+				--gal.lib.shapes.register_node(""..node_name.."", "stairs")
+				--gal.lib.shapes.register_node(""..node_name.."", "stairs_inner")
+				--gal.lib.shapes.register_node(""..node_name.."", "stairs_outer")
+				--gal.lib.shapes.register_node(""..node_name.."", "slab")
+			elseif node_name == "stone_desert" or node_name == "stone_desert_block" or node_name == "stone_desert_brick" or node_name == "stone_desert_cobble" or node_name == "stone_desert_rockwall" then
+				gal.lib.shapes.register_basic_set(""..node_name.."")
+			elseif node_name == "stone_sandstone" or node_name == "stone_sandstone_block" or node_name == "stone_sandstone_brick" or node_name == "stone_sandstone_cobble" then
+				gal.lib.shapes.register_basic_set(""..node_name.."")
+			elseif node_name == "stone_sandstone_desert" or node_name == "stone_sandstone_desert_block" or node_name == "stone_sandstone_desert_brick" or node_name == "stone_sandstone_desert_cobble" then
+				gal.lib.shapes.register_basic_set(""..node_name.."")
+			elseif node_name == "stone_sandstone_silver" or node_name == "stone_sandstone_silver_block" or node_name == "stone_sandstone_silver_brick" or node_name == "stone_sandstone_silver_cobble" then
+				gal.lib.shapes.register_basic_set(""..node_name.."")
+			elseif node_name == "stone_obsidian" or node_name == "stone_obsidian_block" or node_name == "stone_obsidian_brick" then
+				gal.lib.shapes.register_basic_set(""..node_name.."")
+			elseif not string.find(node_name, "gravel") then
+				if string.find(node_name, "basalt_01") or string.find(node_name, "bluestone_basalt") or string.find(node_name, "claystone_02") or string.find(node_name, "concrete") then
+					gal.lib.shapes.register_basic_set(""..node_name.."")
+				elseif string.find(node_name, "conglomerate_02") or string.find(node_name, "gneiss_01") or string.find(node_name, "limestone_03") or string.find(node_name, "limestone_coquina") then
+					gal.lib.shapes.register_basic_set(""..node_name.."")
+				elseif string.find(node_name, "pounamu") or string.find(node_name, "rhyolitic_tuff") or string.find(node_name, "sandstone_desert_stone") or string.find(node_name, "sandstone_old_red") then
+					gal.lib.shapes.register_basic_set(""..node_name.."")
+				elseif string.find(node_name, "sandstone_white") or string.find(node_name, "schist_02") or string.find(node_name, "stone_sea") or string.find(node_name, "siltstone") then
+					gal.lib.shapes.register_basic_set(""..node_name.."")
+				elseif string.find(node_name, "slate_01") or string.find(node_name, "tuff") or string.find(node_name, "whitestone") then
+					gal.lib.shapes.register_basic_set(""..node_name.."")
+				end
+			end
 
-		--		--description = S("Stone Slope"),
-		--		description = S(""..descript.." Slope"),
-		--				--new_node_def.description = S(""..descript.."")
-		--		},
-		--		100
-		--	)
-		--end
+			if string.find(node_name, "mineral_") then
+
+				gal.lib.shapes.register_basic_set(""..node_name.."")
+
+				gal.lib.shapes.register_node(""..node_name.."", "pane")
+				gal.lib.shapes.register_node(""..node_name.."", "pane_centered")
+				gal.lib.shapes.register_node(""..node_name.."", "pane_pillar")
+				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered")
+				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_right")
+				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_with_window")
+				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_with_window_right")
+				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_sliding")
+				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_sliding_right")
+
+			end
+
+			if string.find(node_name, "metal_iron_rusted_block") or string.find(node_name, "metal_rusty_block") or string.find(node_name, "metal_iron_cast_block2") or string.find(node_name, "metal_steel_black_block") then
+
+				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_jail")
+				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_jail_right")
 		
-		if node_name == "stone" or node_name == "stone_block" or node_name == "stone_brick" or node_name == "stone_cobble" or node_name == "stone_cobble_mossy" or node_name == "stone_rockwall" then
-			gal.lib.shapes.register_basic_set(""..node_name.."")
-			--gal.lib.shapes.register_node(""..node_name.."", "stairs")
-			--gal.lib.shapes.register_node(""..node_name.."", "stairs_inner")
-			--gal.lib.shapes.register_node(""..node_name.."", "stairs_outer")
-			--gal.lib.shapes.register_node(""..node_name.."", "slab")
-		elseif node_name == "stone_desert" or node_name == "stone_desert_block" or node_name == "stone_desert_brick" or node_name == "stone_desert_cobble" or node_name == "stone_desert_rockwall" then
-			gal.lib.shapes.register_basic_set(""..node_name.."")
-			--gal.lib.shapes.register_node(""..node_name.."", "stairs")
-			--gal.lib.shapes.register_node(""..node_name.."", "stairs_inner")
-			--gal.lib.shapes.register_node(""..node_name.."", "stairs_outer")
-			--gal.lib.shapes.register_node(""..node_name.."", "slab")
-			--gal.lib.shapes.register_node(""..node_name.."", "wall_centered")
-		elseif node_name == "stone_sandstone" or node_name == "stone_sandstone_block" or node_name == "stone_sandstone_brick" or node_name == "stone_sandstone_cobble" then
-			gal.lib.shapes.register_basic_set(""..node_name.."")
-			--gal.lib.shapes.register_node(""..node_name.."", "stairs")
-			--gal.lib.shapes.register_node(""..node_name.."", "stairs_inner")
-			--gal.lib.shapes.register_node(""..node_name.."", "stairs_outer")
-			--gal.lib.shapes.register_node(""..node_name.."", "slab")
-			--gal.lib.shapes.register_node(""..node_name.."", "wall_centered")
-		elseif node_name == "stone_sandstone_desert" or node_name == "stone_sandstone_desert_block" or node_name == "stone_sandstone_desert_brick" or node_name == "stone_sandstone_desert_cobble" then
-			gal.lib.shapes.register_basic_set(""..node_name.."")
-			--gal.lib.shapes.register_node(""..node_name.."", "stairs")
-			--gal.lib.shapes.register_node(""..node_name.."", "stairs_inner")
-			--gal.lib.shapes.register_node(""..node_name.."", "stairs_outer")
-			--gal.lib.shapes.register_node(""..node_name.."", "slab")
-			--gal.lib.shapes.register_node(""..node_name.."", "wall_centered")
-		elseif node_name == "stone_sandstone_silver" or node_name == "stone_sandstone_silver_block" or node_name == "stone_sandstone_silver_brick" or node_name == "stone_sandstone_silver_cobble" then
-			gal.lib.shapes.register_basic_set(""..node_name.."")
-			--gal.lib.shapes.register_node(""..node_name.."", "stairs")
-			--gal.lib.shapes.register_node(""..node_name.."", "stairs_inner")
-			--gal.lib.shapes.register_node(""..node_name.."", "stairs_outer")
-			--gal.lib.shapes.register_node(""..node_name.."", "slab")
-			--gal.lib.shapes.register_node(""..node_name.."", "wall_centered")
-		elseif node_name == "stone_obsidian" or node_name == "stone_obsidian_block" or node_name == "stone_obsidian_brick" then
-			gal.lib.shapes.register_basic_set(""..node_name.."")
-			--gal.lib.shapes.register_node(""..node_name.."", "stairs")
-			--gal.lib.shapes.register_node(""..node_name.."", "stairs_inner")
-			--gal.lib.shapes.register_node(""..node_name.."", "stairs_outer")
-			--gal.lib.shapes.register_node(""..node_name.."", "slab")
-			--gal.lib.shapes.register_node(""..node_name.."", "wall_centered")
-		elseif not string.find(node_name, "gravel") then
-			if string.find(node_name, "basalt_01") or string.find(node_name, "bluestone_basalt") or string.find(node_name, "claystone_02") or string.find(node_name, "concrete") then
+
+			end
+
+			if string.find(node_name, "_roof_tile") then
+				gal.lib.shapes.register_node(""..node_name.."", "roof")
+				gal.lib.shapes.register_node(""..node_name.."", "stairs")
+				gal.lib.shapes.register_node(""..node_name.."", "stairs_inner")
+				gal.lib.shapes.register_node(""..node_name.."", "stairs_outer")
+				gal.lib.shapes.register_node(""..node_name.."", "slab")
+			end
+
+			if string.find(node_name, "glass") then
 				gal.lib.shapes.register_basic_set(""..node_name.."")
-			elseif string.find(node_name, "conglomerate_02") or string.find(node_name, "gneiss_01") or string.find(node_name, "limestone_03") or string.find(node_name, "limestone_coquina") then
-				gal.lib.shapes.register_basic_set(""..node_name.."")
-			elseif string.find(node_name, "pounamu") or string.find(node_name, "rhyolitic_tuff") or string.find(node_name, "sandstone_desert_stone") or string.find(node_name, "sandstone_old_red") then
-				gal.lib.shapes.register_basic_set(""..node_name.."")
-			elseif string.find(node_name, "sandstone_white") or string.find(node_name, "schist_02") or string.find(node_name, "stone_sea") or string.find(node_name, "siltstone") then
-				gal.lib.shapes.register_basic_set(""..node_name.."")
-			elseif string.find(node_name, "slate_01") or string.find(node_name, "tuff") or string.find(node_name, "whitestone") then
-				gal.lib.shapes.register_basic_set(""..node_name.."")
+
+				gal.lib.shapes.register_node(""..node_name.."", "pane")
+				gal.lib.shapes.register_node(""..node_name.."", "pane_centered")
+				gal.lib.shapes.register_node(""..node_name.."", "pane_pillar")
+				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered")
+				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_right")
+				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_with_window")
+				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_with_window_right")
+				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_sliding")
+				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_sliding_right")
+				gal.lib.shapes.register_door_node(""..node_name.."", "trapdoor_solid")
+				gal.lib.shapes.register_door_node(""..node_name.."", "trapdoor_with_window")
+
 			end
 		end
-
-		if string.find(node_name, "mineral_") then
-
-			gal.lib.shapes.register_basic_set(""..node_name.."")
-
-			gal.lib.shapes.register_node(""..node_name.."", "pane")
-			gal.lib.shapes.register_node(""..node_name.."", "pane_centered")
-			gal.lib.shapes.register_node(""..node_name.."", "pane_pillar")
-			gal.lib.shapes.register_door_node(""..node_name.."", "door_centered")
-			gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_right")
-			gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_with_window")
-			gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_with_window_right")
-			gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_sliding")
-			gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_sliding_right")
-
-		end
-
-		if string.find(node_name, "metal_iron_rusted_block") or string.find(node_name, "metal_rusty_block") or string.find(node_name, "metal_iron_cast_block2") or string.find(node_name, "metal_steel_black_block") then
-
-			gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_jail")
-			gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_jail_right")
-	
-
-		end
-
-		if string.find(node_name, "_roof_tile") then
-			gal.lib.shapes.register_node(""..node_name.."", "roof")
-			gal.lib.shapes.register_node(""..node_name.."", "stairs")
-			gal.lib.shapes.register_node(""..node_name.."", "stairs_inner")
-			gal.lib.shapes.register_node(""..node_name.."", "stairs_outer")
-			gal.lib.shapes.register_node(""..node_name.."", "slab")
-		end
-
-		if string.find(node_name, "glass") then
-			gal.lib.shapes.register_basic_set(""..node_name.."")
-
-			gal.lib.shapes.register_node(""..node_name.."", "pane")
-			gal.lib.shapes.register_node(""..node_name.."", "pane_centered")
-			gal.lib.shapes.register_node(""..node_name.."", "pane_pillar")
-			gal.lib.shapes.register_door_node(""..node_name.."", "door_centered")
-			gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_right")
-			gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_with_window")
-			gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_with_window_right")
-			gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_sliding")
-			gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_sliding_right")
-			gal.lib.shapes.register_door_node(""..node_name.."", "trapdoor_solid")
-			gal.lib.shapes.register_door_node(""..node_name.."", "trapdoor_with_window")
-
-		end
-
-		--if string.find(node_name, "dirt") or string.find(node_name, "sand") then
-		--if node_name == "dirt" or node_name == "sand" then
-		--	gal.lib.shapes.register_slope_set(""..node_name.."")
-		--end
---
 	end
 end
 

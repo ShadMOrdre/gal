@@ -133,10 +133,13 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/gal_ecology_plants_no
 
 	if use_alpha ~= "" then
 		if string.lower(use_alpha) == "true" then
-			--new_node_def.use_texture_alpha = true
 			new_node_def.use_texture_alpha = "clip"
-		--else
-		--	new_node_def.use_texture_alpha = false
+		end
+		if string.lower(use_alpha) == "blend" then
+			new_node_def.use_texture_alpha = "blend"
+		end
+		if string.lower(use_alpha) == "clip" then
+			new_node_def.use_texture_alpha = "clip"
 		end
 	end
 
@@ -800,31 +803,32 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/gal_ecology_plants_no
 
 
 --##REGISTER SHAPES
-	if (string.find(node_name, "item_")) and (not (string.find(node_name, "_bale") or string.find(node_name, "_mat"))) then
-		if string.find(node_name, "reed") or string.find(node_name, "reet") or string.find(node_name, "hay") or string.find(node_name, "straw") then
+	if gal.enable_lib_shapes then
+		if (string.find(node_name, "item_")) and (not (string.find(node_name, "_bale") or string.find(node_name, "_mat"))) then
+			if string.find(node_name, "reed") or string.find(node_name, "reet") or string.find(node_name, "hay") or string.find(node_name, "straw") then
 
-			gal.lib.shapes.register_door_node(""..node_name.."", "door_centered")
-			gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_right")
-			gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_with_window")
-			gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_with_window_right")
-			gal.lib.shapes.register_door_node(""..node_name.."", "trapdoor_solid")
-			gal.lib.shapes.register_door_node(""..node_name.."", "trapdoor_with_window")
-			gal.lib.shapes.register_node(""..node_name.."", "roof")
-			gal.lib.shapes.register_node(""..node_name.."", "roof_corner")
-			gal.lib.shapes.register_node(""..node_name.."", "stairs")
-			gal.lib.shapes.register_node(""..node_name.."", "stairs_inner")
-			gal.lib.shapes.register_node(""..node_name.."", "stairs_outer")
-			gal.lib.shapes.register_node(""..node_name.."", "slab")
-			--gal.lib.shapes.register_node(""..node_name.."", "step")
-			--gal.lib.shapes.register_node(""..node_name.."", "ceiling")
-			gal.lib.shapes.register_node(""..node_name.."", "pane")
-			gal.lib.shapes.register_node(""..node_name.."", "pane_centered")
-			gal.lib.shapes.register_node(""..node_name.."", "wall")
-			--gal.lib.shapes.register_node(""..node_name.."", "wall_centered")
+				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered")
+				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_right")
+				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_with_window")
+				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_with_window_right")
+				gal.lib.shapes.register_door_node(""..node_name.."", "trapdoor_solid")
+				gal.lib.shapes.register_door_node(""..node_name.."", "trapdoor_with_window")
+				gal.lib.shapes.register_node(""..node_name.."", "roof")
+				gal.lib.shapes.register_node(""..node_name.."", "roof_corner")
+				gal.lib.shapes.register_node(""..node_name.."", "stairs")
+				gal.lib.shapes.register_node(""..node_name.."", "stairs_inner")
+				gal.lib.shapes.register_node(""..node_name.."", "stairs_outer")
+				gal.lib.shapes.register_node(""..node_name.."", "slab")
+				--gal.lib.shapes.register_node(""..node_name.."", "step")
+				--gal.lib.shapes.register_node(""..node_name.."", "ceiling")
+				gal.lib.shapes.register_node(""..node_name.."", "pane")
+				gal.lib.shapes.register_node(""..node_name.."", "pane_centered")
+				gal.lib.shapes.register_node(""..node_name.."", "wall")
+				--gal.lib.shapes.register_node(""..node_name.."", "wall_centered")
 
+			end
 		end
 	end
-
 
 end
 

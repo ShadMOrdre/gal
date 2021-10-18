@@ -17,8 +17,8 @@ gal.mapgen.mg_seed = minetest.get_mapgen_setting("seed")
 
 --## Valid choices are:
 --## mg_vflat, mg_v6, mg_v7, mg_v67noises, mg_v3d, mg_valleys2d, mg_valleys3d, mg_continental, mg_voronoi, mg_mapgenrivers, mg_vor_dia_sq, mg_stability, mg_noisegrid
-gal.mapgen.name = "mg_test"
-gal.mapgen.natural_slopes = true
+--gal.mapgen.name = "mg_test"
+--gal.mapgen.natural_slopes = true
 
 gal.mapgen.rivergen = {}
 
@@ -60,11 +60,13 @@ gal.mapgen.chunk_voronoi_cells = nil
 
 
 --gal.mapgen.mg_world_scale = 0.01667
-gal.mapgen.mg_world_scale = 1
+--gal.mapgen.mg_world_scale = 1
+gal.mapgen.mg_world_scale = gal.settings.mg_world_scale
 gal.mapgen.mg_world_scale_inverse = 0.001 / gal.mapgen.mg_world_scale
 gal.mapgen.mg_half_chunk_size = 40
 gal.mapgen.mg_map_size = 60000
 
+--[[
 if gal.mapgen.name == "mg_voronoi" or gal.mapgen.name == "mg_vor_dia_sq" then
 	gal.lib.voronoi.world_scale = gal.mapgen.mg_world_scale
 	gal.lib.voronoi.file2d = "" .. gal.path_world .. "/" .. "2d_data_points.txt"
@@ -76,19 +78,21 @@ if gal.mapgen.name == "mg_voronoi" or gal.mapgen.name == "mg_vor_dia_sq" then
 	--gal.lib.voronoi.load_neighbors()
 	--gal.lib.voronoi.load_edgemap()
 end
-
+--]]
+--[[
 if gal.mapgen.name == "mg_v7" or  gal.mapgen.name == "mg_continental" then
 	gal.lib.voronoi.world_scale = gal.mapgen.mg_world_scale
 	gal.mapgen.distance_metric = "cm"
 	gal.lib.voronoi.distance_metric = gal.mapgen.distance_metric
 	gal.lib.metrics.set_dist_func(gal.lib.voronoi.distance_metric)
 end
+--]]
 
-
-gal.mapgen.mg_base_height = 300 * gal.mapgen.mg_world_scale
+--gal.mapgen.mg_base_height = 300 * gal.mapgen.mg_world_scale
+gal.mapgen.mg_base_height = gal.settings.mg_base_height * gal.mapgen.mg_world_scale
 gal.mapgen.water_level = (1 * gal.mapgen.mg_world_scale)
 
-gal.mapgen.mgv7_mapgen_scale_factor =  8
+--gal.mapgen.mgv7_mapgen_scale_factor =  8
 --gal.mapgen.biome_vertical_range =  35 * gal.mapgen.mg_world_scale
 --gal.mapgen.biome_vertical_range =  (gal.mapgen.mg_base_height / 6) * gal.mapgen.mg_world_scale
 gal.mapgen.biome_vertical_range =  (gal.mapgen.mg_base_height / 6)

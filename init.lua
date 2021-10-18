@@ -17,38 +17,34 @@ gal.path_mod = minetest.get_modpath(minetest.get_current_modname())
 gal.path_world = minetest.get_worldpath()
 gal.path = gal.path_mod
 
---gal.intllib = gal.intllib
---gal.intllib = minetest.get_translator("gal")
-
---local S = gal.intllib
-
 
 -- Intllib
-local S
-local NS
---if minetest.get_modpath("intllib") then
---	S = intllib.Getter()
---else
-	S, NS = dofile(gal.path_mod.."/intllib.lua")
---end
+local S, NS = dofile(gal.path_mod.."/intllib.lua")
 gal.intllib = S
+--gal.intllib = minetest.get_translator("gal")
 
+minetest.log(S("[MOD] gal:  Loading..."))
+minetest.log(S("[MOD] gal:  Version:") .. S(gal.ver_str))
+minetest.log(S("[MOD] gal:  Legal Info: Copyright ") .. S(gal.copyright) .. " " .. S(gal.authorship) .. "")
+minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 
-
-	minetest.log(S("[MOD] gal:  Loading..."))
-	minetest.log(S("[MOD] gal:  Version:") .. S(gal.ver_str))
-	minetest.log(S("[MOD] gal:  Legal Info: Copyright ") .. S(gal.copyright) .. " " .. S(gal.authorship) .. "")
-	minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
-
-
-
-	minetest.log(S("[MOD] gal:  TODO:  Update calls to:     'minetest.setting_get'"))
+--TODO:  Update calls to:     'minetest.setting_get'
 
 	gal.lib = {}
 	gal.mapgen = {}
 	gal.liquids = {}
 
-
+	gal.settings = {
+		clear_biomes						= minetest.settings:get("gal.clear_biomes") == "true",
+		clear_decos							= minetest.settings:get("gal.clear_decos") == "true",
+		clear_ores							= minetest.settings:get("gal.clear_ores") == "false",
+		color_grass_use						= minetest.settings:get("gal.color_grass_use") == "false",
+		color_grass_reg						= minetest.settings:get("gal.color_grass_reg") == "true",
+		mg_world_scale						= tonumber(minetest.settings:get("gal.mg_world_scale")) or 1,
+		mg_base_height						= tonumber(minetest.settings:get("gal.mg_base_height")) or 300,
+		enable_lib_shapes_support			= minetest.settings:get("gal.enable_lib_shapes_support") == "true",
+		enable_mapgen_aliases				= minetest.settings:get("gal.enable_mapgen_aliases") == "false",
+	}
 --[[
 		if minetest.setting_get("gal_geology_clear_biomes") and minetest.setting_get("gal_geology_clear_biomes") == "true" then
 			gal.clear_biomes = true
@@ -65,8 +61,9 @@ gal.intllib = S
 		else
 			gal.clear_ores = false
 		end
+--]]
 
-
+--[[
 		--if minetest.setting_get("gal_geology_color_grass_reg") and minetest.setting_get("gal_geology_color_grass_reg") == "true" then
 			--gal.color_grass_reg = true
 		--else
@@ -77,8 +74,9 @@ gal.intllib = S
 		--else
 			--gal.color_grass_use = false
 		--end
+--]]
 
-
+--[[
 		--if minetest.setting_get("gal_geology_enable_lakes") and minetest.setting_get("gal_geology_enable_lakes") == "true"then
 		--	gal.enable_lakes = true
 		--else
@@ -125,9 +123,9 @@ gal.intllib = S
 	minetest.clear_registered_decorations()
 	--minetest.clear_registered_ores()
 
-	gal.color_grass_reg = true
-	gal.color_grass_use = false
-	gal.enable_lib_shapes = true
+	gal.color_grass_reg = gal.settings.color_grass_reg
+	gal.color_grass_use = gal.settings.color_grass_use
+	gal.enable_lib_shapes = gal.settings.enable_lib_shapes_support
 	--gal.enable_waterdynamics = true
 	--gal.enable_mapgen_aliases = false
 	gal.config = "default"	--default, gal_geology, mcl?
@@ -138,8 +136,14 @@ gal.intllib = S
 
 
 	minetest.log(S("[MOD] gal:  TODO:  Update calls to:     'minetest.get_mapgen_params()'"))
-	gal.mg_params = minetest.get_mapgen_params()
-	gal.mg_seed = gal.mg_params.seed
+	--gal.mg_params = minetest.get_mapgen_params()
+	--gal.mg_seed = gal.mg_params.seed
+	--minetest.set_mapgen_setting("seed", "16096304901732432682", true)
+	gal.mg_seed = minetest.get_mapgen_setting("seed")
+	minetest.set_mapgen_setting("mg_flags", "nocaves, nodungeons, light, decorations, biomes, ores", true)
+	if minetest.get_mapgen_setting("mg_name") == "v7" then
+		minetest.set_mapgen_setting("mgv7_spflags", "nomountains, noridges, nofloatlands, nocaverns", true)
+	end
 
 --[[
 		--gal.mapgen_scale_factor = minetest.setting_get("gal_geology_mgv7_mapgen_scale_factor") or 8
@@ -186,26 +190,13 @@ gal.intllib = S
 
 	minetest.log(S("[MOD] gal:  Loading..."))
 
-
-		--gal.read_csv = dofile(gal.path .. "/csv.lua")
-
-		--dofile(gal.path.."/gal_geology_sound_defaults.lua")
-
-		--dofile(gal.path.."/gal_geology_nodeio.lua")
-		--dofile(gal.path.."/gal_geology_fluid_lib.lua")
-
-
-
 	dofile(gal.path_mod .. "/gal_sound_defaults.lua")
 
 	dofile(gal.path_mod .. "/gal_lib.lua")
 
 	dofile(gal.path_mod .. "/gal_mapgen.lua")
 
-
 	dofile(gal.path.."/gal_geology_node_registration.lua")
-
-		--dofile(gal.path.."/gal_geology_testnode.lua")
 
 	dofile(gal.path.."/gal_geology_caves.lua")
 
@@ -233,15 +224,10 @@ gal.intllib = S
 
 	dofile(gal.path.."/gal_geology_chatcommands.lua")
 
-	--if gal.enable_waterdynamics == true then
-		dofile(gal.path.."/gal_geology_water_dynamics.lua")
-	--end
+	dofile(gal.path.."/gal_geology_water_dynamics.lua")
 
-	--if gal.enable_waterfalls == true then
-	--	dofile(gal.path.."/gal_geology_waterfalls.lua")
-	--end
 
-	--gal.mapgen.update_biomes()
+--Plants
 
 	dofile(gal.path.."/gal_ecology_plants_node_registration.lua")
 
@@ -259,15 +245,11 @@ gal.intllib = S
 
 	dofile(gal.path.."/gal_ecology_trees_schematics.lua")
 
---Plants
-
 	dofile(gal.path .. "/gal_ecology_trees_craftitems.lua")
 
 	dofile(gal.path .. "/gal_ecology_trees_craftrecipes.lua")
 
 	dofile(gal.path.."/gal_ecology_trees_deco_registration.lua")
-
-
 
 
 	gal.mapgen.c_air				= minetest.get_content_id("air")
