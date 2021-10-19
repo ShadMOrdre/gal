@@ -28,7 +28,6 @@ minetest.log(S("[MOD] gal:  Version:") .. S(gal.ver_str))
 minetest.log(S("[MOD] gal:  Legal Info: Copyright ") .. S(gal.copyright) .. " " .. S(gal.authorship) .. "")
 minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 
---TODO:  Update calls to:     'minetest.setting_get'
 
 	gal.lib = {}
 	gal.mapgen = {}
@@ -45,89 +44,23 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 		enable_lib_shapes_support			= minetest.settings:get("gal.enable_lib_shapes_support") == "true",
 		enable_mapgen_aliases				= minetest.settings:get("gal.enable_mapgen_aliases") == "false",
 	}
---[[
-		if minetest.setting_get("gal_geology_clear_biomes") and minetest.setting_get("gal_geology_clear_biomes") == "true" then
-			gal.clear_biomes = true
-		else
-			gal.clear_biomes = false
-		end
-		if minetest.setting_get("gal_geology_clear_decos") and minetest.setting_get("gal_geology_clear_decos") == "true" then
-			gal.clear_decos = true
-		else
-			gal.clear_decos = false
-		end
-		if minetest.setting_get("gal_geology_clear_ores") and minetest.setting_get("gal_geology_clear_ores") == "true" then
-			gal.clear_ores = true
-		else
-			gal.clear_ores = false
-		end
---]]
 
---[[
-		--if minetest.setting_get("gal_geology_color_grass_reg") and minetest.setting_get("gal_geology_color_grass_reg") == "true" then
-			--gal.color_grass_reg = true
-		--else
-		--	gal.color_grass_reg = false
-		--end
-		--if minetest.setting_get("gal_geology_color_grass_use") and minetest.setting_get("gal_geology_color_grass_use") == "true" then
-		--	gal.color_grass_use = true
-		--else
-			--gal.color_grass_use = false
-		--end
---]]
-
---[[
-		--if minetest.setting_get("gal_geology_enable_lakes") and minetest.setting_get("gal_geology_enable_lakes") == "true"then
-		--	gal.enable_lakes = true
-		--else
-		--	gal.enable_lakes = false
-		--end
-		--if minetest.setting_get("gal_geology_enable_rivers") and minetest.setting_get("gal_geology_enable_rivers") == "true"then
-		--	gal.enable_rivers = true
-		--else
-		--	gal.enable_rivers = false
-		--end
-		--if minetest.setting_get("gal_geology_enable_waterdynamics") and minetest.setting_get("gal_geology_enable_waterdynamics") == "true"then
-			--gal.enable_waterdynamics = true
-		--else
-			--gal.enable_waterdynamics = false
-		--end
-		--if minetest.setting_get("gal_geology_enable_waterfalls") and minetest.setting_get("gal_geology_enable_waterfalls") == "true"then
-		--	gal.enable_waterfalls = true
-		--else
-		--	gal.enable_waterfalls = false
-		--end
-		--if minetest.setting_get("gal_geology_enable_lib_shapes_support") and minetest.setting_get("gal_geology_enable_lib_shapes_support") == "true"then
-		--	gal.enable_lib_shapes = true
-		--else
-		--	gal.enable_lib_shapes = false
-		--end
-		--if minetest.setting_get("gal_geology_enable_mapgen_aliases") and minetest.setting_get("gal_geology_enable_mapgen_aliases") == "true"then
-		--	gal.enable_mapgen_aliases = true
-		--else
-		--	gal.enable_mapgen_aliases = false
-		--end
-
-		--if gal.clear_biomes then
-			minetest.clear_registered_biomes()
-		--end
-		--if gal.clear_decos then
-			minetest.clear_registered_decorations()
-		--end
-		--if gal.clear_ores then
-			--minetest.clear_registered_ores()
-		--end
---]]
-
-	minetest.clear_registered_biomes()
-	minetest.clear_registered_decorations()
-	--minetest.clear_registered_ores()
+	if gal.settings.clear_biomes then
+		minetest.clear_registered_biomes()
+	end
+	if gal.settings.clear_decos then
+		minetest.clear_registered_decorations()
+	end
+	if gal.settings.clear_ores then
+		minetest.clear_registered_ores()
+	end
+	
 
 	gal.color_grass_reg = gal.settings.color_grass_reg
 	gal.color_grass_use = gal.settings.color_grass_use
 	gal.enable_lib_shapes = gal.settings.enable_lib_shapes_support
 	--gal.enable_waterdynamics = true
-	--gal.enable_mapgen_aliases = false
+	gal.enable_mapgen_aliases = gal.settings.enable_mapgen_aliases
 	gal.config = "default"	--default, gal_geology, mcl?
 	gal.biome_data_file = "gal_geology_biomes"
 	gal.ore_data_file = "gal_geology_ores"
@@ -135,9 +68,6 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 	gal.nodes_data_file = "gal_geology_nodes"
 
 
-	minetest.log(S("[MOD] gal:  TODO:  Update calls to:     'minetest.get_mapgen_params()'"))
-	--gal.mg_params = minetest.get_mapgen_params()
-	--gal.mg_seed = gal.mg_params.seed
 	--minetest.set_mapgen_setting("seed", "16096304901732432682", true)
 	gal.mg_seed = minetest.get_mapgen_setting("seed")
 	minetest.set_mapgen_setting("mg_flags", "nocaves, nodungeons, light, decorations, biomes, ores", true)
@@ -145,50 +75,9 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 		--minetest.set_mapgen_setting("mgv7_spflags", "nomountains, noridges, nofloatlands, nocaverns", true)
 	--end
 
---[[
-		--gal.mapgen_scale_factor = minetest.setting_get("gal_geology_mgv7_mapgen_scale_factor") or 8
-		--gal.biome_altitude_range = minetest.setting_get("gal_geology_biome_altitude_range") or 40				--10, 20, 30, 40
-		-- gal.mapgen_scale_factor = 8
-		-- gal.biome_altitude_range = 56				--10, 20, 30, 40
-
-		--DEFAULTS
-		-- -192, -4, 0, 4, 30, 60, 90, 120, 150, 285, 485, 1250
-		-- -192, -4, 0, 4, 40, 80, 120, 160, 200, 380, 780, 1800
-		-- gal.ocean_depth = -192
-		-- gal.beach_depth = -4
-		-- gal.maxheight_beach = 4
-		-- gal.sea_level = 0
-		-- gal.water_level = 1
-
-		-- gal.maxheight_coastal = gal.sea_level + gal.biome_altitude_range
-		-- gal.maxheight_lowland = gal.maxheight_coastal + gal.biome_altitude_range
-		-- gal.maxheight_shelf = gal.maxheight_lowland + gal.biome_altitude_range
-		-- gal.maxheight_highland = gal.maxheight_shelf + gal.biome_altitude_range
-		-- gal.maxheight_mountain = gal.maxheight_highland + gal.biome_altitude_range
-		-- gal.minheight_snow = gal.maxheight_mountain + gal.biome_altitude_range
-		-- gal.maxheight_snow = gal.minheight_snow  + (gal.biome_altitude_range * 2)
-		-- gal.maxheight_strato = gal.maxheight_mountain  + (gal.biome_altitude_range * (gal.mapgen_scale_factor / 2))
-
-		-- -- 100, 75, 50, 25, 0
-		-- -- 90, 75, 50, 25, 10
-		-- -- 90, 70, 50, 30, 10
-		-- gal.temperature_hot = 100
-		-- gal.temperature_warm = 75
-		-- gal.temperature_temperate = 50
-		-- gal.temperature_cool = 25
-		-- gal.temperature_cold = 0
-		-- gal.humidity_humid = 100
-		-- gal.humidity_semihumid = 75
-		-- gal.humidity_temperate = 50
-		-- gal.humidity_semiarid = 25
-		-- gal.humidity_arid = 0
-
-		-- 8, 4
-		-- gal.biome_vertical_blend = gal.biome_altitude_range / 5
---]]
 
 
-	minetest.log(S("[MOD] gal:  Loading..."))
+	minetest.log(S("[MOD] gal:  Config complete..."))
 
 	dofile(gal.path_mod .. "/gal_sound_defaults.lua")
 
@@ -233,12 +122,12 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 
 	dofile(gal.path.."/gal_ecology_plants_mushrooms.lua")
 
+--Trees
 
 	gal.N = {}
 	gal.schem = dofile(gal.path.."/gal_ecology_trees_schem.lua")
 	dofile(gal.path.."/gal_ecology_trees_schematic.lua")
 
---Trees
 	dofile(gal.path.."/gal_ecology_trees_utils.lua")
 
 	dofile(gal.path.."/gal_ecology_trees_node_registration.lua")
@@ -312,10 +201,11 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 	gal.mapgen.m_dirtgrass			= "gal:dirt_with_grass"
 
 
-	minetest.register_alias("mapgen_stone", "gal:stone")
-	minetest.register_alias("mapgen_water_source", "gal:liquid_water_source")
-	minetest.register_alias("mapgen_river_water_source", "gal:liquid_water_river_source")
-
+	if gal.enable_mapgen_aliases then
+		minetest.register_alias("mapgen_stone", "gal:stone")
+		minetest.register_alias("mapgen_water_source", "gal:liquid_water_source")
+		minetest.register_alias("mapgen_river_water_source", "gal:liquid_water_river_source")
+	end
 
 minetest.log(S("[MOD] gal:  Successfully loaded."))
 
