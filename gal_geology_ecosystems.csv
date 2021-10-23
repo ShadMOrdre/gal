@@ -1,7 +1,7 @@
 #Ore_Type|Ore_Name|Wherein|Threshold|Y_Min|Y_Max|Biome
 ##||||||
 #HOT HUMID||||||
-dirt|dirt_silt_01|sand|0.8|beach_depth|beach|hot_humid_beach
+dirt|dirt_silt_01|sand|0.8|-2|2|hot_humid_beach
 #dirt|dirt_mud_01|dirt_with_litter_rainforest|0.8|beach|lowland|hot_humid_beach
 dirt|dirt_with_grass_hot_humid|dirt_with_litter_rainforest|0.8|beach|highland|hot_humid
 blob|dirt_with_grass_hot_humid_pale|dirt_with_litter_rainforest|0.8|beach|highland|hot_humid
@@ -33,7 +33,7 @@ dirt|ice|stone_granite_brown_02|0.8|mountain|strato|hot_humid_strato
 dirt|ice_2|stone_granite_brown_02|0.8|mountain|strato|hot_humid_strato
 dirt|snow_block|stone_granite_brown_02|0.8|mountain|strato|hot_humid_strato
 #HOT SEMIHUMID||||||
-dirt|dirt_silt_01|sand_volcanic|0.8|beach_depth|beach|hot_semihumid_beach
+dirt|dirt_silt_01|sand_volcanic|0.8|-2|2|hot_semihumid_beach
 #dirt|dirt_mud_01|dirt_with_grass_hot_semihumid|0.8|beach|lowland|hot_semihumid
 blob|dirt_with_grass_hot_semihumid_pale|dirt_with_grass_hot_semihumid|0.8|beach|highland|hot_semihumid
 dirt|dirt_black_with_grass_hot_semihumid|dirt_with_grass_hot_semihumid|0.8|beach|highland|hot_semihumid
@@ -122,7 +122,7 @@ dirt|stone_brown|stone_sandstone_desert|0.8|mountain|strato|hot_arid_strato
 dirt|stone_sand|stone_sandstone_desert|0.8|mountain|strato|hot_arid_strato
 ##||||||
 #WARM HUMID||||||
-dirt|dirt_silt_01|sand_white|0.8|beach_depth|beach|warm_humid_beach
+dirt|dirt_silt_01|sand_white|0.8|-2|2|warm_humid_beach
 #dirt|dirt_mud_01|dirt_with_grass_warm_humid|0.8|beach|lowland|warm_humid
 blob|dirt_with_grass_warm_humid_pale|dirt_with_grass_warm_humid|0.8|beach|highland|warm_humid
 dirt|dirt_black_with_grass_warm_humid|dirt_with_grass_warm_humid|0.8|beach|highland|warm_humid

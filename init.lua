@@ -34,15 +34,15 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 	gal.liquids = {}
 
 	gal.settings = {
-		clear_biomes						= minetest.settings:get("gal.clear_biomes") == "true",
-		clear_decos							= minetest.settings:get("gal.clear_decos") == "true",
-		clear_ores							= minetest.settings:get("gal.clear_ores") == "false",
-		color_grass_use						= minetest.settings:get("gal.color_grass_use") == "false",
-		color_grass_reg						= minetest.settings:get("gal.color_grass_reg") == "true",
+		clear_biomes						= minetest.settings:get_bool("gal.clear_biomes") or true,
+		clear_decos							= minetest.settings:get_bool("gal.clear_decos") or true,
+		clear_ores							= minetest.settings:get_bool("gal.clear_ores") or false,
+		color_grass_use						= minetest.settings:get_bool("gal.color_grass_use") or false,
+		color_grass_reg						= minetest.settings:get_bool("gal.color_grass_reg") or true,
 		mg_world_scale						= tonumber(minetest.settings:get("gal.mg_world_scale")) or 1,
 		mg_base_height						= tonumber(minetest.settings:get("gal.mg_base_height")) or 300,
-		enable_lib_shapes_support			= minetest.settings:get("gal.enable_lib_shapes_support") == "true",
-		enable_mapgen_aliases				= minetest.settings:get("gal.enable_mapgen_aliases") == "false",
+		enable_lib_shapes_support			= minetest.settings:get_bool("gal.enable_lib_shapes_support") or true,
+		enable_mapgen_aliases				= minetest.settings:get_bool("gal.enable_mapgen_aliases") or false,
 	}
 
 	if gal.settings.clear_biomes then

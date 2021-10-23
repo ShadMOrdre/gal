@@ -1118,7 +1118,7 @@ minetest.register_craft({
 
 
 
-
+--[[
 bucket = {}
 bucket.liquids = gal.liquids
 
@@ -1129,7 +1129,7 @@ minetest.register_alias("bucket_lava",  "gal:tool_bucket_lava")
 minetest.register_alias("bucket:bucket_empty", "gal:tool_bucket_empty")
 minetest.register_alias("bucket:bucket_water", "gal:tool_bucket_water")
 minetest.register_alias("bucket:bucket_lava",  "gal:tool_bucket_lava")
-
+--]]
 
 
 
