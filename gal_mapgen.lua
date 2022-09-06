@@ -63,12 +63,13 @@ gal.mapgen.mg_map_size = 60000
 gal.mapgen.mg_base_height = gal.settings.mg_base_height * gal.mapgen.mg_world_scale
 gal.mapgen.water_level = (1 * gal.mapgen.mg_world_scale)
 
---gal.mapgen.mgv7_mapgen_scale_factor =  8
---gal.mapgen.biome_vertical_range =  35 * gal.mapgen.mg_world_scale
---gal.mapgen.biome_vertical_range =  (gal.mapgen.mg_base_height / 6) * gal.mapgen.mg_world_scale
-gal.mapgen.biome_vertical_range =  (gal.mapgen.mg_base_height / 6)
---gal.mapgen.biome_vertical_range =  175 / 6
---gal.mapgen.biome_vertical_blend = (gal.mapgen.biome_vertical_range / 5) * gal.mapgen.mg_world_scale
+	--gal.mapgen.mgv7_mapgen_scale_factor =  8
+	--gal.mapgen.biome_vertical_range =  35 * gal.mapgen.mg_world_scale
+	--gal.mapgen.biome_vertical_range =  (gal.mapgen.mg_base_height / 6) * gal.mapgen.mg_world_scale
+--gal.mapgen.biome_vertical_range =  (gal.mapgen.mg_base_height / 6)
+gal.mapgen.biome_vertical_range =  (gal.mapgen.mg_base_height / 5)
+	--gal.mapgen.biome_vertical_range =  175 / 6
+	--gal.mapgen.biome_vertical_blend = (gal.mapgen.biome_vertical_range / 5) * gal.mapgen.mg_world_scale
 gal.mapgen.biome_vertical_blend = (gal.mapgen.biome_vertical_range / 6.25) * gal.mapgen.mg_world_scale
 gal.mapgen.mg_biome_mode = "full"
 gal.mapgen.use_heat_scalar = true
@@ -89,12 +90,12 @@ gal.mapgen.maxheight_coastal = gal.mapgen.sea_level + gal.mapgen.biome_vertical_
 gal.mapgen.maxheight_lowland = gal.mapgen.maxheight_coastal + gal.mapgen.biome_vertical_range
 gal.mapgen.maxheight_shelf = gal.mapgen.maxheight_lowland + gal.mapgen.biome_vertical_range
 gal.mapgen.maxheight_highland = gal.mapgen.maxheight_shelf + gal.mapgen.biome_vertical_range
-gal.mapgen.maxheight_mountain = gal.mapgen.maxheight_highland + gal.mapgen.biome_vertical_range
+gal.mapgen.maxheight_mountain = gal.mapgen.maxheight_highland + (gal.mapgen.biome_vertical_range * 2)
 --gal.mapgen.minheight_snow = gal.mapgen.maxheight_mountain + gal.mapgen.biome_vertical_range
 gal.mapgen.minheight_snow = gal.mapgen.maxheight_mountain + (gal.mapgen.biome_vertical_range * 2)
 gal.mapgen.maxheight_snow = gal.mapgen.minheight_snow  + (gal.mapgen.biome_vertical_range * 2)
 --gal.mapgen.maxheight_strato = gal.mapgen.maxheight_snow  + (gal.mapgen.biome_vertical_range * (gal.mapgen.biome_vertical_blend / 2))
-gal.mapgen.maxheight_strato = 31000
+gal.mapgen.maxheight_strato = 31000 * gal.mapgen.mg_world_scale
 
 -- 100, 75, 50, 25, 0
 -- 90, 75, 50, 25, 10

@@ -697,9 +697,10 @@ gal.schematics.insert("schem_bush_rhodedendron_blooming", le_temp_schem)
 -- waterlilies
 	le_temp_schem = {
 		size = {x = 1, y = 3, z = 1},
+		--size = {x = 1, y = 2, z = 1},
 		data = {
-			{name = "gal:sand", param2 = 0, prob = 254},
-			{name = "gal:liquid_water_source", param2 = 0, prob = 254},
+			{name = "gal:dirt_mud_01", param2 = 0, prob = 254},
+			{name = "air", param2 = 0, prob = 0},
 			{name = "gal:plant_waterlily_pink", param2 = 0, prob = 254}
 		},
 	}
@@ -707,9 +708,10 @@ gal.schematics.insert("schem_bush_rhodedendron_blooming", le_temp_schem)
 
 	le_temp_schem = {
 		size = {x = 1, y = 3, z = 1},
+		--size = {x = 1, y = 2, z = 1},
 		data = {
-			{name = "gal:sand", param2 = 0, prob = 254},
-			{name = "gal:liquid_water_source", param2 = 0, prob = 254},
+			{name = "gal:dirt_mud_01", param2 = 0, prob = 254},
+			{name = "air", param2 = 0, prob = 0},
 			{name = "gal:plant_waterlily_yellow", param2 = 0, prob = 254}
 		},
 	}

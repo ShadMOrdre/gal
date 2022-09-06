@@ -133,7 +133,7 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/gal_ecology_plants_no
 
 	if use_alpha ~= "" then
 		if string.lower(use_alpha) == "true" then
-			new_node_def.use_texture_alpha = "clip"
+			new_node_def.use_texture_alpha = "blend"
 		end
 		if string.lower(use_alpha) == "blend" then
 			new_node_def.use_texture_alpha = "blend"
@@ -603,6 +603,9 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/gal_ecology_plants_no
 
 			return itemstack
 		end
+		
+		new_node_def.node_dig_prediction = nil
+		new_node_def.node_placement_prediction = ""
 	
 	end
 

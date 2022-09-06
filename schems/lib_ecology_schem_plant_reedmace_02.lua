@@ -11,7 +11,7 @@
 		size = {x = 1,y = 5,z = 1},
 		data = {
 			{param2 = 0,name = "gal:plant_reedmace_water",prob = 254,force_place = true},
-			N["_____"],
+			{name = "air", param2 = 0, prob = 0},
 			{param2 = 0,name = "gal:plant_reedmace_bottom",prob = 254},
 			{param2 = 0,name = "gal:plant_reedmace_middle",prob = 254},
 			{param2 = 0,name = "gal:plant_reedmace_spikes",prob = 254}

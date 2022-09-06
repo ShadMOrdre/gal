@@ -89,6 +89,7 @@ gal.lib.shapes.register_node = function(node_mat, shape)
 		connects_to = { "group:wall", "group:stone", "group:lib_architecture_lite", "group:lib_doors", "group:lib_fences", "group:lib_general", "group:lib_shaped_node" },
 		is_ground_content = false,
 		walkable = true,
+		use_alpha = node_def.use_alpha,
 		groups = new_node_groups,
 		sounds = node_def.sounds,
 		node_box = shape_node_box,

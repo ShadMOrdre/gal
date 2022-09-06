@@ -16,7 +16,11 @@ local lookup = function(schem_name, node_set)
 				if mat ~= "" then
 					if node ~= "" then
 						--minetest.log("mat = " .. mat .. ";   node = " .. node)
-						NS[mat] = "gal:"..node					--m = material
+						if node == "air" then
+							NS[mat] = node
+						else
+							NS[mat] = "gal:"..node					--m = material
+						end
 					end
 				end
 			end
@@ -60,8 +64,10 @@ local lookup = function(schem_name, node_set)
 	end
 	local tfruit = NS["F"] or xfruit
 
-	local tcap = NS["B"] or "gal:mushroom_cap_red_spotted"
-	local tstem = NS["H"] or "gal:mushroom_01_trunk"
+	-- local tcap = NS["B"] or "gal:mushroom_cap_red_spotted"
+	local tcap = NS["B"] or "air"
+	-- local tstem = NS["H"] or "gal:mushroom_01_trunk"
+	local tstem = NS["H"] or "air"
 
 	local tplant = NS["P"]
 
@@ -141,8 +147,16 @@ local lookup = function(schem_name, node_set)
 	N["CW"] = {name = tfruit,param2 = 3,prob = 254}
 
 	N["B0m00"] = {name = tcap,param2 = 0,prob = 254}
+	N["B0mN0"] = {name = tcap,param2 = 0,prob = 254}
+	N["B0mE0"] = {name = tcap,param2 = 0,prob = 254}
+	N["B0mS0"] = {name = tcap,param2 = 0,prob = 254}
+	N["B0mW0"] = {name = tcap,param2 = 0,prob = 254}
 
 	N["H0m00"] = {name = tstem,param2 = 0,prob = 254}
+	N["H0mN0"] = {name = tstem,param2 = 4,prob = 254}
+	N["H0mE0"] = {name = tstem,param2 = 8,prob = 254}
+	N["H0mS0"] = {name = tstem,param2 = 12,prob = 254}
+	N["H0mW0"] = {name = tstem,param2 = 16,prob = 254}
 
 	N["P0m00"] = {name = tplant,param2 = 0,prob = 254}
 	N["P0m01"] = {name = tplant,param2 = 0,prob = 222}

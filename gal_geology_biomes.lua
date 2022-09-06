@@ -43,6 +43,15 @@ local function read_node_str(node_str)
 	end
 end
 
+
+-- if gal.ecosystem_base == "default" then
+	-- gal.biome_data_file = "gal_geology_biomes_default"
+-- else
+	gal.biome_data_file = "gal_geology_biomes_gal"
+-- end
+
+
+
 for i, biome in ipairs(gal.lib.csv.read("|", gal.path .. "/" .. gal.biome_data_file .. ".csv")) do
 
 	--#Name|Dust|NodeTop|NodeTopDepth|Filler|FillerDepth|Stone|WaterTop|WaterTopDepth|Water|River water|RiverBed|RiverBedDepth|CaveLiquid|DungeonNode|DungeonAlt|DungeonStair|Y-min|Y-max|Temperature|Humidity|MaxPos|MinPos|VerticalBlend
@@ -111,6 +120,177 @@ for i, biome in ipairs(gal.lib.csv.read("|", gal.path .. "/" .. gal.biome_data_f
 	})
 end
 
+
+function gal.get_altitude_zone(ppos)
+
+	local t_altitude = ""
+
+	if (ppos.y < gal.mapgen.beach_depth) then
+		t_altitude = "ocean"
+	elseif (ppos.y >= gal.mapgen.beach_depth) and (ppos.y < gal.mapgen.maxheight_beach) then
+		t_altitude = "beach"
+	elseif (ppos.y >= gal.mapgen.maxheight_beach) and (ppos.y < gal.mapgen.maxheight_coastal) then
+		t_altitude = "coastal"
+	elseif (ppos.y >= gal.mapgen.maxheight_coastal) and (ppos.y < gal.mapgen.maxheight_lowland) then
+		t_altitude = "lowland"
+	elseif (ppos.y >= gal.mapgen.maxheight_lowland) and (ppos.y < gal.mapgen.maxheight_shelf) then
+		t_altitude = "shelf"
+	elseif (ppos.y >= gal.mapgen.maxheight_shelf) and (ppos.y < gal.mapgen.maxheight_highland) then
+		t_altitude = "highland"
+	elseif (ppos.y >= gal.mapgen.maxheight_highland) and (ppos.y < gal.mapgen.maxheight_mountain) then
+		t_altitude = "mountain"
+	elseif (ppos.y >= gal.mapgen.maxheight_mountain) then
+		t_altitude = "strato"
+	end
+
+--[[
+	if ppos.y >= -31000 and ppos.y < -20000 then
+		t_name = "generic_mantle"
+	elseif ppos.y >= -20000 and ppos.y < -15000 then
+		t_name = "stone_basalt_01_layer"
+	elseif ppos.y >= -15000 and ppos.y < -10000 then
+		t_name = "stone_brown_layer"
+	elseif ppos.y >= -10000 and ppos.y < -6000 then
+		t_name = "stone_sand_layer"
+	elseif ppos.y >= -6000 and ppos.y < -5000 then
+		t_name = "desert_stone_layer"
+	elseif ppos.y >= -5000 and ppos.y < -4000 then
+		t_name = "desert_sandstone_layer"
+	elseif ppos.y >= -4000 and ppos.y < -3000 then
+		t_name = "generic_stone_limestone_01_layer"
+	elseif ppos.y >= -3000 and ppos.y < -2000 then
+		t_name = "generic_granite_layer"
+	elseif ppos.y >= -2000 and ppos.y < gal.mapgen.ocean_depth then
+		t_name = "generic_stone_layer"
+	else
+		
+	end
+--]]
+
+	return t_altitude
+
+end
+
+function gal.get_biome_name(pheat,phumid,ppos)
+
+	local t_heat, t_humid, t_altitude, t_name
+
+	--local m_heat1 = 12.5
+	--local m_heat1 = 5
+	local m_heat1 = (gal.mapgen.temperature_cool + gal.mapgen.temperature_cold) / 2
+	--local m_heat2 = 37.5
+	--local m_heat2 = 35
+	local m_heat2 = (gal.mapgen.temperature_temperate + gal.mapgen.temperature_cool) / 2
+	--local m_heat3 = 62.5
+	--local m_heat3 = 65
+	local m_heat3 = (gal.mapgen.temperature_warm + gal.mapgen.temperature_temperate) / 2
+	--local m_heat4 = 87.5
+	--local m_heat4 = 95
+	local m_heat4 = (gal.mapgen.temperature_hot + gal.mapgen.temperature_warm) / 2
+
+	--local m_humid1 = 12.5
+	--local m_humid1 = 5
+	local m_humid1 = (gal.mapgen.humidity_semiarid + gal.mapgen.humidity_arid) / 2
+	--local m_humid2 = 37.5
+	--local m_humid2 = 35
+	local m_humid2 = (gal.mapgen.humidity_temperate + gal.mapgen.humidity_semiarid) / 2
+	--local m_humid3 = 62.5
+	--local m_humid3 = 65
+	local m_humid3 = (gal.mapgen.humidity_semihumid + gal.mapgen.humidity_temperate) / 2
+	--local m_humid4 = 87.5
+	--local m_humid4 = 95
+	local m_humid4 = (gal.mapgen.humidity_humid + gal.mapgen.humidity_semihumid) / 2
+
+
+	if pheat < m_heat1 then
+		t_heat = "cold"
+	elseif pheat >= m_heat1 and pheat < m_heat2 then
+		t_heat = "cool"
+	elseif pheat >= m_heat2 and pheat < m_heat3 then
+		t_heat = "temperate"
+	elseif pheat >= m_heat3 and pheat < m_heat4 then
+		t_heat = "warm"
+	elseif pheat >= m_heat4 then
+		t_heat = "hot"
+	else
+
+	end
+
+	if phumid < m_humid1 then
+		t_humid = "_arid"
+	elseif phumid >= m_humid1 and phumid < m_humid2 then
+		t_humid = "_semiarid"
+	elseif phumid >= m_humid2 and phumid < m_humid3 then
+		t_humid = "_temperate"
+	elseif phumid >= m_humid3 and phumid < m_humid4 then
+		t_humid = "_semihumid"
+	elseif phumid >= m_humid4 then
+		t_humid = "_humid"
+	else
+
+	end
+
+
+--[[if ppos.y < gal.mapgen.beach_depth then
+		t_altitude = "_ocean"
+	elseif ppos.y >= gal.mapgen.beach_depth and ppos.y < gal.mapgen.maxheight_beach then
+		t_altitude = "_beach"
+	elseif ppos.y >= gal.mapgen.maxheight_beach and ppos.y < gal.mapgen.maxheight_highland then
+		t_altitude = ""
+	elseif ppos.y >= gal.mapgen.maxheight_highland and ppos.y < gal.mapgen.maxheight_mountain then
+		t_altitude = "_mountain"
+	elseif ppos.y >= gal.mapgen.maxheight_mountain then
+		t_altitude = "_strato"
+	else
+		t_altitude = ""
+	end
+--]]
+
+--[[if t_heat and t_heat ~= "" and t_humid and t_humid ~= "" then
+		t_name = t_heat .. t_humid .. t_altitude
+	else
+		if (t_heat == "hot") and (t_humid == "_humid") and (pheat > 90) and (phumid > 90) and (t_altitude == "_beach") then
+			t_name = "hot_humid_swamp"
+		elseif (t_heat == "hot") and (t_humid == "_semihumid") and (pheat > 90) and (phumid > 80) and (t_altitude == "_beach") then
+			t_name = "hot_semihumid_swamp"
+		elseif (t_heat == "warm") and (t_humid == "_humid") and (pheat > 80) and (phumid > 90) and (t_altitude == "_beach") then
+			t_name = "warm_humid_swamp"
+		elseif (t_heat == "temperate") and (t_humid == "_humid") and (pheat > 57) and (phumid > 90) and (t_altitude == "_beach") then
+			t_name = "temperate_humid_swamp"
+		else
+			t_name = "temperate_temperate"
+		end
+	end
+--]]
+
+--[[if ppos.y >= -31000 and ppos.y < -20000 then
+		t_name = "generic_mantle"
+	elseif ppos.y >= -20000 and ppos.y < -15000 then
+		t_name = "stone_basalt_01_layer"
+	elseif ppos.y >= -15000 and ppos.y < -10000 then
+		t_name = "stone_brown_layer"
+	elseif ppos.y >= -10000 and ppos.y < -6000 then
+		t_name = "stone_sand_layer"
+	elseif ppos.y >= -6000 and ppos.y < -5000 then
+		t_name = "desert_stone_layer"
+	elseif ppos.y >= -5000 and ppos.y < -4000 then
+		t_name = "desert_sandstone_layer"
+	elseif ppos.y >= -4000 and ppos.y < -3000 then
+		t_name = "generic_stone_limestone_01_layer"
+	elseif ppos.y >= -3000 and ppos.y < -2000 then
+		t_name = "generic_granite_layer"
+	elseif ppos.y >= -2000 and ppos.y < gal.mapgen.ocean_depth then
+		t_name = "generic_stone_layer"
+	else
+		
+	end
+--]]
+
+	t_name = t_heat .. t_humid
+
+	return t_name
+
+end
 
 
 

@@ -7,8 +7,9 @@
 
 	
 		return {
-		size = {x = 1,y = 7,z = 1},
+		size = {x = 1,y = 8,z = 1},
 		data = {
+			N["_____"],
 			N["T0m00"],
 			N["T0m00"],
 			N["T0m00"],
@@ -24,6 +25,7 @@
 			{ypos = 3,prob = 127},
 			{ypos = 4,prob = 254},
 			{ypos = 5,prob = 254},
-			{ypos = 6,prob = 254}
+			{ypos = 6,prob = 254},
+			{ypos = 7,prob = 254}
 		}
 	}

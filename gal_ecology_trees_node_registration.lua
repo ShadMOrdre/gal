@@ -139,7 +139,7 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/gal_ecology_trees_nod
 		-- --	new_node_def.use_texture_alpha = false
 		-- end
 		if string.lower(use_alpha) == "true" then
-			new_node_def.use_texture_alpha = "clip"
+			new_node_def.use_texture_alpha = "blend"
 		end
 		if string.lower(use_alpha) == "blend" then
 			new_node_def.use_texture_alpha = "blend"

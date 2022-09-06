@@ -14,13 +14,28 @@ local schem_load = function(schem_name, node_set)
 
 		sch_file = "/schems/lib_ecology_schem_" .. schem_name .. ".lua"
 
+	elseif string.find(schem_name, "cactus") then
+
+		local lookup = dofile(gal.path.."/gal_ecology_trees_schem_lookup.lua")
+		gal.N = lookup("default", node_set)
+
+		sch_file = "/schems/lib_ecology_schem_" .. schem_name .. ".lua"
+
+	elseif string.find(schem_name, "coral") then
+
+		local lookup = dofile(gal.path.."/gal_ecology_trees_schem_lookup.lua")
+		gal.N = lookup("default", node_set)
+
+		sch_file = "/schems/lib_ecology_schem_tree_" .. schem_name .. ".lua"
+
 	elseif string.find(schem_name, "tree") then
 
 		sch_name = sch_name:gsub("_%d%d", "")
-		sch_name = sch_name:gsub("_log", "")
+		-- sch_name = sch_name:gsub("_log", "")
 
 		local lookup = dofile(gal.path.."/gal_ecology_trees_schem_lookup.lua")
 		gal.N = lookup(sch_name, node_set)
+		-- gal.N = lookup("default", node_set)
 
 		sch_file = "/schems/lib_ecology_schem_tree_" .. schem_name .. ".lua"
 
@@ -30,6 +45,16 @@ local schem_load = function(schem_name, node_set)
 		gal.N = lookup("default", node_set)
 
 		sch_file = "/schems/lib_ecology_schem_" .. schem_name .. ".lua"
+
+	elseif string.find(schem_name, "log") then
+
+		sch_name = sch_name:gsub("_%d%d", "")
+		sch_name = sch_name:gsub("_log", "")
+
+		local lookup = dofile(gal.path.."/gal_ecology_trees_schem_lookup.lua")
+		gal.N = lookup(sch_name, node_set)
+
+		sch_file = "/schems/lib_ecology_schem_tree_" .. schem_name .. ".lua"
 
 	else
 

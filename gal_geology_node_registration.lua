@@ -338,22 +338,24 @@ local covers = {
 	{"grass_green", "Green Grass", "lib_materials_grass_green_top.png", "lib_materials_grass_green_side.png"},
 	{"grass_grove", "Grove Grass", "lib_materials_grass_grove_top.png", "lib_materials_grass_grove_side.png"},
 	{"grass_jungle_01", "Jungle Grass 01", "lib_materials_grass_jungle_01_top.png", "lib_materials_grass_jungle_01_side.png"},
-	{"grass_jungle_02", "Jungle Grass 02", "lib_materials_grass_jungle_02_top.png", "lib_materials_grass_jungle_02_side.png"},
-	{"grass_leafy", "Leafy Grass", "lib_materials_grass_leafy_top.png", "lib_materials_grass_leafy_side.png"},
+	--{"grass_jungle_02", "Jungle Grass 02", "lib_materials_grass_jungle_02_top.png", "lib_materials_grass_jungle_02_side.png"},
+	--{"grass_leafy", "Leafy Grass", "lib_materials_grass_leafy_top.png", "lib_materials_grass_leafy_side.png"},
 	{"grass_mushroom", "Mushroom Grass", "lib_materials_grass_mushroom_top.png", "lib_materials_grass_mushroom_side.png"},
-	{"grass_peat_moss", "Peat Moss Grass", "lib_materials_grass_peat_moss_top.png", "lib_materials_grass_peat_moss_side.png"},
+	--{"grass_peat_moss", "Peat Moss Grass", "lib_materials_grass_peat_moss_top.png", "lib_materials_grass_peat_moss_side.png"},
 	{"grass_prairie", "Prairie Grass", "lib_materials_grass_prairie_top.png", "lib_materials_grass_prairie_side.png"},
-	{"grass_swamp", "Swamp Grass", "lib_materials_grass_swamp_top.png", "lib_materials_grass_swamp_side.png"},
+	--{"grass_swamp", "Swamp Grass", "lib_materials_grass_swamp_top.png", "lib_materials_grass_swamp_side.png"},
 	{"litter_coniferous", "Coniferous Litter", "lib_materials_litter_coniferous.png", "lib_materials_litter_coniferous_side.png"},
 	{"litter_rainforest", "Rainforest Litter", "lib_materials_litter_rainforest.png", "lib_materials_litter_rainforest_side.png"},
 	{"litter_beech", "Beech Litter", "aotearoa_dirt_with_beech_litter.png", "aotearoa_dirt_with_beech_litter_side.png"},
 	{"litter_dark", "Dark Litter", "aotearoa_dirt_with_dark_litter.png", "aotearoa_dirt_with_dark_litter_side.png"},
 	{"litter_dry", "Dry Litter", "aotearoa_dirt_with_dry_litter.png", "aotearoa_dirt_with_dry_litter_side.png"},
-	{"litter_fungi", "Fungal Litter", "lib_materials_litter_vine.png", "lib_materials_grass_fungi_side.png"},
+	{"litter_fungi", "Fungal Litter", "lib_materials_litter_fungi.png", "lib_materials_grass_fungi_side.png"},
 	{"litter_gumland", "Gumland Soil Litter", "aotearoa_gumland_soil.png", "aotearoa_gumland_soil_side.png"},
-	{"litter_moss", "Moss Litter", "aotearoa_dirt_with_moss.png", "aotearoa_dirt_with_moss_side.png"},
+	{"litter_moss_forest", "Forest Moss Litter", "aotearoa_dirt_with_moss.png", "aotearoa_dirt_with_moss_side.png"},
+	{"litter_moss", "Moss Litter", "default_moss.png", "default_moss_side.png"},
 	{"litter_peat_forest", "Forest Peat Litter", "aotearoa_forest_peat.png", "aotearoa_forest_peat_side.png"},
 	{"litter_peat_restiad", "Restiad Peat Litter", "aotearoa_restiad_peat.png", "aotearoa_restiad_peat_side.png"},
+	{"litter_snowy", "Snowy Litter", "lib_materials_litter_snowy.png", "lib_materials_snow_side.png"},
 	--{"litter_dark", "Dark Litter", "aotearoa_dirt_with_dark_litter.png", "aotearoa_dirt_with_dark_litter_side.png"},
 	--{"forest_peat", "Forest Peat", "aotearoa_forest_peat.png", "aotearoa_forest_peat_side.png"},
 	--{"moss", "Moss", "aotearoa_dirt_with_moss.png", "aotearoa_dirt_with_moss_side.png"},
@@ -475,7 +477,7 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/" .. gal.nodes_data_f
 
 	if use_alpha ~= "" then
 		if string.lower(use_alpha) == "true" then
-			new_node_def.use_texture_alpha = "clip"
+			new_node_def.use_texture_alpha = "blend"
 		end
 		if string.lower(use_alpha) == "blend" then
 			new_node_def.use_texture_alpha = "blend"
@@ -1111,43 +1113,65 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/" .. gal.nodes_data_f
 		--minetest.register_alias(""..node_name.."", "gal:"..node_name.."")
 
 		if gal.enable_lib_shapes then
+
 			if node_name == "stone" or node_name == "stone_block" or node_name == "stone_brick" or node_name == "stone_cobble" or node_name == "stone_cobble_mossy" or node_name == "stone_rockwall" then
 				gal.lib.shapes.register_basic_set(""..node_name.."")
 				--gal.lib.shapes.register_node(""..node_name.."", "stairs")
 				--gal.lib.shapes.register_node(""..node_name.."", "stairs_inner")
 				--gal.lib.shapes.register_node(""..node_name.."", "stairs_outer")
 				--gal.lib.shapes.register_node(""..node_name.."", "slab")
+
+			elseif node_name == "ice_thin" or node_name == "stone_with_algae" or node_name == "stone_with_lichen" or node_name == "stone_with_moss" or node_name == "stone_with_salt" then
+				gal.lib.shapes.register_node(""..node_name.."", "pillar_thick")
+				gal.lib.shapes.register_node(""..node_name.."", "pillar")
+				gal.lib.shapes.register_node(""..node_name.."", "pillar_thin")
+				gal.lib.shapes.register_node(""..node_name.."", "pillar_with_wall_thick")
+				gal.lib.shapes.register_node(""..node_name.."", "pillar_with_wall")
+				gal.lib.shapes.register_node(""..node_name.."", "pane_pillar")
+				gal.lib.shapes.register_node(""..node_name.."", "wall_centered_thick")
+				gal.lib.shapes.register_node(""..node_name.."", "wall_centered")
+				gal.lib.shapes.register_node(""..node_name.."", "pane_centered")
+
 			elseif node_name == "stone_desert" or node_name == "stone_desert_block" or node_name == "stone_desert_brick" or node_name == "stone_desert_cobble" or node_name == "stone_desert_rockwall" then
 				gal.lib.shapes.register_basic_set(""..node_name.."")
+
 			elseif node_name == "stone_sandstone" or node_name == "stone_sandstone_block" or node_name == "stone_sandstone_brick" or node_name == "stone_sandstone_cobble" then
 				gal.lib.shapes.register_basic_set(""..node_name.."")
+
 			elseif node_name == "stone_sandstone_desert" or node_name == "stone_sandstone_desert_block" or node_name == "stone_sandstone_desert_brick" or node_name == "stone_sandstone_desert_cobble" then
 				gal.lib.shapes.register_basic_set(""..node_name.."")
+
 			elseif node_name == "stone_sandstone_silver" or node_name == "stone_sandstone_silver_block" or node_name == "stone_sandstone_silver_brick" or node_name == "stone_sandstone_silver_cobble" then
 				gal.lib.shapes.register_basic_set(""..node_name.."")
+
 			elseif node_name == "stone_obsidian" or node_name == "stone_obsidian_block" or node_name == "stone_obsidian_brick" then
 				gal.lib.shapes.register_basic_set(""..node_name.."")
+
 			elseif not string.find(node_name, "gravel") then
 				if string.find(node_name, "basalt_01") or string.find(node_name, "bluestone_basalt") or string.find(node_name, "claystone_02") or string.find(node_name, "concrete") then
 					gal.lib.shapes.register_basic_set(""..node_name.."")
+
 				elseif string.find(node_name, "conglomerate_02") or string.find(node_name, "gneiss_01") or string.find(node_name, "limestone_03") or string.find(node_name, "limestone_coquina") then
 					gal.lib.shapes.register_basic_set(""..node_name.."")
+
 				elseif string.find(node_name, "pounamu") or string.find(node_name, "rhyolitic_tuff") or string.find(node_name, "sandstone_desert_stone") or string.find(node_name, "sandstone_old_red") then
 					gal.lib.shapes.register_basic_set(""..node_name.."")
+
 				elseif string.find(node_name, "sandstone_white") or string.find(node_name, "schist_02") or string.find(node_name, "stone_sea") or string.find(node_name, "siltstone") then
 					gal.lib.shapes.register_basic_set(""..node_name.."")
+
 				elseif string.find(node_name, "slate_01") or string.find(node_name, "tuff") or string.find(node_name, "whitestone") then
 					gal.lib.shapes.register_basic_set(""..node_name.."")
+
 				end
 			end
 
 			if string.find(node_name, "mineral_") then
-
 				gal.lib.shapes.register_basic_set(""..node_name.."")
 
-				gal.lib.shapes.register_node(""..node_name.."", "pane")
-				gal.lib.shapes.register_node(""..node_name.."", "pane_centered")
-				gal.lib.shapes.register_node(""..node_name.."", "pane_pillar")
+				--gal.lib.shapes.register_node(""..node_name.."", "pane")
+				--gal.lib.shapes.register_node(""..node_name.."", "pane_centered")
+				--gal.lib.shapes.register_node(""..node_name.."", "pane_pillar")
 				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered")
 				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_right")
 				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_with_window")
@@ -1158,10 +1182,8 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/" .. gal.nodes_data_f
 			end
 
 			if string.find(node_name, "metal_iron_rusted_block") or string.find(node_name, "metal_rusty_block") or string.find(node_name, "metal_iron_cast_block2") or string.find(node_name, "metal_steel_black_block") then
-
 				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_jail")
 				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_jail_right")
-		
 
 			end
 
@@ -1171,14 +1193,15 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/" .. gal.nodes_data_f
 				gal.lib.shapes.register_node(""..node_name.."", "stairs_inner")
 				gal.lib.shapes.register_node(""..node_name.."", "stairs_outer")
 				gal.lib.shapes.register_node(""..node_name.."", "slab")
+
 			end
 
 			if string.find(node_name, "glass") then
 				gal.lib.shapes.register_basic_set(""..node_name.."")
 
-				gal.lib.shapes.register_node(""..node_name.."", "pane")
-				gal.lib.shapes.register_node(""..node_name.."", "pane_centered")
-				gal.lib.shapes.register_node(""..node_name.."", "pane_pillar")
+				-- gal.lib.shapes.register_node(""..node_name.."", "pane")
+				-- gal.lib.shapes.register_node(""..node_name.."", "pane_centered")
+				-- gal.lib.shapes.register_node(""..node_name.."", "pane_pillar")
 				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered")
 				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_right")
 				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_with_window")

@@ -88,8 +88,8 @@ mineral_charcoal2_lump|Charcoal 2|lib_materials_mineral_charcoal2_lump.png|
 mineral_cinnabar_lump|Mineral - Cinnabar Lump|lib_materials_mineral_cinnabar_lump.png|
 mineral_coal_lump|Mineral - Coal Lump|lib_materials_mineral_coal_lump.png|coal 1,flammable 1
 mineral_cryolite_lump|Mineral - cryolite Lump|lib_materials_mineral_cryolite_lump.png|
-mineral_diamond|Mineral - Diamond|lib_materials_mineral_diamond.png|
-mineral_diamond_2|Mineral - Diamond 2|lib_materials_mineral_diamond_2.png|
+mineral_diamond_gem|Mineral - Diamond|lib_materials_mineral_diamond.png|
+mineral_diamond_2_gem|Mineral - Diamond 2|lib_materials_mineral_diamond_2.png|
 mineral_flint|Mineral - Flint|lib_materials_mineral_flint.png|
 mineral_flux|Mineral - Flux|lib_materials_mineral_flux.png|
 mineral_galena_lump|Mineral - Galena Lump|lib_materials_mineral_galena_lump.png|
@@ -107,10 +107,10 @@ mineral_lignite_lump|Mineral - Lignite Lump|lib_materials_mineral_lignite_lump.p
 mineral_limonite_lump|Mineral - limonite Lump|lib_materials_mineral_limonite_lump.png|
 mineral_magnetite_lump|Mineral - magnetite Lump|lib_materials_mineral_magnetite_lump.png|
 mineral_malachite_lump|Mineral - malachite Lump|lib_materials_mineral_malachite_lump.png|
-mineral_mese_crystal|Mineral - Mese Crystal|lib_materials_mineral_mese_crystal.png|
-mineral_mese_crystal_fragment|Mineral - Mese Crystal Fragment|lib_materials_mineral_mese_crystal_fragment.png|
-mineral_mese_crystal_2|Mineral - Mese Crystal 2|lib_materials_mineral_mese_crystal_2.png|
-mineral_mese_crystal_fragment_2|Mineral - Mese Crystal Fragment 2|lib_materials_mineral_mese_crystal_fragment_2.png|
+mineral_mese_gem|Mineral - Mese Crystal|lib_materials_mineral_mese_crystal.png|
+mineral_mese_gem_fragment|Mineral - Mese Crystal Fragment|lib_materials_mineral_mese_crystal_fragment.png|
+mineral_mese_gem_2|Mineral - Mese Crystal 2|lib_materials_mineral_mese_crystal_2.png|
+mineral_mese_gem_fragment_2|Mineral - Mese Crystal Fragment 2|lib_materials_mineral_mese_crystal_fragment_2.png|
 mineral_obsidian_shard|Mineral - Obsidian Shard|lib_materials_mineral_obsidian_shard.png|
 mineral_olivine_lump|Mineral - olivine Lump|lib_materials_mineral_olivine_lump.png|
 mineral_quartz_crystal|Mineral - Quartz Crystal|lib_materials_mineral_quartz_crystal_full.png|

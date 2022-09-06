@@ -50,6 +50,220 @@ for _, desc in pairs(spel) do
 	})
 end
 
+
+local function register_speleotherms()
+	local materials = {"stone,0.008","stone_with_algae,0.006","stone_with_lichen,0.006","stone_with_moss,0.006","stone_with_salt,0.004","ice_thin,0.003","mineral_amethyst_crystal,0.001",
+				"mineral_emerald_crystal,0.001","mineral_mese_crystal,0.001","mineral_ruby_crystal,0.001","mineral_salt_crystal,0.002","mineral_saphire_crystal,0.001",}
+	--local __ = {name = "air", param2 = 0, prob = 0},
+
+	for m, material in pairs(materials) do
+	
+		local mat,fill = unpack(material:split(",",true))
+	
+		local schem_stalagmite_small = {
+			size = {x = 1, y = 2, z = 1},
+			--size = {x = 1, y = 2, z = 1},
+			data = {
+				{name = "gal:"..mat.."_pillar_with_wall", param2 = 0, prob = 254},
+				{name = "gal:"..mat.."_pane_pillar", param2 = 0, prob = 254}
+			},
+		}
+		local schem_stalagmite_medium = {
+			size = {x = 1, y = 3, z = 1},
+			--size = {x = 1, y = 2, z = 1},
+			data = {
+				{name = "gal:"..mat.."_pillar_with_wall_thick", param2 = 0, prob = 254},
+				{name = "gal:"..mat.."_pillar_with_wall", param2 = 0, prob = 254},
+				{name = "gal:"..mat.."_pane_pillar", param2 = 0, prob = 254}
+			},
+		}
+		local schem_stalagmite_large = {
+			size = {x = 1, y = 4, z = 1},
+			--size = {x = 1, y = 2, z = 1},
+			data = {
+				{name = "gal:"..mat.."", param2 = 0, prob = 254},
+				{name = "gal:"..mat.."_pillar_with_wall_thick", param2 = 0, prob = 254},
+				{name = "gal:"..mat.."_pillar_with_wall", param2 = 0, prob = 254},
+				{name = "gal:"..mat.."_pane_pillar", param2 = 0, prob = 254}
+			},
+		}
+		local schem_stalactite_small = {
+			size = {x = 1, y = 2, z = 1},
+			--size = {x = 1, y = 2, z = 1},
+			data = {
+				{name = "gal:"..mat.."_pane_pillar", param2 = 0, prob = 254},
+				{name = "gal:"..mat.."_pillar_with_wall", param2 = 0, prob = 254}
+			},
+		}
+		local schem_stalactite_medium = {
+			size = {x = 1, y = 3, z = 1},
+			--size = {x = 1, y = 2, z = 1},
+			data = {
+				{name = "gal:"..mat.."_pane_pillar", param2 = 0, prob = 254},
+				{name = "gal:"..mat.."_pillar_with_wall", param2 = 0, prob = 254},
+				{name = "gal:"..mat.."_pillar_with_wall_thick", param2 = 0, prob = 254}
+			},
+		}
+		local schem_stalactite_large = {
+			size = {x = 1, y = 4, z = 1},
+			--size = {x = 1, y = 2, z = 1},
+			data = {
+				{name = "gal:"..mat.."_pane_pillar", param2 = 0, prob = 254},
+				{name = "gal:"..mat.."_pillar_with_wall", param2 = 0, prob = 254},
+				{name = "gal:"..mat.."_pillar_with_wall_thick", param2 = 0, prob = 254},
+				{name = "gal:"..mat.."", param2 = 0, prob = 254}
+			},
+		}
+		minetest.register_decoration({
+			name = "gal:"..mat.."_stalagmite_small",
+			deco_type = "schematic",
+			schematic = schem_stalagmite_small,
+			sidelen = 80,
+			place_on = {"group:stone"},
+			place_offset_y = 1,
+			fill_ratio = tonumber(fill),
+			y_min = -31000,
+			y_max = -50 * gal.settings.mg_world_scale,
+			flags = "all_floors",
+			rotation = "random",
+		})
+		minetest.register_decoration({
+			name = "gal:"..mat.."_stalagmite_medium",
+			deco_type = "schematic",
+			schematic = schem_stalagmite_medium,
+			sidelen = 80,
+			place_on = {"group:stone"},
+			place_offset_y = 1,
+			fill_ratio = tonumber(fill),
+			y_min = -31000,
+			y_max = -50 * gal.settings.mg_world_scale,
+			flags = "all_floors",
+			rotation = "random",
+		})
+		minetest.register_decoration({
+			name = "gal:"..mat.."_stalagmite_large",
+			deco_type = "schematic",
+			schematic = schem_stalagmite_large,
+			sidelen = 80,
+			place_on = {"group:stone"},
+			place_offset_y = 1,
+			fill_ratio = tonumber(fill),
+			y_min = -31000,
+			y_max = -50 * gal.settings.mg_world_scale,
+			flags = "all_floors",
+			rotation = "random",
+		})
+		minetest.register_decoration({
+			name = "gal:"..mat.."_stalactite_small",
+			deco_type = "schematic",
+			schematic = schem_stalactite_small,
+			sidelen = 80,
+			place_on = {"group:stone"},
+			place_offset_y = 1,
+			fill_ratio = tonumber(fill),
+			y_min = -31000,
+			y_max = -50 * gal.settings.mg_world_scale,
+			flags = "all_ceilings",
+			rotation = "random",
+		})
+		minetest.register_decoration({
+			name = "gal:"..mat.."_stalactite_medium",
+			deco_type = "schematic",
+			schematic = schem_stalactite_medium,
+			sidelen = 80,
+			place_on = {"group:stone"},
+			place_offset_y = 1,
+			fill_ratio = tonumber(fill),
+			y_min = -31000,
+			y_max = -50 * gal.settings.mg_world_scale,
+			flags = "all_ceilings",
+			rotation = "random",
+		})
+		minetest.register_decoration({
+			name = "gal:"..mat.."_stalactite_large",
+			deco_type = "schematic",
+			schematic = schem_stalactite_large,
+			sidelen = 80,
+			place_on = {"group:stone"},
+			place_offset_y = 1,
+			fill_ratio = tonumber(fill),
+			y_min = -31000,
+			y_max = -50 * gal.settings.mg_world_scale,
+			flags = "all_ceilings",
+			rotation = "random",
+		})
+	end
+end
+register_speleotherms()
+
+
+-- minetest.register_decoration({
+	-- name = "gal:speleotherms",
+	-- deco_type = "simple",
+	-- decoration = {"gal:stalactite","gal:stalactite_slimy","gal:stalactite_mossy","gal:icicle_down","gal:stalagmite","gal:stalagmite_slimy","gal:stalagmite_mossy","gal:icicle_up",},
+	-- sidelen = 80,
+	-- place_on = {"group:stone"},
+	-- fill_ratio = 0.008,
+	-- y_min = -31000,
+	-- y_max = 25,
+	-- flags = "place_center_x, place_center_z, all_floors, all_ceilings",
+	-- rotation = "random",
+-- })
+minetest.register_decoration({
+	name = "gal:speleotherm_stalagmites",
+	deco_type = "simple",
+	decoration = {"gal:stalagmite","gal:stalagmite_slimy","gal:stalagmite_mossy","gal:icicle_up",},
+	sidelen = 80,
+	place_on = {"group:stone"},
+	fill_ratio = 0.008,
+	y_min = -31000,
+	y_max = -50,
+	flags = "place_center_x, place_center_z, all_floors",
+	rotation = "random",
+})
+minetest.register_decoration({
+	name = "gal:speleotherm_stalactites",
+	deco_type = "simple",
+	decoration = {"gal:stalactite","gal:stalactite_slimy","gal:stalactite_mossy","gal:icicle_down",},
+	sidelen = 80,
+	place_on = {"group:stone"},
+	fill_ratio = 0.008,
+	y_min = -31000,
+	y_max = -50,
+	flags = "place_center_x, place_center_z, all_ceilings",
+	rotation = "random",
+})
+-- minetest.register_decoration({
+	-- name = "gal:speleotherms_slimy",
+	-- deco_type = "simple",
+	-- decoration = {"gal:stalactite_slimy","gal:stalagmite_slimy",},
+	-- sidelen = 80,
+	-- place_on = {"group:stone"},
+	-- fill_ratio = 0.008,
+	-- y_min = -31000,
+	-- y_max = 25,
+	-- flags = "place_center_x, place_center_z, all_floors, all_ceilings",
+	-- rotation = "random",
+-- })
+-- minetest.register_decoration({
+	-- name = "gal:speleotherms_icy",
+	-- deco_type = "simple",
+	-- decoration = {"gal:icicle_down","gal:icicle_up",},
+	-- sidelen = 80,
+	-- place_on = {"group:stone"},
+	-- fill_ratio = 0.008,
+	-- y_min = -31000,
+	-- y_max = 25,
+	-- flags = "place_center_x, place_center_z, all_floors, all_ceilings",
+	-- rotation = "random",
+-- })
+
+
+
+
+
+
+
 -- They can be made into cobblestone, to get them out of inventory.
 minetest.register_craft({
 	output = "gal:stone_cobble",

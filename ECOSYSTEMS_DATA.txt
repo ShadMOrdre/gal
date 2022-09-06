@@ -1,0 +1,50 @@
+
+
+n1,n2	=	normal,special
+n3,n4	=	grass,pale,litter
+n5,n6	=	dirt,dirt_sandy,sand
+n7,n8	=	clay,sand,silt
+
+
+
+
+determining factors:
+altitude,humidity,heat,
+
+n1,n2,n3	=	(dirt,)(clayey,sandy,silty,)(clay,sand,silt)		dirts/rocks								< 0.5 = set_1, < 1.00 = set_2, > 1.00 = set_3
+n4,n5,n6	=	biome,grass,grass_pale,special						covers									< 0.5 = set_1, < 0.75 = set_2, < 1.00 = set_3, > 1.00 = set_4
+n7,n8		=	special_1,special_2,special_3						specialized ground covers
+
+
+
+
+
+
+standards
+wetlands			=	determined by lakes value
+riverside			=	determined by rivers proximity
+with_soil			=	used to place towns
+
+
+
+
+
+
+dirt based on moisture content, i.e., humidity and lakes / river proximity.
+
+dirt type of dirt, clay, sand or silt, clayey, sandy, silty,
+
+course, cracked dirts go with dirt_clayey,
+
+compacted, loam, trail dirts go with dirt_sandy,
+
+black, brown, dark dirts go with dirt_silty,
+
+clay_red, red dirts go with dirt_clay,
+
+dry, dried dirts go with sand,
+
+mud, peat, sod dirts go with dirt_silt,
+
+
+

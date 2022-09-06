@@ -114,6 +114,7 @@ local S = gal.intllib
 	gal.lib.node.register_to_game("litter_sticks", {
 		description = S("Litter - Sticks"),
 		drawtype = "nodebox",
+		--drawtype = "plantlike",
 		tiles = {"lib_materials_litter_stick.png^(lib_materials_litter_stick.png^[transformFX)"},
 		inventory_image = "lib_materials_litter_stick.png^(lib_materials_litter_stick.png^[transformFX)",
 		wield_image = "lib_materials_litter_stick.png^(lib_materials_litter_stick.png^[transformFX)",
@@ -136,7 +137,239 @@ local S = gal.intllib
 	})
 	
 
+local abs = math.abs
+local max = math.max
 
+
+local function get_3d_dist(a,b,c,d_type)
+	local dist
+	if d_type then
+		if d_type == "c" then
+			dist = (max(abs(a), max(abs(b), abs(c))))
+		elseif d_type == "e" then
+			dist = ((a * a) + (b * b) + (c * c))^0.5
+		elseif d_type == "m" then
+			dist = (abs(a) + abs(b) + abs(c))
+		elseif d_type == "cm" then
+			dist = (max(abs(a), max(abs(b), abs(c))) + (abs(a) + abs(b) + abs(c))) * 0.5
+		end
+	end
+	return dist
+end
+
+-- local function make_boulder(psize,pos,area,data,c_stone)
+
+			-- -- local psize = {
+				-- -- -- x = math.random(p_size),
+				-- -- -- y = math.random(p_size),
+				-- -- -- z = math.random(p_size),
+				-- -- x = p_size.x,
+				-- -- y = p_size.y,
+				-- -- z = p_size.z,
+			-- -- }
+	
+	-- --local t_size = psize.x * psize.y * psize.z
+	-- --local t_size = 1
+	
+	-- -- local t_boulder = {
+		-- -- size = {x=psize.x,y=psize.y,z=psize.z},
+		-- -- data = {},
+	-- -- }
+
+	-- -- local t_air = {param2 = 0, name = "air", prob = 254}
+	-- -- local t_air_ignore = {param2 = 0, name = "air", prob = 0}
+		-- -- --local t_ignore = {param2 = 0, name = "ignore", prob = 254}
+	-- -- local t_stone = {param2 = 0, name = "default:stone", prob = 254}
+
+	-- local chunk_center_rand = {
+		-- x = (psize.x / 2) + math.random(psize.x / 5),
+		-- y = (psize.y / 2) + math.random(psize.y / 5),
+		-- z = (psize.z / 2) + math.random(psize.z / 5),
+	-- }
+	-- local chunk_points = {
+		-- --{x=1,						y=1,						z=1},
+		-- --{x=(psize.x),				y=1,						z=1},
+		-- {x=(psize.x/2),				y=(psize.y/2),				z=1},
+		-- {x=1,						y=(psize.y),				z=1},
+		-- {x=(psize.x),				y=(psize.y),				z=1},
+		-- --{x=(psize.x/2),				y=1,						z=(psize.z/2)},
+		-- {x=1,						y=(psize.y/2),				z=(psize.z/2)},
+		-- {x=(chunk_center_rand.x),	y=(chunk_center_rand.y),	z=(chunk_center_rand.z)},
+		-- {x=(psize.x),				y=(psize.y/2),				z=(psize.z/2)},
+		-- {x=(psize.x/2),				y=(psize.y),				z=(psize.z/2)},
+		-- --{x=1,						y=1,						z=(psize.z)},
+		-- --{x=(psize.x),				y=1,						z=(psize.z)},
+		-- {x=(psize.x/2),				y=(psize.y/2),				z=(psize.z)},
+		-- {x=1,						y=(psize.y),				z=(psize.z)},
+		-- {x=(psize.x),				y=(psize.y),				z=(psize.z)},
+	-- }
+
+	-- -- local top = math.random(6,H_LAG) --grab a random height for the stalagmite
+	-- -- for j = 0, top do --y
+		-- -- for k = -3, 3 do
+			-- -- for l = -3, 3 do
+				-- -- if j == 0 then
+					-- -- if k*k + l*l <= 9 then
+						-- -- local vi = area:index(x+k, y+j, z+l-3)
+						-- -- data[vi] = c_stone
+					-- -- end
+				-- -- elseif j <= top/5 then
+					-- -- if k*k + l*l <= 4 then
+						-- -- local vi = area:index(x+k, y+j, z+l-3)
+						-- -- data[vi] = c_stone
+					-- -- end
+				-- -- elseif j <= top/5 * 3 then
+					-- -- if k*k + l*l <= 1 then
+						-- -- local vi = area:index(x+k, y+j, z+l-3)
+						-- -- data[vi] = c_stone
+					-- -- end
+				-- -- else
+					-- -- local vi = area:index(x, y+j, z-3)
+					-- -- data[vi] = c_stone
+				-- -- end
+			-- -- end
+		-- -- end
+	-- -- end
+
+			-- -- for i_x = -(psize.x/2), (psize.x/2) do
+				-- -- for i_y = -(psize.y/2), (psize.y/2) do
+					-- -- for i_z = -(psize.z/2), (psize.z/2) do
+	-- for i_x = -1, psize.x do
+		-- for i_y = 1, psize.y do
+			-- for i_z = 1, psize.z do
+				-- local thisidx
+				-- local thisdist
+				-- local last
+				-- local this
+				-- for i, point in ipairs(chunk_points) do
+				
+					-- this = get_3d_dist((i_x - point.x),(i_y - point.y),(i_z - point.z),"cm")
+
+					-- if last then
+						-- if last > this then
+							-- last = this
+							-- thisidx = i
+							-- thisdist = this
+						-- elseif last == this then
+							-- thisidx = i
+							-- thisdist = this
+						-- end
+					-- else
+						-- last = this
+						-- thisidx = i
+						-- thisdist = this
+					-- end
+				-- end
+
+				-- if thisidx == 5 then
+				
+					-- local c_x = i_x - (psize.x / 2)
+					-- local c_y = i_y - (psize.y / 2)
+					-- local c_z = i_z - (psize.z / 2)
+				
+					-- local vi = area:index(pos.x+c_x, pos.y+c_y, pos.z+c_z)
+					-- data[vi] = c_stone
+					-- -- t_boulder.data[t_size] = c_stone
+						-- -- -- if y == (10 + chunk_rand) then
+							-- -- -- t_node = t_top
+						-- -- -- elseif y < (10 + chunk_rand) and y >= (5 + chunk_rand) then
+							-- -- -- t_node = t_filler
+						-- -- -- elseif y < (5 + chunk_rand) then
+							-- -- -- t_node = t_stone
+						-- -- -- else
+							-- -- -- t_node = t_ignore
+						-- -- -- end
+				-- -- else
+					-- -- if i_y > (psize.y/2) then
+						-- -- t_boulder.data[t_size] = t_air
+							-- -- --t_node = t_ignore
+					-- -- else
+						-- -- t_boulder.data[t_size] = t_ignore
+					-- -- end
+				-- end
+				
+				-- --t_size = t_size + 1
+				
+			-- end
+		-- end
+	-- end
+	
+	-- --return t_boulder
+
+-- end
+
+-- minetest.register_decoration({
+	-- name = "gal:boulder",
+	-- deco_type = "schematic",
+	-- place_on = {"group:dirt", "group:stone", "group:gravel"},
+	-- sidelen = 80,
+	-- fill_ratio = 0.001,
+	-- -- biomes = {
+		-- -- "hot_arid_coastal", "hot_arid_lowland", "hot_arid_shelf", "hot_arid_highland",
+		-- -- "warm_arid_coastal", "warm_arid_lowland", "warm_arid_shelf", "warm_arid_highland",
+		-- -- "temperate_arid_coastal", "temperate_arid_lowland", "temperate_arid_shelf", "temperate_arid_highland",
+		-- -- "cool_arid_coastal", "cool_arid_lowland", "cool_arid_shelf", "cool_arid_highland",
+		-- -- "cold_arid_coastal", "cold_arid_lowland", "cold_arid_shelf", "cold_arid_highland",
+		-- -- "hot_humid_mountain", "hot_semihumid_mountain", "hot_temperate_mountain", "hot_semiarid_mountain", "hot_arid_mountain",
+		-- -- "warm_humid_mountain", "warm_semihumid_mountain", "warm_temperate_mountain", "warm_semiarid_mountain", "warm_arid_mountain",
+		-- -- "temperate_humid_mountain", "temperate_semihumid_mountain", "temperate_temperate_mountain", "temperate_semiarid_mountain", "temperate_arid_mountain",
+		-- -- "cool_humid_mountain", "cool_semihumid_mountain", "cool_temperate_mountain", "cool_semiarid_mountain", "cool_arid_mountain",
+		-- -- "cold_humid_mountain", "cold_semihumid_mountain", "cold_temperate_mountain", "cold_semiarid_mountain", "cold_arid_mountain",
+	-- -- },
+	-- flags = "force_placement, place_center_x, place_center_z",
+		-- ----schematic = dofile(gal.path.."/schems/lib_materials_schem_rock_01.lua"),
+	-- --schematic = make_boulder(20),
+	-- schematic = make_boulder({x=15,y=15,z=15}),
+	-- rotation = "random",
+-- })
+-- minetest.register_decoration({
+	-- name = "gal:erratic",
+	-- deco_type = "schematic",
+	-- place_on = {"group:dirt", "group:stone", "group:gravel"},
+	-- sidelen = 80,
+	-- fill_ratio = 0.001,
+	-- -- biomes = {
+		-- -- "hot_arid_coastal", "hot_arid_lowland", "hot_arid_shelf", "hot_arid_highland",
+		-- -- "warm_arid_coastal", "warm_arid_lowland", "warm_arid_shelf", "warm_arid_highland",
+		-- -- "temperate_arid_coastal", "temperate_arid_lowland", "temperate_arid_shelf", "temperate_arid_highland",
+		-- -- "cool_arid_coastal", "cool_arid_lowland", "cool_arid_shelf", "cool_arid_highland",
+		-- -- "cold_arid_coastal", "cold_arid_lowland", "cold_arid_shelf", "cold_arid_highland",
+		-- -- "hot_humid_mountain", "hot_semihumid_mountain", "hot_temperate_mountain", "hot_semiarid_mountain", "hot_arid_mountain",
+		-- -- "warm_humid_mountain", "warm_semihumid_mountain", "warm_temperate_mountain", "warm_semiarid_mountain", "warm_arid_mountain",
+		-- -- "temperate_humid_mountain", "temperate_semihumid_mountain", "temperate_temperate_mountain", "temperate_semiarid_mountain", "temperate_arid_mountain",
+		-- -- "cool_humid_mountain", "cool_semihumid_mountain", "cool_temperate_mountain", "cool_semiarid_mountain", "cool_arid_mountain",
+		-- -- "cold_humid_mountain", "cold_semihumid_mountain", "cold_temperate_mountain", "cold_semiarid_mountain", "cold_arid_mountain",
+	-- -- },
+	-- flags = "force_placement, place_center_x, place_center_z",
+		-- ----schematic = dofile(gal.path.."/schems/lib_materials_schem_rock_01.lua"),
+	-- --schematic = make_boulder(20),
+	-- schematic = make_boulder({x=20,y=20,z=20}),
+	-- rotation = "random",
+-- })
+-- minetest.register_decoration({
+	-- name = "gal:hoodoo",
+	-- deco_type = "schematic",
+	-- place_on = {"group:dirt", "group:stone", "group:gravel"},
+	-- sidelen = 80,
+	-- fill_ratio = 0.001,
+	-- -- biomes = {
+		-- -- "hot_arid_coastal", "hot_arid_lowland", "hot_arid_shelf", "hot_arid_highland",
+		-- -- "warm_arid_coastal", "warm_arid_lowland", "warm_arid_shelf", "warm_arid_highland",
+		-- -- "temperate_arid_coastal", "temperate_arid_lowland", "temperate_arid_shelf", "temperate_arid_highland",
+		-- -- "cool_arid_coastal", "cool_arid_lowland", "cool_arid_shelf", "cool_arid_highland",
+		-- -- "cold_arid_coastal", "cold_arid_lowland", "cold_arid_shelf", "cold_arid_highland",
+		-- -- "hot_humid_mountain", "hot_semihumid_mountain", "hot_temperate_mountain", "hot_semiarid_mountain", "hot_arid_mountain",
+		-- -- "warm_humid_mountain", "warm_semihumid_mountain", "warm_temperate_mountain", "warm_semiarid_mountain", "warm_arid_mountain",
+		-- -- "temperate_humid_mountain", "temperate_semihumid_mountain", "temperate_temperate_mountain", "temperate_semiarid_mountain", "temperate_arid_mountain",
+		-- -- "cool_humid_mountain", "cool_semihumid_mountain", "cool_temperate_mountain", "cool_semiarid_mountain", "cool_arid_mountain",
+		-- -- "cold_humid_mountain", "cold_semihumid_mountain", "cold_temperate_mountain", "cold_semiarid_mountain", "cold_arid_mountain",
+	-- -- },
+	-- flags = "force_placement, place_center_x, place_center_z",
+		-- ----schematic = dofile(gal.path.."/schems/lib_materials_schem_rock_01.lua"),
+	-- --schematic = make_boulder(20),
+	-- schematic = make_boulder({x=20,y=40,z=20}),
+	-- rotation = "random",
+-- })
 
 
 -- Push an element onto a stack (table).

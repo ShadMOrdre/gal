@@ -1,0 +1,56 @@
+						TREE TYPE:								TOP:									HUMIDITY:				TREES:							
+-------------------------------------------------------------------------------------------------------------------------------------------
+DIRT_WITH_PALE:			NONE									PALE															GRASSES
+DIRT_WITH_GRASS:		NONE									GRASS															GRASSES
+DIRT_WITH_RAIN:			NONE									RAIN															GRASSES
+DIRT_WITH_DARK:			NONE									DARK															GRASSES
+CLAYEY_WITH_PALE:		MIXED JUNGLE / PALM FOREST				PALE
+CLAYEY_WITH_GRASS:		MIXED JUNGLE / BROADLEAF FOREST			GRASS
+CLAYEY_WITH_RAIN:		MIXED JUNGLE FOREST						RAIN
+CLAYEY_WITH_DARK:		MIXED JUNGLE FOREST						DARK
+CLAY_RED:				DENSE JUNGLE FOREST						DIRT
+SANDY_WITH_PALE:		MIXED PALM FOREST						PALE
+SANDY_WITH_GRASS:		MIXED PALM / BROADLEAF FOREST			GRASS
+SANDY_WITH_RAIN:		MIXED PALM / JUNGLE FOREST				RAIN
+SANDY_WITH_DARK:		MIXED PALM FOREST						DARK
+DIRT_SAND:				DENSE PALM FOREST						DIRT
+SILTY_WITH_PALE:		MIXED BROADLEAF / PALM FOREST			PALE
+SILTY_WITH_GRASS:		MIXED BROADLEAF FOREST					GRASS
+SILTY_WITH_RAIN:		MIXED BROADLEAF / JUNGLE FOREST			RAIN
+SILTY_WITH_DARK:		MIXED BROADLEAF FOREST					DARK
+SILT_01:				DENSE BROADLEAF FOREST					DIRT
+
+
+
+
+
+			HUMID										SEMIHUMID																TEMPERATE												SEMIARID
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HOT																																	
+	Clay	Cocoa,Ebony,Jungle,Kapok,Mahogany,			Fig,Laurel,Teak,														Eucalyptus,												Acacia,
+	Sand	Palm Trees,									Bamboo Trees,															Jacaranda,Wattle,										Acacia,
+	Silt	Brazilnut,Capirona,Rubber,					Fern Trees,																Jacaranda,Ipe,Yellowwood								Acacia,Dry
+
+
+WARM
+	Clay																	
+	Sand																	
+	Silt																	
+
+
+TEMPERATE
+	Clay	Beech,Southern Beech,Maple,Sugar Maple		Ash,Cherry Blossom,American Chestnut,Chestnut,							Cedar,Ginkgo,Oak										Oak,
+	Sand	Southern Oak,Yellow Pine					Red Oak,White Oak,Pinyon Pine											Oak,Ponderosa Pine										Mesquite,Oak,
+	Silt	Cypress,Willow,								Birch,Cherry,Poplar,Yew													Aspen,Apple												Mesquite
+
+
+COOL
+	Clay	Beech,Coast Fir,Doug Fir,Fir,Sugar Maple	Beech,Doug Fir,Fir,Redwood,Coast Redwood,Sugar Maple					Fir														?Pine
+	Sand	Conifer,Lavender,Oak,Pine,Sequoia			Conifer,Red Oak,White Oak,Pinyon Pine,Sequoia,Giant Sequoia				Conifer													?Pine
+	Silt	Birch,Cherry,Larch,Poplar,Spruce,Willow		Birch,Larch,Sitka Spruce,Spruce,Willow									Larch													?Pine
+
+
+COLD
+	Clay																	
+	Sand																	
+	Silt																	

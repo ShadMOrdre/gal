@@ -36,10 +36,10 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 	gal.settings = {
 		clear_biomes						= minetest.settings:get_bool("gal.clear_biomes") or true,
 		clear_decos							= minetest.settings:get_bool("gal.clear_decos") or true,
-		clear_ores							= minetest.settings:get_bool("gal.clear_ores") or false,
+		clear_ores							= minetest.settings:get_bool("gal.clear_ores") or true,
 		color_grass_use						= minetest.settings:get_bool("gal.color_grass_use") or false,
 		color_grass_reg						= minetest.settings:get_bool("gal.color_grass_reg") or true,
-		mg_world_scale						= tonumber(minetest.settings:get("gal.mg_world_scale")) or 1,
+		mg_world_scale						= tonumber(minetest.settings:get("gal.mg_world_scale")) or 1.0,
 		mg_base_height						= tonumber(minetest.settings:get("gal.mg_base_height")) or 300,
 		enable_lib_shapes_support			= minetest.settings:get_bool("gal.enable_lib_shapes_support") or true,
 		enable_mapgen_aliases				= minetest.settings:get_bool("gal.enable_mapgen_aliases") or false,
@@ -56,6 +56,40 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 	end
 	
 
+	minetest.override_item("default:leaves", {
+		drawtype = "allfaces_optional",
+		walkable = false,
+	})
+	minetest.override_item("default:jungleleaves", {
+		drawtype = "allfaces_optional",
+		walkable = false,
+	})
+	minetest.override_item("default:pine_needles", {
+		drawtype = "allfaces_optional",
+		walkable = false,
+	})
+	minetest.override_item("default:acacia_leaves", {
+		drawtype = "allfaces_optional",
+		walkable = false,
+	})
+	minetest.override_item("default:aspen_leaves", {
+		drawtype = "allfaces_optional",
+		walkable = false,
+	})
+
+	gal.ecosystem_base = ""
+	if minetest.get_mapgen_setting("mg_name") == "singlenode" then
+		if minetest.global_exists("mg_earth") then
+			gal.ecosystem_base = "gal"
+		else
+			gal.ecosystem_base = "default"
+		end
+	else
+		gal.ecosystem_base = "default"
+	end
+
+
+
 	gal.color_grass_reg = gal.settings.color_grass_reg
 	gal.color_grass_use = gal.settings.color_grass_use
 	gal.enable_lib_shapes = gal.settings.enable_lib_shapes_support
@@ -69,13 +103,18 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 
 
 	--minetest.set_mapgen_setting("seed", "16096304901732432682", true)
-	gal.mg_seed = minetest.get_mapgen_setting("seed")
-	minetest.set_mapgen_setting("mg_flags", "nocaves, nodungeons, light, decorations, biomes, ores", true)
+	-- gal.mg_seed = minetest.get_mapgen_setting("seed")
+	-- minetest.set_mapgen_setting("mg_flags", "nocaves, nodungeons, light, decorations, biomes, ores", true)
 	--if minetest.get_mapgen_setting("mg_name") == "v7" then
 		--minetest.set_mapgen_setting("mgv7_spflags", "nomountains, noridges, nofloatlands, nocaverns", true)
 	--end
 
-
+	gal.gui = {}  --controls basic gui formspec and background images
+	dofile(gal.path_mod .. "/gui_init.lua")
+	gal.player = {}  --controls all aspects of player.  Sets the definition of and controls attributes of(avatar and game stats)
+	gal.player.api = player_api
+	gal.sfinv = {}  --container for sfinv and smart_sfinv and other inventory control mods
+	gal.sfinv = sfinv
 
 	minetest.log(S("[MOD] gal:  Config complete..."))
 
@@ -205,6 +244,21 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 		minetest.register_alias("mapgen_stone", "gal:stone")
 		minetest.register_alias("mapgen_water_source", "gal:liquid_water_source")
 		minetest.register_alias("mapgen_river_water_source", "gal:liquid_water_river_source")
+
+		-- minetest.register_alias_force("default:stone", "gal:stone")
+		-- minetest.register_alias_force("default:dirt", "gal:dirt")
+		-- minetest.register_alias_force("default:dirt_with_grass", "gal:dirt_with_grass" )
+
+		-- minetest.register_alias_force("default:leaves", "gal:tree_default_leaves")
+		-- minetest.register_alias_force("default:tree", "gal:tree_default_trunk")
+		-- minetest.register_alias_force("default:wood", "gal:tree_default_wood")
+
+		-- minetest.register_alias_force("default:jungleleaves", "gal:tree_jungle_leaves")
+		-- minetest.register_alias_force("default:jungletree", "gal:tree_jungle_tree")
+		-- minetest.register_alias_force("default:junglewood", "gal:tree_jungle_wood")
+
+		-- minetest.register_alias_force("default:water_source", "gal:liquid_water_source")
+		-- minetest.register_alias_force("default:river_water_source", "gal:liquid_water_river_source")
 	end
 
 minetest.log(S("[MOD] gal:  Successfully loaded."))

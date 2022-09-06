@@ -16,7 +16,7 @@ gal.color_grass_use (Enable to use colored grass nodes.  true / false) bool fals
 gal.color_grass_reg (Enable to register colored grass nodes.  true / false) bool true
 
 #Defines the scale in which the world is generated.  Has the effect of making a map of size 300m x 300m to 30000m x 30000m.
-gal.mg_world_scale (Sets the scale of the world map.  Valid values are from 0.01 to 1. Default is 1.) int 1 0.01 1
+gal.mg_world_scale (Sets the scale of the world map.  Valid values are from 0.01 to 1. Default is 1.) float 1.0 0.01 1.0
 
 #Sets the height used to define biomes and ecosystems.  Stretches terrain vertically.  Good values range from 240 to 420 with 300 as the default.
 gal.mg_base_height (Sets the maximum altitude in which to define biomes and ecosystems. Default is 300.) int 300 1 30000
