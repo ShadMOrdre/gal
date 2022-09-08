@@ -34,11 +34,11 @@ cool_arid||gal:stone_gravel|3|gal:stone_granite_01|4|gal:stone_basalt_01|gal:liq
 #
 #Name|Dust|NodeTop|NodeTopDepth|Filler|FillerDepth|Stone|WaterTop|WaterTopDepth|Water|River water|RiverBed|RiverBedDepth|CaveLiquid|DungeonNode|DungeonAlt|DungeonStair|Y-min|Y-max|Temperature|Humidity|MaxPos|MinPos|VerticalBlend|
 #COLD
-cold_humid||gal:dirt_permafrost_with_snow|1|gal:dirt_permafrost|4|gal:stone|gal:ice|2|gal:ice|gal:ice|gal:stone_gravel||||||-31000|31000|cold|humid||||
-cold_semihumid||gal:dirt_permafrost_with_snow|1|gal:dirt_permafrost|4|gal:stone|gal:ice|2|gal:ice|gal:ice|gal:stone_gravel||||||-31000|31000|cold|semihumid||||
-cold_temperate||gal:dirt_permafrost|1|gal:dirt_permafrost|4|gal:stone|gal:ice|2|gal:ice|gal:ice|gal:stone_gravel||||||-31000|31000|cold|temperate||||
-cold_semiarid||gal:dirt_permafrost|1|gal:dirt_permafrost|4|gal:stone|gal:ice|2|gal:ice|gal:ice|gal:stone_gravel||||||-31000|31000|cold|semiarid||||
-cold_arid||gal:dirt_permafrost|1|gal:dirt_permafrost|4|gal:stone|gal:ice|2|gal:ice|gal:ice|gal:stone_gravel||||||-31000|31000|cold|arid||||
+cold_humid||gal:dirt_permafrost_with_snow|1|gal:dirt_permafrost|4|gal:stone|gal:ice|10|gal:liquid_water_source|gal:ice|gal:stone_gravel||||||-31000|31000|cold|humid||||
+cold_semihumid||gal:dirt_permafrost_with_snow|1|gal:dirt_permafrost|4|gal:stone|gal:ice|8|gal:liquid_water_source|gal:ice|gal:stone_gravel||||||-31000|31000|cold|semihumid||||
+cold_temperate||gal:dirt_permafrost|1|gal:dirt_permafrost|4|gal:stone|gal:ice|6|gal:liquid_water_source|gal:ice|gal:stone_gravel||||||-31000|31000|cold|temperate||||
+cold_semiarid||gal:dirt_permafrost|1|gal:dirt_permafrost|4|gal:stone|gal:ice|3|gal:liquid_water_source|gal:ice|gal:stone_gravel||||||-31000|31000|cold|semiarid||||
+cold_arid||gal:dirt_permafrost|1|gal:dirt_permafrost|4|gal:stone|gal:ice|1|gal:liquid_water_source|gal:ice|gal:stone_gravel||||||-31000|31000|cold|arid||||
 #
 #Name|Dust|NodeTop|NodeTopDepth|Filler|FillerDepth|Stone|WaterTop|WaterTopDepth|Water|River water|RiverBed|RiverBedDepth|CaveLiquid|DungeonNode|DungeonAlt|DungeonStair|Y-min|Y-max|Temperature|Humidity|MaxPos|MinPos|VerticalBlend|
 #SWAMPS
