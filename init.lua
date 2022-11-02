@@ -28,78 +28,119 @@ minetest.log(S("[MOD] gal:  Version:") .. S(gal.ver_str))
 minetest.log(S("[MOD] gal:  Legal Info: Copyright ") .. S(gal.copyright) .. " " .. S(gal.authorship) .. "")
 minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 
+	gal.settings = {
+		mg_world_scale						= tonumber(minetest.settings:get("gal.mg_world_scale")) or 1.0,
+		mg_base_height						= tonumber(minetest.settings:get("gal.mg_base_height")) or 300,
+		clear_biomes						= minetest.settings:get_bool("gal.clear_biomes") or false,
+		clear_decos							= minetest.settings:get_bool("gal.clear_decos") or false,
+		clear_ores							= minetest.settings:get_bool("gal.clear_ores") or false,
+		enable_biomes						= minetest.settings:get_bool("gal.enable_biomes") or true,
+		enable_decos						= minetest.settings:get_bool("gal.enable_decos") or true,
+		enable_ores							= minetest.settings:get_bool("gal.enable_ores") or true,
+		enable_ecosystems					= minetest.settings:get_bool("gal.enable_ecosystems") or true,
+		enable_lib_shapes_support			= minetest.settings:get_bool("gal.enable_lib_shapes_support") or true,
+		enable_mapgen_aliases				= minetest.settings:get_bool("gal.enable_mapgen_aliases") or false,
+		enable_node_aliases					= minetest.settings:get_bool("gal.enable_node_aliases") or false,
+		color_grass_use						= minetest.settings:get_bool("gal.color_grass_use") or false,
+		color_grass_reg						= minetest.settings:get_bool("gal.color_grass_reg") or true,
+	}
 
+	if gal.settings.clear_biomes == true then
+		minetest.clear_registered_biomes()
+	end
+	if gal.settings.clear_decos == true then
+		minetest.clear_registered_decorations()
+	end
+	if gal.settings.clear_ores == true then
+		minetest.clear_registered_ores()
+	end
+	
+	gal.config = {}
 	gal.lib = {}
 	gal.mapgen = {}
 	gal.liquids = {}
 
-	gal.settings = {
-		clear_biomes						= minetest.settings:get_bool("gal.clear_biomes") or true,
-		clear_decos							= minetest.settings:get_bool("gal.clear_decos") or true,
-		clear_ores							= minetest.settings:get_bool("gal.clear_ores") or true,
-		color_grass_use						= minetest.settings:get_bool("gal.color_grass_use") or false,
-		color_grass_reg						= minetest.settings:get_bool("gal.color_grass_reg") or true,
-		mg_world_scale						= tonumber(minetest.settings:get("gal.mg_world_scale")) or 1.0,
-		mg_base_height						= tonumber(minetest.settings:get("gal.mg_base_height")) or 300,
-		enable_lib_shapes_support			= minetest.settings:get_bool("gal.enable_lib_shapes_support") or true,
-		enable_mapgen_aliases				= minetest.settings:get_bool("gal.enable_mapgen_aliases") or false,
-	}
 
-	if gal.settings.clear_biomes then
-		minetest.clear_registered_biomes()
-	end
-	if gal.settings.clear_decos then
-		minetest.clear_registered_decorations()
-	end
-	if gal.settings.clear_ores then
-		minetest.clear_registered_ores()
-	end
-	
-
-	minetest.override_item("default:leaves", {
-		drawtype = "allfaces_optional",
-		walkable = false,
-	})
-	minetest.override_item("default:jungleleaves", {
-		drawtype = "allfaces_optional",
-		walkable = false,
-	})
-	minetest.override_item("default:pine_needles", {
-		drawtype = "allfaces_optional",
-		walkable = false,
-	})
-	minetest.override_item("default:acacia_leaves", {
-		drawtype = "allfaces_optional",
-		walkable = false,
-	})
-	minetest.override_item("default:aspen_leaves", {
-		drawtype = "allfaces_optional",
-		walkable = false,
-	})
-
-	gal.ecosystem_base = ""
-	if minetest.get_mapgen_setting("mg_name") == "singlenode" then
-		if minetest.global_exists("mg_earth") then
-			gal.ecosystem_base = "gal"
-		else
-			gal.ecosystem_base = "default"
-		end
-	else
-		gal.ecosystem_base = "default"
-	end
-
-
-
-	gal.color_grass_reg = gal.settings.color_grass_reg
-	gal.color_grass_use = gal.settings.color_grass_use
 	gal.enable_lib_shapes = gal.settings.enable_lib_shapes_support
 	--gal.enable_waterdynamics = true
 	gal.enable_mapgen_aliases = gal.settings.enable_mapgen_aliases
-	gal.config = "default"	--default, gal_geology, mcl?
+	gal.config.enable_node_aliases = gal.settings.enable_node_aliases
+
+	-- gal.config = "default"	--default, gal_geology, mcl?
+
+	gal.color_grass_reg = gal.settings.color_grass_reg
+	gal.color_grass_use = gal.settings.color_grass_use
+
 	gal.biome_data_file = "gal_geology_biomes"
 	gal.ore_data_file = "gal_geology_ores"
-	gal.ecosystem_data_file = "gal_geology_ecosystems"
+	-- gal.ecosystem_data_file = "gal_geology_ecosystems"
+	gal.ecosystem_data_file = "gal_ecosystems_new"
 	gal.nodes_data_file = "gal_geology_nodes"
+
+	gal.ecosystem_base = "gal"
+
+	if minetest.global_exists("default") == true then
+		minetest.override_item("default:leaves", {
+			drawtype = "allfaces_optional",
+			walkable = false,
+		})
+		minetest.override_item("default:jungleleaves", {
+			drawtype = "allfaces_optional",
+			walkable = false,
+		})
+		minetest.override_item("default:pine_needles", {
+			drawtype = "allfaces_optional",
+			walkable = false,
+		})
+		minetest.override_item("default:acacia_leaves", {
+			drawtype = "allfaces_optional",
+			walkable = false,
+		})
+		minetest.override_item("default:aspen_leaves", {
+			drawtype = "allfaces_optional",
+			walkable = false,
+		})
+
+		if minetest.get_mapgen_setting("mg_name") == "singlenode" then
+			if minetest.global_exists("mg_earth") == true then
+				if gal.settings.enable_biomes == true then
+					gal.ecosystem_base = "gal"
+				else
+					gal.ecosystem_base = "default"
+				end
+			else
+				gal.ecosystem_base = "default"
+			end
+		else
+			gal.ecosystem_base = "default"
+		end
+	end
+
+
+	if gal.settings.enable_biomes == true then
+		gal.config.enable_biomes = true
+
+		if gal.settings.enable_ores == true then
+			gal.config.enable_ores = true
+		end
+
+		if gal.settings.enable_ecosystems == true then
+			gal.config.enable_ecosystems = true
+		end
+
+		if gal.settings.enable_decos == true then
+			gal.config.enable_decos = true
+		end
+
+	else
+
+		gal.config.enable_biomes = false
+		gal.config.enable_ores = false
+		gal.config.enable_ecosystems = false
+		gal.config.enable_decos = false
+
+	end
+
 
 
 	--minetest.set_mapgen_setting("seed", "16096304901732432682", true)
@@ -111,10 +152,10 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 
 	gal.gui = {}  --controls basic gui formspec and background images
 	dofile(gal.path_mod .. "/gui_init.lua")
-	gal.player = {}  --controls all aspects of player.  Sets the definition of and controls attributes of(avatar and game stats)
-	gal.player.api = player_api
-	gal.sfinv = {}  --container for sfinv and smart_sfinv and other inventory control mods
-	gal.sfinv = sfinv
+	-- gal.player = {}  --controls all aspects of player.  Sets the definition of and controls attributes of(avatar and game stats)
+	-- gal.player.api = player_api
+	-- gal.sfinv = {}  --container for sfinv and smart_sfinv and other inventory control mods
+	-- gal.sfinv = sfinv
 
 	minetest.log(S("[MOD] gal:  Config complete..."))
 
@@ -140,13 +181,21 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 
 		--dofile(gal.path.."/gal_geology_schematics.lua")
 
-	dofile(gal.path.."/gal_geology_biomes.lua")
+	if gal.config.enable_biomes == true then
+		dofile(gal.path.."/gal_geology_biomes.lua")
+	end
 
-	dofile(gal.path.."/gal_geology_ores.lua")
+	if gal.config.enable_ores == true then
+		dofile(gal.path.."/gal_geology_ores.lua")
+	end
 
-	dofile(gal.path.."/gal_geology_ecosystems.lua")
+	if gal.config.enable_ecosystems == true then
+		dofile(gal.path.."/gal_geology_ecosystems.lua")
+	end
 
-	dofile(gal.path.."/gal_geology_decorations.lua")
+	if gal.config.enable_decos == true then
+		dofile(gal.path.."/gal_geology_decorations.lua")
+	end
 
 	dofile(gal.path.."/gal_geology_abms.lua")
 
@@ -177,8 +226,9 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 
 	dofile(gal.path .. "/gal_ecology_trees_craftrecipes.lua")
 
-	dofile(gal.path.."/gal_ecology_trees_deco_registration.lua")
-
+	if gal.config.enable_decos == true then
+		dofile(gal.path.."/gal_ecology_trees_deco_registration.lua")
+	end
 
 	gal.mapgen.c_air				= minetest.get_content_id("air")
 	gal.mapgen.c_ignore				= minetest.get_content_id("ignore")
@@ -240,7 +290,7 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 	gal.mapgen.m_dirtgrass			= "gal:dirt_with_grass"
 
 
-	if gal.enable_mapgen_aliases then
+	if gal.enable_mapgen_aliases == true then
 		minetest.register_alias("mapgen_stone", "gal:stone")
 		minetest.register_alias("mapgen_water_source", "gal:liquid_water_source")
 		minetest.register_alias("mapgen_river_water_source", "gal:liquid_water_river_source")

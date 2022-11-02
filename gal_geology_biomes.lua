@@ -93,6 +93,7 @@ for i, biome in ipairs(gal.lib.csv.read("|", gal.path .. "/" .. gal.biome_data_f
 	x = read_node_str(x)
 
 	minetest.register_biome({
+		-- name = "gal:" .. a,
 		name = a,
 		node_dust = b or nil,
 		node_top = c or nil,
@@ -115,7 +116,9 @@ for i, biome in ipairs(gal.lib.csv.read("|", gal.path .. "/" .. gal.biome_data_f
 		heat_point = tonumber(t) or temperatures[t],
 		humidity_point = tonumber(u) or humidities[u],
 		max_pos = tonumber(v),
+		-- max_pos = {x = 31000, y = tonumber(v), z = 31000} or {x = 31000, y = 31000, z = 31000},
 		min_pos = tonumber(w),
+		-- min_pos = {x = -31000, y = tonumber(w), z = -31000} or {x = -31000, y = -31000, z = -31000},
 		vertical_blend = tonumber(x) or gal.mapgen.biome_vertical_blend,
 	})
 end

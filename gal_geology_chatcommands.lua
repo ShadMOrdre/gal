@@ -108,8 +108,30 @@ minetest.register_chatcommand("biomes_get", {
 		local path = minetest.get_worldpath()..'/'..filename;
 		local file = io.open( path, 'w' );
 		
-		for biome_name, biome_def in pairs(minetest.registered_biomes) do
-			list_biomes = list_biomes .. "\t" .. biome_name .. "\n"
+		for b_name, b_def in pairs(minetest.registered_biomes) do
+			local b_stone = "NA"
+			local b_fill = "NA"
+			local b_top = "NA"
+			local b_heat = "NA"
+			local b_humid = "NA"
+
+			if b_def.node_stone and b_def.node_stone ~= "" then
+				b_stone = b_def.node_stone
+			end
+			if b_def.node_filler and b_def.node_filler ~= "" then
+				b_fill = b_def.node_filler
+			end
+			if b_def.node_top and b_def.node_top ~= "" then
+				b_top = b_def.node_top
+			end
+			if b_def.heat_point and b_def.heat_point ~= "" then
+				b_heat = tonumber(b_def.heat_point)
+			end
+			if b_def.humidity_point and b_def.humidity_point ~= "" then
+				b_humid = tonumber(b_def.humidity_point)
+			end
+
+			list_biomes = list_biomes .. b_name .. "-" .. b_stone .. ", " ..b_fill  .. ", " .. b_top .. ", " .. b_heat .. ", " .. b_humid .. ", " .. "\t" .. "\n"
 		end
 
 		if( file ) then

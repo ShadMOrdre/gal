@@ -1,30 +1,45 @@
 #gal settings
 
-#If enabled, will clear all registered biomes.
-gal.clear_biomes (Enable to clear registered biomes.  true / false) bool true
-
-#If enabled, will clear all registered decorations.
-gal.clear_decos (Enable to clear registered decorations.  true / false) bool true
-
-#If enabled, will clear all registered ores.
-gal.clear_ores (Enable to clear registered ores.  true / false) bool false
-
-#If enabled, will use colored grass base for all registered grass types.
-gal.color_grass_use (Enable to use colored grass nodes.  true / false) bool false
-
-#If enabled, will register colored grass nodes.  Ignored if Use Grass enabled.
-gal.color_grass_reg (Enable to register colored grass nodes.  true / false) bool true
-
 #Defines the scale in which the world is generated.  Has the effect of making a map of size 300m x 300m to 30000m x 30000m.
 gal.mg_world_scale (Sets the scale of the world map.  Valid values are from 0.01 to 1. Default is 1.) float 1.0 0.01 1.0
 
 #Sets the height used to define biomes and ecosystems.  Stretches terrain vertically.  Good values range from 240 to 420 with 300 as the default.
 gal.mg_base_height (Sets the maximum altitude in which to define biomes and ecosystems. Default is 300.) int 300 1 30000
 
+#If enabled, will clear all registered biomes.
+gal.clear_biomes (Enable to clear registered biomes.  true / false) bool false
+
+#If enabled, will clear all registered decorations.
+gal.clear_decos (Enable to clear registered decorations.  true / false) bool false
+
+#If enabled, will clear all registered ores.
+gal.clear_ores (Enable to clear registered ores.  true / false) bool false
+
+#If enabled, will register biomes.
+gal.enable_biomes (Enable to register biomes.  true / false) bool true
+
+#If enabled, will register decorations.
+gal.enable_decos (Enable to register decorations.  true / false) bool true
+
+#If enabled, will register ores.
+gal.enable_ores (Enable to register ores.  true / false) bool true
+
+#If enabled, will create ecosystems.
+gal.enable_ecosystems (Enable to create ecosystems.  true / false) bool true
+
 #If enabled, will use lib_shapes to register nodebox shaped nodes.  Use this for stairs, slabs, walls, doors, fences, and furniture.
 gal.enable_lib_shapes_support (Enable to register shaped nodes.  true / false) bool true
 
 #If enabled, will register all required mgv6 mapgen aliases.  Will only register stone, water, river water for all other mapgens.
 gal.enable_mapgen_aliases (Enable to register mapgen aliases.  true / false) bool false
+
+#If enabled, will register all nodes that are aliased to the gal version.
+gal.enable_node_aliases (Enable to register node aliases.  true / false) bool false
+
+#If enabled, will use colored grass base for all registered grass types.
+gal.color_grass_use (Enable to use colored grass nodes.  true / false) bool false
+
+#If enabled, will register colored grass nodes.  Ignored if Use Grass enabled.
+gal.color_grass_reg (Enable to register colored grass nodes.  true / false) bool true
 
 
