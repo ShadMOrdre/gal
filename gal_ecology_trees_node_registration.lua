@@ -182,11 +182,10 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/gal_ecology_trees_nod
 
 --NEED GROW CODE FOR CROPS
 	if grow ~= "" then
-		if string.find(grow, ",") then
-			
-		else
+		if string.find(grow, ":") then
 			new_node_def.on_construct = function(pos)
-				minetest.get_node_timer(pos):start(math.random(60,120))
+				-- minetest.get_node_timer(pos):start(math.random(60,120))
+				minetest.get_node_timer(pos):start(60)
 			end
 			new_node_def.on_timer = function(pos)
 				minetest.set_node(pos, {name=grow})
@@ -255,8 +254,8 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/gal_ecology_trees_nod
 			local new_drop1, new_drop2, new_drop3, new_drop4, new_drop5, new_drop6
 			new_node_def.drop = {}
 
-			if max_drop then
-				new_node_def.drop.max_items = max_drop
+			if max_drop and max_drop ~= "" then
+				new_node_def.drop.max_items = tonumber(max_drop)
 			end
 
 			new_node_def.drop.items = {}
@@ -773,7 +772,8 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/gal_ecology_trees_nod
 
 	if string.find(node_name, "_sapling") then
 		new_node_def.on_construct = function(pos)
-			minetest.get_node_timer(pos):start(math.random(60,120))
+			-- minetest.get_node_timer(pos):start(math.random(60,120))
+			minetest.get_node_timer(pos):start(120)
 		end
 		new_node_def.on_timer = function(pos)
 			if not gal.can_grow(pos) then
@@ -781,12 +781,18 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/gal_ecology_trees_nod
 				minetest.get_node_timer(pos):start(300)
 				return
 			end
-			if string.find(grow, ",") then
-				local new_node_schems = grow:split(",", true)
-				local rnum = math.random(1,#new_node_schems)
-				local rname = new_node_schems[rnum]
-				minetest.place_schematic(pos, gal.schematics.select(rname), "random", nil, true, "place_center_x, place_center_z")
-			end
+			-- if string.find(grow, ",") then
+				-- local new_node_schems = grow:split(",", true)
+				-- local rnum = math.random(1,#new_node_schems)
+				-- local rname = new_node_schems[rnum]
+				local rname, rreplace = unpack(grow:split("-", true))
+				-- minetest.place_schematic(pos, gal.schematics.select(rname), "random", nil, true, "place_center_x, place_center_z")
+				minetest.place_schematic(pos, gal.schem(rname, rreplace), "random", nil, true, "place_center_x, place_center_z")
+			-- end
+						-- local rtree, rtreename, rtreesapling = unpack(grow:split("_", true))
+						-- local new_node_schems = grow:split(",", true)
+						-- minetest.place_schematic(pos, gal.schematics.select(rname), "random", nil, true, "place_center_x, place_center_z")
+						-- gal.schem(t_tree, t_replace)
 		end
 		new_node_def.on_place = function(itemstack, placer, pointed_thing)
 			itemstack = gal.sapling_on_place(itemstack, placer, pointed_thing,

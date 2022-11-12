@@ -158,7 +158,7 @@ gal.lib.node.register_to_game("fire_flame_permanent", {
 
 -- Flint and steel
 
-minetest.register_tool(":gal:tool_flint_and_steel", {
+minetest.register_tool("gal:tool_flint_and_steel", {
 	description = "Flint and Steel",
 	inventory_image = "lib_materials_tool_flint_steel.png",
 	sound = {breaks = "default_tool_breaks"},

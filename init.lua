@@ -39,7 +39,7 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 		enable_ores							= minetest.settings:get_bool("gal.enable_ores") or true,
 		enable_ecosystems					= minetest.settings:get_bool("gal.enable_ecosystems") or true,
 		enable_lib_shapes_support			= minetest.settings:get_bool("gal.enable_lib_shapes_support") or true,
-		enable_mapgen_aliases				= minetest.settings:get_bool("gal.enable_mapgen_aliases") or false,
+		enable_mapgen_aliases				= minetest.settings:get_bool("gal.enable_mapgen_aliases") or true,
 		enable_node_aliases					= minetest.settings:get_bool("gal.enable_node_aliases") or false,
 		color_grass_use						= minetest.settings:get_bool("gal.color_grass_use") or false,
 		color_grass_reg						= minetest.settings:get_bool("gal.color_grass_reg") or true,
@@ -79,6 +79,9 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 
 	gal.ecosystem_base = "gal"
 
+	gal.mg_earth					= minetest.global_exists("mg_earth")
+	gal.mg_mapgen_rivers			= minetest.global_exists("mg_mapgen_rivers")
+
 	if minetest.global_exists("default") == true then
 		minetest.override_item("default:leaves", {
 			drawtype = "allfaces_optional",
@@ -102,7 +105,7 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 		})
 
 		if minetest.get_mapgen_setting("mg_name") == "singlenode" then
-			if minetest.global_exists("mg_earth") == true then
+			if gal.mg_earth == true then
 				if gal.settings.enable_biomes == true then
 					gal.ecosystem_base = "gal"
 				else
@@ -163,8 +166,6 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 
 	dofile(gal.path_mod .. "/gal_lib.lua")
 
-	dofile(gal.path_mod .. "/gal_mapgen.lua")
-
 	dofile(gal.path.."/gal_geology_node_registration.lua")
 
 	dofile(gal.path.."/gal_geology_caves.lua")
@@ -174,6 +175,8 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 	dofile(gal.path.."/gal_geology_vessels.lua")
 
 	dofile(gal.path.."/gal_geology_fire.lua")
+
+	dofile(gal.path_mod .. "/gal_mapgen.lua")
 
 	dofile(gal.path.."/gal_geology_craftitems.lua")
 
@@ -230,70 +233,17 @@ minetest.log(S("[MOD] gal:  License: ") .. S(gal.license) .. "")
 		dofile(gal.path.."/gal_ecology_trees_deco_registration.lua")
 	end
 
-	gal.mapgen.c_air				= minetest.get_content_id("air")
-	gal.mapgen.c_ignore				= minetest.get_content_id("ignore")
-	
-	gal.mapgen.c_top				= minetest.get_content_id("gal:dirt_with_grass")
-	gal.mapgen.c_filler				= minetest.get_content_id("gal:dirt")
-	gal.mapgen.c_stone				= minetest.get_content_id("gal:stone")
-	gal.mapgen.c_water				= minetest.get_content_id("gal:liquid_water_source")
-	gal.mapgen.c_river				= minetest.get_content_id("gal:liquid_water_river_source")
-	gal.mapgen.c_gravel				= minetest.get_content_id("gal:stone_gravel")
-	
-	gal.mapgen.c_lava				= minetest.get_content_id("gal:liquid_lava_source")
-	gal.mapgen.c_ice				= minetest.get_content_id("gal:ice")
-	gal.mapgen.c_mud				= minetest.get_content_id("gal:dirt_mud_01")
-	
-	gal.mapgen.c_cobble				= minetest.get_content_id("gal:stone_cobble")
-	gal.mapgen.c_mossy				= minetest.get_content_id("gal:stone_cobble_mossy")
-	gal.mapgen.c_block				= minetest.get_content_id("gal:stone_block")
-	gal.mapgen.c_brick				= minetest.get_content_id("gal:stone_brick")
-	gal.mapgen.c_sand				= minetest.get_content_id("gal:sand")
-	gal.mapgen.c_dirt				= minetest.get_content_id("gal:dirt")
-	gal.mapgen.c_dirtperm				= minetest.get_content_id("gal:dirt_permafrost")
-	gal.mapgen.c_dirtgrass				= minetest.get_content_id("gal:dirt_with_grass")
 
-	--gal.mapgen.update_biome_data()
+	if minetest.get_mapgen_setting("mg_name") ~= "singlenode" then
+		dofile(gal.path.."/gal_voxel.lua")
+	end
 
-	gal.mapgen.m_air				= "air"
-	gal.mapgen.m_ignore				= "ignore"
-	
-	gal.mapgen.m_top				= "gal:dirt_with_grass"
-	gal.mapgen.m_filler				= "gal:dirt"
-	gal.mapgen.m_stone				= "gal:stone"
-	gal.mapgen.m_watertop			= "gal:liquid_water_source"
-	gal.mapgen.m_water				= "gal:liquid_water_source"
-	gal.mapgen.m_river				= "gal:liquid_water_river_source"
-	gal.mapgen.m_bed				= "gal:stone_gravel"
-	gal.mapgen.m_caveliquid			= "gal:liquid_water_river_source"
-	gal.mapgen.m_dungeon			= "gal:stone_cobble"
-	gal.mapgen.m_dungeonalt			= "gal:stone_cobble_mossy"
-	gal.mapgen.m_dungeonstair		= "gal:stone_brick"
-	gal.mapgen.m_dust				= "air"
-	
-	gal.mapgen.m_stone				= "gal:stone"
-	gal.mapgen.m_dirt				= "gal:dirt"
-	gal.mapgen.m_grass				= "gal:dirt_with_grass"
-	gal.mapgen.m_water				= "gal:liquid_water_source"
-	gal.mapgen.m_lava				= "gal:liquid_lava_source"
-	gal.mapgen.m_ice				= "gal:ice"
-	gal.mapgen.m_mud				= "gal:dirt_mud_01"
-	gal.mapgen.m_gravel				= "gal:stone_gravel"
-	
-	gal.mapgen.m_cobble				= "gal:stone_cobble"
-	gal.mapgen.m_mossy				= "gal:stone_cobble_mossy"
-	gal.mapgen.m_block				= "gal:stone_block"
-	gal.mapgen.m_brick				= "gal:stone_brick"
-	gal.mapgen.m_sand				= "gal:sand"
-	gal.mapgen.m_dirt				= "gal:dirt"
-	gal.mapgen.m_dirtperm			= "gal:dirt_permafrost"
-	gal.mapgen.m_dirtgrass			= "gal:dirt_with_grass"
 
 
 	if gal.enable_mapgen_aliases == true then
-		minetest.register_alias("mapgen_stone", "gal:stone")
-		minetest.register_alias("mapgen_water_source", "gal:liquid_water_source")
-		minetest.register_alias("mapgen_river_water_source", "gal:liquid_water_river_source")
+		minetest.register_alias_force("mapgen_stone", "gal:stone")
+		minetest.register_alias_force("mapgen_water_source", "gal:liquid_water_source")
+		minetest.register_alias_force("mapgen_river_water_source", "gal:liquid_water_river_source")
 
 		-- minetest.register_alias_force("default:stone", "gal:stone")
 		-- minetest.register_alias_force("default:dirt", "gal:dirt")

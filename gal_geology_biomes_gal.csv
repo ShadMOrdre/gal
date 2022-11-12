@@ -1,44 +1,39 @@
 #Name|Dust|NodeTop|NodeTopDepth|Filler|FillerDepth|Stone|WaterTop|WaterTopDepth|Water|River water|RiverBed|RiverBedDepth|CaveLiquid|DungeonNode|DungeonAlt|DungeonStair|Y-min|Y-max|Temperature|Humidity|MaxPos|MinPos|VerticalBlend|
 #HOT
-#hot_humid||gal:dirt_with_litter_rainforest|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_swamp_source|gal:dirt_mud_01|2|||||-31000|31000|hot|humid||||
-hot_humid||gal:dirt_with_grass_hot_humid|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_swamp_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_moss||-31000|31000|hot|humid||||
-hot_semihumid||gal:dirt_with_grass_hot_semihumid|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_swamp_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_algae||-31000|31000|hot|semihumid||||
-hot_temperate||gal:dirt_with_grass_hot_temperate|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_swamp_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_lichen||-31000|31000|hot|temperate||||
-hot_semiarid||gal:dirt_with_grass_hot_semiarid|1|gal:dirt|4|gal:stone_desert|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_river_muddy_source|gal:stone_gravel|2||gal:stone_travertine|gal:stone_with_salt||-31000|31000|hot|semiarid||||
-hot_arid||gal:stone_sandstone_white_gravel|4|gal:stone_brown|4|gal:stone_gabbro|gal:liquid_water_source|10|gal:liquid_water_source|gal:dirt_mud_dried|gal:stone_gravel|2||gal:stone_travertine|gal:mineral_salt_crystal||-31000|31000|hot|arid||||
+hot_humid||gal:dirt_with_grass_hot_humid|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_swamp_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_moss||-31000|31000|100|100||||
+hot_semihumid||gal:dirt_with_grass_hot_semihumid|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_swamp_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_algae||-31000|31000|100|75||||
+hot_temperate||gal:dirt_with_grass_hot_temperate|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_swamp_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_lichen||-31000|31000|100|50||||
+hot_semiarid||gal:dirt_with_grass_hot_semiarid|1|gal:dirt|4|gal:stone_desert|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_river_muddy_source|gal:stone_gravel|2||gal:stone_travertine|gal:stone_with_salt||-31000|31000|100|25||||
+hot_arid||gal:stone_sandstone_white_gravel|4|gal:stone_brown|4|gal:stone_gabbro|gal:liquid_water_source|10|gal:liquid_water_source|gal:dirt_mud_dried|gal:stone_gravel|2||gal:stone_travertine|gal:mineral_salt_crystal||-31000|31000|100|0||||
 #
 #Name|Dust|NodeTop|NodeTopDepth|Filler|FillerDepth|Stone|WaterTop|WaterTopDepth|Water|River water|RiverBed|RiverBedDepth|CaveLiquid|DungeonNode|DungeonAlt|DungeonStair|Y-min|Y-max|Temperature|Humidity|MaxPos|MinPos|VerticalBlend|
 #WARM
-warm_humid||gal:dirt_with_grass_warm_humid|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_dirty_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_moss||-31000|31000|warm|humid||||
-warm_semihumid||gal:dirt_with_grass_warm_semihumid|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_dirty_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_algae||-31000|31000|warm|semihumid||||
-warm_temperate||gal:dirt_with_grass_warm_temperate|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_dirty_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_lichen||-31000|31000|warm|temperate||||
-warm_semiarid||gal:dirt_with_grass_warm_semiarid|1|gal:dirt|4|gal:stone_desert|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_river_muddy_source|gal:stone_gravel|2||gal:stone_travertine|gal:stone_with_salt||-31000|31000|warm|semiarid||||
-warm_arid||gal:stone_sandstone_gravel|3|gal:stone_sand|4|gal:stone_sand|gal:liquid_water_source|10|gal:liquid_water_source|gal:dirt_mud_dried|gal:stone_gravel|2||gal:stone_travertine|gal:mineral_salt_crystal||-31000|31000|warm|arid||||
+warm_humid||gal:dirt_with_grass_warm_humid|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_dirty_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_moss||-31000|31000|75|100||||
+warm_semihumid||gal:dirt_with_grass_warm_semihumid|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_dirty_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_algae||-31000|31000|75|75||||
+warm_temperate||gal:dirt_with_grass_warm_temperate|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_dirty_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_lichen||-31000|31000|75|50||||
+warm_semiarid||gal:dirt_with_grass_warm_semiarid|1|gal:dirt|4|gal:stone_desert|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_river_muddy_source|gal:stone_gravel|2||gal:stone_travertine|gal:stone_with_salt||-31000|31000|75|25||||
+warm_arid||gal:stone_sandstone_gravel|3|gal:stone_sand|4|gal:stone_sand|gal:liquid_water_source|10|gal:liquid_water_source|gal:dirt_mud_dried|gal:stone_gravel|2||gal:stone_travertine|gal:mineral_salt_crystal||-31000|31000|75|0||||
 #
 #Name|Dust|NodeTop|NodeTopDepth|Filler|FillerDepth|Stone|WaterTop|WaterTopDepth|Water|River water|RiverBed|RiverBedDepth|CaveLiquid|DungeonNode|DungeonAlt|DungeonStair|Y-min|Y-max|Temperature|Humidity|MaxPos|MinPos|VerticalBlend|
 #TEMPERATE
-temperate_humid||gal:dirt_with_grass_temperate_humid|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_river_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_moss||-31000|31000|temperate|humid||||
-temperate_semihumid||gal:dirt_with_grass_temperate_semihumid|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_river_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_algae||-31000|31000|temperate|semihumid||||
-temperate_temperate||gal:dirt_with_grass_temperate_temperate|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_river_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_lichen||-31000|31000|temperate|temperate||||
-temperate_semiarid||gal:dirt_with_grass_temperate_semiarid|1|gal:dirt|4|gal:stone_desert|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_river_muddy_source|gal:stone_gravel|2||gal:stone_travertine|gal:stone_with_salt||-31000|31000|temperate|semiarid||||
-temperate_arid||gal:stone_sandstone_desert_gravel|3|gal:stone_brown|4|gal:stone_granite_pink|gal:liquid_water_source|10|gal:liquid_water_source|gal:dirt_mud_dried|gal:stone_gravel|2||gal:stone_travertine|gal:mineral_salt_crystal||-31000|31000|temperate|arid||||
+temperate_humid||gal:dirt_with_grass_temperate_humid|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_river_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_moss||-31000|31000|50|100||||
+temperate_semihumid||gal:dirt_with_grass_temperate_semihumid|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_river_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_algae||-31000|31000|50|75||||
+temperate_temperate||gal:dirt_with_grass_temperate_temperate|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_river_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_lichen||-31000|31000|50|50||||
+temperate_semiarid||gal:dirt_with_grass_temperate_semiarid|1|gal:dirt|4|gal:stone_desert|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_river_muddy_source|gal:stone_gravel|2||gal:stone_travertine|gal:stone_with_salt||-31000|31000|50|25||||
+temperate_arid||gal:stone_sandstone_desert_gravel|3|gal:stone_brown|4|gal:stone_granite_pink|gal:liquid_water_source|10|gal:liquid_water_source|gal:dirt_mud_dried|gal:stone_gravel|2||gal:stone_travertine|gal:mineral_salt_crystal||-31000|31000|50|0||||
 #
 #Name|Dust|NodeTop|NodeTopDepth|Filler|FillerDepth|Stone|WaterTop|WaterTopDepth|Water|River water|RiverBed|RiverBedDepth|CaveLiquid|DungeonNode|DungeonAlt|DungeonStair|Y-min|Y-max|Temperature|Humidity|MaxPos|MinPos|VerticalBlend|
 #COOL
-#cool_humid||gal:dirt_with_litter_coniferous|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_rushing_source|gal:dirt_mud_01|2|||||-31000|31000|cool|humid||||
-cool_humid||gal:dirt_with_grass_cool_humid|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_rushing_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_moss||-31000|31000|cool|humid||||
-cool_semihumid||gal:dirt_with_grass_cool_semihumid|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_rushing_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_algae||-31000|31000|cool|semihumid||||
-cool_temperate||gal:dirt_with_grass_cool_temperate|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_rushing_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_lichen||-31000|31000|cool|temperate||||
-cool_semiarid||gal:dirt_with_grass_cool_semiarid|1|gal:dirt|4|gal:stone_desert|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_river_muddy_source|gal:stone_gravel|2||gal:stone_travertine|gal:stone_with_salt||-31000|31000|cool|semiarid||||
-cool_arid||gal:stone_gravel|3|gal:stone_granite_01|4|gal:stone_basalt_01|gal:liquid_water_source|10|gal:liquid_water_source|gal:dirt_mud_dried|gal:stone_gravel|2||gal:stone_travertine|gal:mineral_salt_crystal||-31000|31000|cool|arid||||
+cool_humid||gal:dirt_with_grass_cool_humid|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_rushing_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_moss||-31000|31000|25|100||||
+cool_semihumid||gal:dirt_with_grass_cool_semihumid|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_rushing_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_algae||-31000|31000|25|75||||
+cool_temperate||gal:dirt_with_grass_cool_temperate|1|gal:dirt|4|gal:stone|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_rushing_source|gal:dirt_mud_01|2||gal:stone_travertine|gal:stone_with_lichen||-31000|31000|25|50||||
+cool_semiarid||gal:dirt_with_grass_cool_semiarid|1|gal:dirt|4|gal:stone_desert|gal:liquid_water_source|10|gal:liquid_water_source|gal:liquid_water_river_muddy_source|gal:stone_gravel|2||gal:stone_travertine|gal:stone_with_salt||-31000|31000|25|25||||
+cool_arid||gal:stone_gravel|3|gal:stone_granite_01|4|gal:stone_basalt_01|gal:liquid_water_source|10|gal:liquid_water_source|gal:dirt_mud_dried|gal:stone_gravel|2||gal:stone_travertine|gal:mineral_salt_crystal||-31000|31000|25|0||||
 #
 #Name|Dust|NodeTop|NodeTopDepth|Filler|FillerDepth|Stone|WaterTop|WaterTopDepth|Water|River water|RiverBed|RiverBedDepth|CaveLiquid|DungeonNode|DungeonAlt|DungeonStair|Y-min|Y-max|Temperature|Humidity|MaxPos|MinPos|VerticalBlend|
 #COLD
-cold_humid||gal:dirt_permafrost_with_snow|1|gal:dirt_permafrost|4|gal:stone|gal:ice|10|gal:liquid_water_source|gal:ice|gal:stone_gravel|||gal:stone|gal:stone||-31000|31000|cold|humid||||
-cold_semihumid||gal:dirt_permafrost_with_snow|1|gal:dirt_permafrost|4|gal:stone|gal:ice|8|gal:liquid_water_source|gal:ice|gal:stone_gravel|||gal:stone|gal:stone||-31000|31000|cold|semihumid||||
-cold_temperate||gal:dirt_permafrost|1|gal:dirt_permafrost|4|gal:stone|gal:ice|6|gal:liquid_water_source|gal:ice|gal:stone_gravel|||gal:stone|gal:ice_2||-31000|31000|cold|temperate||||
-cold_semiarid||gal:dirt_permafrost|1|gal:dirt_permafrost|4|gal:stone|gal:ice|3|gal:liquid_water_source|gal:ice|gal:stone_gravel|||gal:ice|gal:ice_2||-31000|31000|cold|semiarid||||
-cold_arid||gal:dirt_permafrost|1|gal:dirt_permafrost|4|gal:stone|gal:ice|1|gal:liquid_water_source|gal:ice|gal:stone_gravel|||gal:ice|gal:ice_2||-31000|31000|cold|arid||||
-#
-#Name|Dust|NodeTop|NodeTopDepth|Filler|FillerDepth|Stone|WaterTop|WaterTopDepth|Water|River water|RiverBed|RiverBedDepth|CaveLiquid|DungeonNode|DungeonAlt|DungeonStair|Y-min|Y-max|Temperature|Humidity|MaxPos|MinPos|VerticalBlend|
-#SWAMPS
+cold_humid||gal:dirt_permafrost_with_snow|1|gal:dirt_permafrost|4|gal:stone|gal:ice|10|gal:liquid_water_source|gal:ice|gal:stone_gravel|||gal:stone|gal:stone||-31000|31000|0|100||||
+cold_semihumid||gal:dirt_permafrost_with_snow|1|gal:dirt_permafrost|4|gal:stone|gal:ice|8|gal:liquid_water_source|gal:ice|gal:stone_gravel|||gal:stone|gal:stone||-31000|31000|0|75||||
+cold_temperate||gal:dirt_permafrost|1|gal:dirt_permafrost|4|gal:stone|gal:ice|6|gal:liquid_water_source|gal:ice|gal:stone_gravel|||gal:stone|gal:ice_2||-31000|31000|0|50||||
+cold_semiarid||gal:dirt_permafrost|1|gal:dirt_permafrost|4|gal:stone|gal:ice|3|gal:liquid_water_source|gal:ice|gal:stone_gravel|||gal:ice|gal:ice_2||-31000|31000|0|25||||
+cold_arid||gal:dirt_permafrost|1|gal:dirt_permafrost|4|gal:stone|gal:ice|1|gal:liquid_water_source|gal:ice|gal:stone_gravel|||gal:ice|gal:ice_2||-31000|31000|0|0||||

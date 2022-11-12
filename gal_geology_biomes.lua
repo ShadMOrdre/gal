@@ -91,6 +91,23 @@ for i, biome in ipairs(gal.lib.csv.read("|", gal.path .. "/" .. gal.biome_data_f
 	v = read_node_str(v)
 	w = read_node_str(w)
 	x = read_node_str(x)
+	
+	local minp_x, minp_y, minp_z
+	local maxp_x, maxp_y, maxp_z
+	-- if v ~= "" then
+		-- minp_x, minp_y, minp_z = unpack(v)
+	-- else
+		minp_x = -31000
+		minp_y = tonumber(r)
+		minp_z = -31000
+	-- end
+	-- if w ~= "" then
+		-- maxp_x, maxp_y, maxp_z = unpack(w)
+	-- else
+		maxp_x = 31000
+		maxp_y = tonumber(s)
+		maxp_z = 31000
+	-- end
 
 	minetest.register_biome({
 		-- name = "gal:" .. a,
@@ -111,14 +128,18 @@ for i, biome in ipairs(gal.lib.csv.read("|", gal.path .. "/" .. gal.biome_data_f
 		node_dungeon = o or nil,
 		node_dungeon_alt = p or nil,
 		node_dungeon_stair = q or nil,
-		y_min = tonumber(r) or heights[r],
-		y_max = tonumber(s) or heights[s],
-		heat_point = tonumber(t) or temperatures[t],
-		humidity_point = tonumber(u) or humidities[u],
-		max_pos = tonumber(v),
-		-- max_pos = {x = 31000, y = tonumber(v), z = 31000} or {x = 31000, y = 31000, z = 31000},
-		min_pos = tonumber(w),
-		-- min_pos = {x = -31000, y = tonumber(w), z = -31000} or {x = -31000, y = -31000, z = -31000},
+		y_min = tonumber(r),
+		y_max = tonumber(s),
+		-- heat_point = tonumber(t) or tonumber(temperatures[t]),
+		heat_point = tonumber(t),
+		-- humidity_point = tonumber(u) or tonumber(humidities[u]),
+		humidity_point = tonumber(u),
+		max_pos = tonumber(v) or {x = 31000, y = 31000, z = 31000},
+		-- max_pos = {x = tonumber(maxp_x), y = tonumber(maxp_y), z = tonumber(maxp_z)},
+		-- -- max_pos = {x = 31000, y = tonumber(v), z = 31000} or {x = 31000, y = 31000, z = 31000},
+		min_pos = tonumber(w) or {x = -31000, y = -31000, z = -31000},
+		-- min_pos = {x = tonumber(minp_x), y = tonumber(minp_y), z = tonumber(minp_z)},
+		-- -- min_pos = {x = -31000, y = tonumber(w), z = -31000} or {x = -31000, y = -31000, z = -31000},
 		vertical_blend = tonumber(x) or gal.mapgen.biome_vertical_blend,
 	})
 end
@@ -294,10 +315,6 @@ function gal.get_biome_name(pheat,phumid,ppos)
 	return t_name
 
 end
-
-
-
-
 
 
 

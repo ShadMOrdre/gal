@@ -5,7 +5,7 @@ local spel = {
 	{type1="stalactite", type2="stalagmite", tile="lib_materials_stone_default.png"},
 	{type1="stalactite_slimy", type2="stalagmite_slimy", tile="lib_materials_stone_default.png^valc_algae.png"},
 	{type1="stalactite_mossy", type2="stalagmite_mossy", tile="lib_materials_stone_default.png^valc_moss.png"},
-	{type1="icicle_down", type2="icicle_up", desc="Icicle", tile="lib_materials_ice2.png", drop="lib_materials:ice_2"},
+	{type1="icicle_down", type2="icicle_up", desc="Icicle", tile="lib_materials_ice2.png", drop="gal:ice_2"},
 }
 
 for _, desc in pairs(spel) do
@@ -17,7 +17,7 @@ for _, desc in pairs(spel) do
 		walkable = false,
 		paramtype = "light",
 		--light_source = 14,
-		drop = (desc.drop or "lib_materials:stalactite"),
+		drop = (desc.drop or "gal:stalactite"),
 		drawtype = "nodebox",
 		node_box = { type = "fixed", 
 			fixed = {
@@ -37,7 +37,7 @@ for _, desc in pairs(spel) do
 		walkable = false,
 		paramtype = "light",
 		--light_source = 14,
-		drop = "lib_materials:stalagmite",
+		drop = "gal:stalagmite",
 		drawtype = "nodebox",
 		node_box = { type = "fixed", 
 			fixed = {
@@ -275,7 +275,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "lib_materials:stone_cobble",
+	output = "gal:stone_cobble",
 	recipe = {
 		{"", "", ""},
 		{"gal:stalagmite", "gal:stalagmite", ""},

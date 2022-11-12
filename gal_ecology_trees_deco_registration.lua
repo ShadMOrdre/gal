@@ -294,7 +294,7 @@ local deco_tree = function(tname,tbiomes,tsoils,tgrasses,tdensitys,tymins,tymaxs
 			elseif tgrasses[bi] == "pale" then
 				tdirts[bi] = "gal:dirt" .. tsoils[bi] .. "_with_grass_" .. bname .. "_pale"
 			elseif tgrasses[bi] == "dirt" then
-				tdirts[bi] = "gal:dirt_" .. tsoils[bi]
+				tdirts[bi] = "gal:dirt" .. tsoils[bi]
 			elseif tgrasses[bi] == "mud" then
 				tdirts[bi] = "gal:" .. tsoils[bi]
 			elseif tgrasses[bi] == "stone" then

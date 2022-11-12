@@ -35,7 +35,7 @@ for i, ci in ipairs(gal.lib.csv.read("|", gal.path .. "/gal_ecology_trees_crafti
 				end
 			end
 
-			minetest.register_craftitem(":gal:" .. citem, new_ci_def)
+			minetest.register_craftitem("gal:" .. citem, new_ci_def)
 			--minetest.register_craftitem(citem, new_ci_def)
 
 		end

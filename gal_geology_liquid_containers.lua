@@ -17,7 +17,7 @@ minetest.register_craft({
 })
 
 --Register unfired clay pot
-minetest.register_craftitem(":gal:tool_pot_clay_unfired", {
+minetest.register_craftitem("gal:tool_pot_clay_unfired", {
 	description = "Unfired Clay Pot (lib_mat)",
 	inventory_image = "lib_materials_tool_pot_clay_unfired.png",
 	stack_max = 99,
@@ -464,7 +464,7 @@ function gal.register_liquid(source, flowing, bucket_item, bucket_wood_item, buc
 end
 
 
-minetest.register_craftitem(":gal:tool_bucket_empty", {
+minetest.register_craftitem("gal:tool_bucket_empty", {
 	description = "Empty Bucket (lib_mat)",
 	inventory_image = "lib_materials_tool_bucket.png",
 	stack_max = 99,
@@ -600,7 +600,7 @@ minetest.register_craftitem(":gal:tool_bucket_empty", {
 	end
 })
 
-minetest.register_craftitem(":gal:tool_bucket_wood_empty", {
+minetest.register_craftitem("gal:tool_bucket_wood_empty", {
 	description = "Empty Wood Bucket (lib_mat)",
 	inventory_image = "lib_materials_tool_bucket_wood.png",
 	stack_max = 99,
@@ -736,7 +736,7 @@ minetest.register_craftitem(":gal:tool_bucket_wood_empty", {
 	end
 })
 
-minetest.register_craftitem(":gal:tool_bucket_steel_empty", {
+minetest.register_craftitem("gal:tool_bucket_steel_empty", {
 	description = "Empty Steel Bucket (lib_mat)",
 	inventory_image = "lib_materials_tool_bucket_steel.png",
 	stack_max = 99,
@@ -872,7 +872,7 @@ minetest.register_craftitem(":gal:tool_bucket_steel_empty", {
 	end
 })
 
-minetest.register_craftitem(":gal:tool_pot_clay_empty", {
+minetest.register_craftitem("gal:tool_pot_clay_empty", {
 	description = "Empty Clay Pot (lib_mat)",
 	inventory_image = "lib_materials_tool_pot_clay.png",
 	stack_max = 99,

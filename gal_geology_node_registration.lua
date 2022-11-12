@@ -572,8 +572,8 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/" .. gal.nodes_data_f
 			local new_drop1, new_drop2, new_drop3, new_drop4, new_drop5, new_drop6
 			new_node_def.drop = {}
 
-			if max_drop then
-				new_node_def.drop.max_items = max_drop
+			if max_drop and max_drop ~= "" then
+				new_node_def.drop.max_items = tonumber(max_drop)
 			end
 
 			new_node_def.drop.items = {}
@@ -1184,8 +1184,29 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/" .. gal.nodes_data_f
 			if string.find(node_name, "metal_iron_rusted_block") or string.find(node_name, "metal_rusty_block") or string.find(node_name, "metal_iron_cast_block2") or string.find(node_name, "metal_steel_black_block") then
 				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_jail")
 				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_jail_right")
+				gal.lib.shapes.register_node(""..node_name.."", "handrail")
+				gal.lib.shapes.register_node(""..node_name.."", "handrail_stairs")
+				gal.lib.shapes.register_node(""..node_name.."", "handrail_stairs_left")
+				gal.lib.shapes.register_node(""..node_name.."", "handrail_stairs_right")
+				gal.lib.shapes.register_node(""..node_name.."", "handrail_post")
+				gal.lib.shapes.register_node(""..node_name.."", "rail")
+				gal.lib.shapes.register_node(""..node_name.."", "rail_post")
+				gal.lib.shapes.register_node(""..node_name.."", "steps")
+				gal.lib.shapes.register_node(""..node_name.."", "steps_open")
+				gal.lib.shapes.register_node(""..node_name.."", "steps_solid")
 
 			end
+
+			--[[if string.find(node_name, "metal_bronze_block") or string.find(node_name, "metal_copper_block") or string.find(node_name, "metal_gold_block") or string.find(node_name, "metal_steel_block") then
+
+				gal.lib.shapes.register_node(""..node_name.."", "lamp_bulb")
+				gal.lib.shapes.register_node(""..node_name.."", "lamp_simple_01")
+				gal.lib.shapes.register_node(""..node_name.."", "lamp_01")
+				gal.lib.shapes.register_node(""..node_name.."", "lamp_02")
+				gal.lib.shapes.register_node(""..node_name.."", "light_overhead")
+				gal.lib.shapes.register_node(""..node_name.."", "light_chandelier_01")
+
+			end--]]
 
 			if string.find(node_name, "_roof_tile") then
 				gal.lib.shapes.register_node(""..node_name.."", "roof")

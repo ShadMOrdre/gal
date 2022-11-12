@@ -175,11 +175,10 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/gal_ecology_plants_no
 
 --NEED GROW CODE FOR CROPS
 	if grow ~= "" then
-		if string.find(grow, ",") then
-			
-		else
+		if string.find(grow, ":") then
 			new_node_def.on_construct = function(pos)
-				minetest.get_node_timer(pos):start(math.random(60,120))
+				-- minetest.get_node_timer(pos):start(math.random(60,120))
+				minetest.get_node_timer(pos):start(60)
 			end
 			new_node_def.on_timer = function(pos)
 				minetest.set_node(pos, {name=grow})
@@ -248,8 +247,8 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/gal_ecology_plants_no
 			local new_drop1, new_drop2, new_drop3, new_drop4, new_drop5, new_drop6
 			new_node_def.drop = {}
 
-			if max_drop then
-				new_node_def.drop.max_items = max_drop
+			if max_drop and max_drop ~= "" then
+				new_node_def.drop.max_items = tonumber(max_drop)
 			end
 
 			new_node_def.drop.items = {}

@@ -2035,6 +2035,19 @@ gal.ecosystems = {}
 local max   = math.max
 local min   = math.min
 
+
+-- local biome_def				= {}
+-- if minetest.get_mapgen_setting("mg_name") == "singlenode" then
+	-- if gal.mg_earth == true then
+		-- biome_def				= mg_earth.biome_info[t_biome]
+	-- else
+		-- biome_def				= gal.biome_info[t_biome]
+	-- end
+-- else
+	-- biome_def				= gal.biome_info[t_biome]
+-- end
+
+
 local np_seed = math.random(1,256)
 
 local np_eco1				= {offset = 0, scale = 1, seed = 2835, spread = {x = (128 * gal.settings.mg_world_scale), y = (128 * gal.settings.mg_world_scale), z = (128 * gal.settings.mg_world_scale)}, octaves = 5, persist = 0.5, lacunarity = 4}
@@ -2117,7 +2130,8 @@ end
 
 function gal.get_ecosystem_data(pbiome, palt, soil_type_idx, soil_idx, top_type_idx, top_idx)
 
-	local biome_def				= minetest.registered_biomes[pbiome]
+	-- local biome_def				= minetest.registered_biomes[pbiome]
+	local biome_def				= gal.biome_info[pbiome]
 
 	local e_tops				= {}
 	local e_fillers				= {}
@@ -2162,10 +2176,10 @@ function gal.get_ecosystem_data(pbiome, palt, soil_type_idx, soil_idx, top_type_
 			end
 		end
 	else
-		e_fill					= biome_def.node_filler
-		e_stone					= biome_def.node_stone
-		e_dungeon				= biome_def.node_dungeon
-		e_dungeon_alt			= biome_def.node_dungeon_alt
+		e_fill					= minetest.get_name_from_content_id(biome_def.b_filler)
+		e_stone					= minetest.get_name_from_content_id(biome_def.b_stone)
+		e_dungeon				= minetest.get_name_from_content_id(biome_def.b_dungeon)
+		e_dungeon_alt			= minetest.get_name_from_content_id(biome_def.b_dungeon_alt)
 		if palt == "ocean" or palt == "beach" then
 			e_fill				= "gal:stone_sandstone"
 			e_stone				= "gal:stone"
@@ -2173,10 +2187,10 @@ function gal.get_ecosystem_data(pbiome, palt, soil_type_idx, soil_idx, top_type_
 			e_dungeon_alt		= "gal:stone"
 		end
 		if palt == "mountain" or palt == "strato" then
-			e_fill				= biome_def.node_stone
-			e_stone				= biome_def.node_stone
-			e_dungeon			= biome_def.node_dungeon
-			e_dungeon_alt		= biome_def.node_dungeon_alt
+			e_fill				= minetest.get_name_from_content_id(biome_def.b_stone)
+			e_stone				= minetest.get_name_from_content_id(biome_def.b_stone)
+			e_dungeon			= minetest.get_name_from_content_id(biome_def.b_dungeon)
+			e_dungeon_alt		= minetest.get_name_from_content_id(biome_def.b_dungeon_alt)
 		end
 	end
 
@@ -2200,8 +2214,11 @@ function gal.get_ecosystem_data(pbiome, palt, soil_type_idx, soil_idx, top_type_
 			if palt == "mountain" or palt == "strato" then
 				e_top			= e_fill
 			end
+		else
+			e_top				= minetest.get_name_from_content_id(biome_def.b_top)
 		end
 	else
+		e_top				= minetest.get_name_from_content_id(biome_def.b_top)
 		if soil_idx > 0 then
 			if string.find(pbiome, "_arid") then
 				e_top			= e_fill
@@ -2216,14 +2233,12 @@ function gal.get_ecosystem_data(pbiome, palt, soil_type_idx, soil_idx, top_type_
 					e_top			= e_fill .. "_with_grass_" .. pbiome
 				end
 			end
-		else
-			e_top				= biome_def.node_top
 		end
 		if palt == "ocean" or palt == "beach" then
 			e_top				= "gal:sand"
 		end
 		if palt == "mountain" or palt == "strato" then
-			e_top				= biome_def.node_stone
+			e_top				= minetest.get_name_from_content_id(biome_def.b_stone)
 		end
 	end
 
@@ -2231,7 +2246,7 @@ function gal.get_ecosystem_data(pbiome, palt, soil_type_idx, soil_idx, top_type_
 		-- e_top					= "gal:sand"
 	-- end
 	-- if palt == "mountain" or palt == "strato" then
-		-- e_top					= biome_def.node_stone
+		-- e_top					= biome_def.b_stone
 	-- end
 
 	local t_top					= minetest.get_content_id(e_top)
