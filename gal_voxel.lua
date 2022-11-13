@@ -167,10 +167,10 @@ local function generate_2d_map(minp, maxp, seed, area)
 
 			gal.heightmap[index2d] = t_y
 
+			local nbiome_name = ""
 			if gal.mg_earth then
 				gal.biomemap[index2d] = bm[index2d]
 			else
-				local nbiome_name = ""
 				if not nbiome_name or nbiome_name == "" then
 					nbiome_name = calc_biome_from_noise(nheat,nhumid,{x=x,y=t_y,z=z})
 				end
