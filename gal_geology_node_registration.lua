@@ -487,12 +487,12 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/" .. gal.nodes_data_f
 		end
 	end
 
-	if alpha ~= "" then
-		--new_node_def.alpha = tonumber(alpha)
-		if string.lower(alpha) == "true" then
-			new_node_def.use_texture_alpha = "blend"
-		end
-	end
+	-- if alpha ~= "" then
+		-- --new_node_def.alpha = tonumber(alpha)
+		-- if string.lower(alpha) == "true" then
+			-- new_node_def.use_texture_alpha = "blend"
+		-- end
+	-- end
 
 	if sun_prop ~= "" then
 		if string.lower(sun_prop) == "true" then

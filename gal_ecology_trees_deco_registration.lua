@@ -7201,10 +7201,10 @@ minetest.register_decoration({
 		persist = 0.7,
 	},
 	biomes = {
-		"warm_temperate_ocean",
-		"temperate_humid_ocean",
-		"temperate_semihumid_ocean",
-		"temperate_temperate_ocean",
+		"warm_temperate",
+		"temperate_humid",
+		"temperate_semihumid",
+		"temperate_temperate",
 	},
 	y_max = -2,
 	y_min = -12,
@@ -7233,8 +7233,8 @@ minetest.register_decoration({
 		persist = 0.7,
 	},
 	biomes = {
-		"warm_humid_ocean",
-		"warm_semihumid_ocean",
+		"warm_humid",
+		"warm_semihumid",
 	},
 	y_max = -4,
 	y_min = -14,
@@ -7706,12 +7706,12 @@ minetest.register_decoration({
 		persist = 0.7
 	},
 	biomes = {
-		"temperate_humid_ocean",
-		"temperate_semihumid_ocean",
-		"temperate_temperate_ocean",
-		"cool_humid_ocean",
-		"cool_semihumid_ocean",
-		"cool_temperate_ocean"
+		"temperate_humid",
+		"temperate_semihumid",
+		"temperate_temperate",
+		"cool_humid",
+		"cool_semihumid",
+		"cool_temperate"
 	},
 	y_max = -5,
 	y_min = -10,
@@ -7735,12 +7735,12 @@ minetest.register_decoration({
 		persist = 0.7
 	},
 	biomes = {
-		"temperate_humid_ocean",
-		"temperate_semihumid_ocean",
-		"temperate_temperate_ocean",
-		"cool_humid_ocean",
-		"cool_semihumid_ocean",
-		"cool_temperate_ocean"
+		"temperate_humid",
+		"temperate_semihumid",
+		"temperate_temperate",
+		"cool_humid",
+		"cool_semihumid",
+		"cool_temperate"
 	},
 	y_max = -5,
 	y_min = -10,
@@ -7764,12 +7764,12 @@ minetest.register_decoration({
 		persist = 0.7
 	},
 	biomes = {
-		"temperate_humid_ocean",
-		"temperate_semihumid_ocean",
-		"temperate_temperate_ocean",
-		"cool_humid_ocean",
-		"cool_semihumid_ocean",
-		"cool_temperate_ocean"
+		"temperate_humid",
+		"temperate_semihumid",
+		"temperate_temperate",
+		"cool_humid",
+		"cool_semihumid",
+		"cool_temperate"
 	},
 	y_max = -5,
 	y_min = -10,
@@ -7793,12 +7793,12 @@ minetest.register_decoration({
 		persist = 0.7
 	},
 	biomes = {
-		"temperate_humid_ocean",
-		"temperate_semihumid_ocean",
-		"temperate_temperate_ocean",
-		"cool_humid_ocean",
-		"cool_semihumid_ocean",
-		"cool_temperate_ocean"
+		"temperate_humid",
+		"temperate_semihumid",
+		"temperate_temperate",
+		"cool_humid",
+		"cool_semihumid",
+		"cool_temperate"
 	},
 	y_max = -5,
 	y_min = -10,
@@ -7822,12 +7822,12 @@ minetest.register_decoration({
 		persist = 0.7
 	},
 	biomes = {
-		"temperate_humid_ocean",
-		"temperate_semihumid_ocean",
-		"temperate_temperate_ocean",
-		"cool_humid_ocean",
-		"cool_semihumid_ocean",
-		"cool_temperate_ocean"
+		"temperate_humid",
+		"temperate_semihumid",
+		"temperate_temperate",
+		"cool_humid",
+		"cool_semihumid",
+		"cool_temperate"
 	},
 	y_max = -5,
 	y_min = -10,
@@ -7851,12 +7851,12 @@ minetest.register_decoration({
 		persist = 0.7
 	},
 	biomes = {
-		"temperate_humid_ocean",
-		"temperate_semihumid_ocean",
-		"temperate_temperate_ocean",
-		"cool_humid_ocean",
-		"cool_semihumid_ocean",
-		"cool_temperate_ocean"
+		"temperate_humid",
+		"temperate_semihumid",
+		"temperate_temperate",
+		"cool_humid",
+		"cool_semihumid",
+		"cool_temperate"
 	},
 	y_max = -5,
 	y_min = -10,
@@ -7882,13 +7882,13 @@ minetest.register_decoration({
 		persist = 0.7
 	},
 	biomes = {
-		"hot_semiarid_ocean",
-		"warm_temperate_ocean",
-		"warm_semiarid_ocean",
-		"temperate_temperate_ocean",
-		"temperate_semiarid_ocean",
-		"cool_temperate_ocean",
-		"cool_semiarid_ocean",
+		"hot_semiarid",
+		"warm_temperate",
+		"warm_semiarid",
+		"temperate_temperate",
+		"temperate_semiarid",
+		"cool_temperate",
+		"cool_semiarid",
 	},
 	y_max = -5,
 	y_min = -10,
@@ -8118,9 +8118,9 @@ minetest.register_decoration({
 --			persist = 0.7
 --		},
 	biomes = {
-		"hot_humid_beach",
-		"hot_semihumid_beach",
-		"warm_humid_beach"
+		"hot_humid",
+		"hot_semihumid",
+		"warm_humid"
 	},
 	y_max = 1,
 	y_min = -1,

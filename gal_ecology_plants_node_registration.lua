@@ -807,7 +807,8 @@ for i, stone in ipairs(gal.lib.csv.read("|", gal.path .. "/gal_ecology_plants_no
 --##REGISTER SHAPES
 	if gal.enable_lib_shapes then
 		if (string.find(node_name, "item_")) and (not (string.find(node_name, "_bale") or string.find(node_name, "_mat"))) then
-			if string.find(node_name, "reed") or string.find(node_name, "reet") or string.find(node_name, "hay") or string.find(node_name, "straw") then
+			-- if string.find(node_name, "reed") or string.find(node_name, "reet") or string.find(node_name, "hay") or string.find(node_name, "straw") then
+			if string.find(node_name, "reed") or string.find(node_name, "reet") or string.find(node_name, "straw") then
 
 				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered")
 				gal.lib.shapes.register_door_node(""..node_name.."", "door_centered_right")

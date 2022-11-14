@@ -513,7 +513,7 @@ minetest.register_abm({
 })
 
 
-minetest.register_craftitem(":gal:tool_bucket_fluid_water_finite", {
+minetest.register_craftitem("gal:tool_bucket_fluid_water_finite", {
 	inventory_image = "bucket_water.png",
 	stack_max = 1,
 	liquids_pointable = true,

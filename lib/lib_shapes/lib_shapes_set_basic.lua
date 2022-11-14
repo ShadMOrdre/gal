@@ -438,7 +438,7 @@ gal.lib.shapes.register_shape("step", {
 	},
 })
 gal.lib.shapes.register_shape("steps", {
-	description = S("Stairs"), 
+	description = S("Steps"), 
 	shape_type = "basic",
 	node_box = {
 		type = "fixed",

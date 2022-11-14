@@ -14,6 +14,7 @@ local S = gal.intllib
 		walkable = false,
 		buildable_to = true,
 		floodable = true,
+		use_texture_alpha = "clip",
 		groups = {chippy = 1, flakey = 1, knappy = 1, ground_litter = 1, rock = 1, oddly_breakable_by_hand = 1},
 		sounds = gal.node_sound_stone_defaults(),
 		node_box = {
@@ -37,6 +38,7 @@ local S = gal.intllib
 		walkable = false,
 		buildable_to = true,
 		floodable = true,
+		use_texture_alpha = "clip",
 		groups = {chippy = 1, flakey = 1, knappy = 1, ground_litter = 1, rock = 1, oddly_breakable_by_hand = 1},
 		sounds = gal.node_sound_stone_defaults(),
 		node_box = {
@@ -61,6 +63,7 @@ local S = gal.intllib
 		walkable = false,
 		buildable_to = true,
 		floodable = true,
+		use_texture_alpha = "clip",
 		groups = {choppy = 1, snappy = 1, ground_litter = 1, stick = 1, oddly_breakable_by_hand = 1},
 		sounds = gal.node_sound_wood_defaults(),
 		node_box = {
@@ -125,6 +128,7 @@ local S = gal.intllib
 		walkable = false,
 		buildable_to = true,
 		floodable = true,
+		use_texture_alpha = "clip",
 		groups = {choppy = 1, snappy = 1, ground_litter = 1, stick = 1, sticks = 1, oddly_breakable_by_hand = 1},
 		sounds = gal.node_sound_wood_defaults(),
 		node_box = {
@@ -157,6 +161,7 @@ local function get_3d_dist(a,b,c,d_type)
 	return dist
 end
 
+--[[
 -- local function make_boulder(psize,pos,area,data,c_stone)
 
 			-- -- local psize = {
@@ -370,7 +375,7 @@ end
 	-- schematic = make_boulder({x=20,y=40,z=20}),
 	-- rotation = "random",
 -- })
-
+--]]
 
 -- Push an element onto a stack (table).
 function push(t, x)

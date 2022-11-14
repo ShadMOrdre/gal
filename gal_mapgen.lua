@@ -139,7 +139,7 @@ gal.mapgen.c_dungeon_alt					= minetest.get_content_id("gal:stone_cobble_mossy")
 gal.mapgen.c_snow							= minetest.get_content_id("gal:snow_block")
 gal.mapgen.c_ice							= minetest.get_content_id("gal:ice")
 		
-gal.mapgen.c_sand							= minetest.get_content_id("gal:sand_beach")
+gal.mapgen.c_sand							= minetest.get_content_id("gal:sand")
 gal.mapgen.c_sandstone						= minetest.get_content_id("gal:stone_sandstone")
 
 -- gal.mapgen.c_air				= nil
