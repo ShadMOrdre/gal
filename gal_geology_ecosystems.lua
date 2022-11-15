@@ -2174,6 +2174,11 @@ function gal.get_ecosystem_data(pbiome, palt, soil_type_idx, soil_idx, top_type_
 				e_dungeon		= "gal:" .. e_dungeons[soil_type_idx][soil_idx]
 				e_dungeon_alt	= "gal:" .. e_dungeon_alts[soil_type_idx][soil_idx]
 			end
+		else
+			e_fill					= minetest.get_name_from_content_id(biome_def.b_filler)
+			e_stone					= minetest.get_name_from_content_id(biome_def.b_stone)
+			e_dungeon				= minetest.get_name_from_content_id(biome_def.b_dungeon)
+			e_dungeon_alt			= minetest.get_name_from_content_id(biome_def.b_dungeon_alt)
 		end
 	else
 		e_fill					= minetest.get_name_from_content_id(biome_def.b_filler)
